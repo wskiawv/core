@@ -1,0 +1,2320 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<codes>
+	<code category="dm_rkxd" category_name="任课学段码" code="3" name="普通初中" />
+	<code category="dm_rkxd" category_name="任课学段码" code="4" name="普通高中" />
+	<code category="dm_rkxd" category_name="任课学段码" code="1" name="学前教育" />
+	<code category="dm_rkxd" category_name="任课学段码" code="2" name="小学" />
+	<code category="dm_rkxd" category_name="任课学段码" code="5" name="职业初中" />
+	<code category="dm_rkxd" category_name="任课学段码" code="6" name="职业高中" />
+	<code category="dm_rkxd" category_name="任课学段码" code="7" name="特殊教育" />
+	<code category="dm_rkxd" category_name="任课学段码" code="9" name="其他" />
+	<code category="gb_jtcs" category_name="家庭出身码" code="01" name="工人" />
+	<code category="gb_jtcs" category_name="家庭出身码" code="03" name="农民" />
+	<code category="gb_jtcs" category_name="家庭出身码" code="10" name="干部" />
+	<code category="gb_jtcs" category_name="家庭出身码" code="11" name="革命军人" />
+	<code category="gb_jtcs" category_name="家庭出身码" code="12" name="革命烈士" />
+	<code category="gb_jtcs" category_name="家庭出身码" code="14" name="职员" />
+	<code category="gb_jtcs" category_name="家庭出身码" code="16" name="自由职业" />
+	<code category="gb_jtcs" category_name="家庭出身码" code="17" name="店员" />
+	<code category="gb_jtcs" category_name="家庭出身码" code="20" name="商人" />
+	<code category="gb_jtcs" category_name="家庭出身码" code="21" name="小业主" />
+	<code category="gb_jtcs" category_name="家庭出身码" code="99" name="其他" />
+	<code category="gb_brcf" category_name="本人成分码" code="01" name="工人" />
+	<code category="gb_brcf" category_name="本人成分码" code="03" name="农民" />
+	<code category="gb_brcf" category_name="本人成分码" code="10" name="干部" />
+	<code category="gb_brcf" category_name="本人成分码" code="11" name="革命军人" />
+	<code category="gb_brcf" category_name="本人成分码" code="13" name="学生" />
+	<code category="gb_brcf" category_name="本人成分码" code="14" name="职员" />
+	<code category="gb_brcf" category_name="本人成分码" code="16" name="自由职业" />
+	<code category="gb_brcf" category_name="本人成分码" code="17" name="店员" />
+	<code category="gb_brcf" category_name="本人成分码" code="20" name="商人" />
+	<code category="gb_brcf" category_name="本人成分码" code="21" name="小业主" />
+	<code category="gb_brcf" category_name="本人成分码" code="99" name="其他" />
+	<code category="gb_whcd" category_name="文化程度码" code="21" name="大学毕业" />
+	<code category="gb_whcd" category_name="文化程度码" code="11" name="研究毕业生" />
+	<code category="gb_whcd" category_name="文化程度码" code="31" name="专科毕业" />
+	<code category="gb_whcd" category_name="文化程度码" code="41" name="中专毕业" />
+	<code category="gb_whcd" category_name="文化程度码" code="51" name="技工学校毕业" />
+	<code category="gb_whcd" category_name="文化程度码" code="61" name="高中毕业" />
+	<code category="gb_whcd" category_name="文化程度码" code="71" name="初中毕业" />
+	<code category="gb_whcd" category_name="文化程度码" code="81" name="小学毕业" />
+	<code category="dm_bzlb" category_name="编制类别码" code="1" name="专任教师" />
+	<code category="dm_bzlb" category_name="编制类别码" code="2" name="行政人员" />
+	<code category="dm_bzlb" category_name="编制类别码" code="3" name="教辅人员" />
+	<code category="dm_bzlb" category_name="编制类别码" code="4" name="工勤人员" />
+	<code category="dm_bzlb" category_name="编制类别码" code="5" name="校办企业职工" />
+	<code category="dm_bzlb" category_name="编制类别码" code="6" name="代课教师" />
+	<code category="dm_bzlb" category_name="编制类别码" code="7" name="兼任(职)教师" />
+	<code category="dm_bzlb" category_name="编制类别码" code="9" name="其他" />
+	<code category="dm_gwzy" category_name="岗位职业码" code="10" name="教师" />
+	<code category="dm_gwzy" category_name="岗位职业码" code="20" name="教师兼行政" />
+	<code category="dm_gwzy" category_name="岗位职业码" code="21" name="教研室主任(组长)" />
+	<code category="dm_gwzy" category_name="岗位职业码" code="22" name="年级主任(组长)" />
+	<code category="dm_gwzy" category_name="岗位职业码" code="23" name="班主任" />
+	<code category="dm_gwzy" category_name="岗位职业码" code="24" name="辅导员、教练员" />
+	<code category="dm_gwzy" category_name="岗位职业码" code="25" name="共青团工作负责人" />
+	<code category="dm_gwzy" category_name="岗位职业码" code="26" name="工会工作负责人" />
+	<code category="dm_gwzy" category_name="岗位职业码" code="27" name="妇女工作负责人" />
+	<code category="dm_gwzy" category_name="岗位职业码" code="28" name="其他工作负责人" />
+	<code category="dm_gwzy" category_name="岗位职业码" code="30" name="行政" />
+	<code category="dm_gwzy" category_name="岗位职业码" code="31" name="校领导" />
+	<code category="dm_gwzy" category_name="岗位职业码" code="32" name="行政处室负责人" />
+	<code category="dm_gwzy" category_name="岗位职业码" code="33" name="行政处室工作" />
+	<code category="dm_gwzy" category_name="岗位职业码" code="34" name="行政兼教学工作" />
+	<code category="dm_gwzy" category_name="岗位职业码" code="40" name="教辅" />
+	<code category="dm_gwzy" category_name="岗位职业码" code="41" name="实习实验工作与管理" />
+	<code category="dm_gwzy" category_name="岗位职业码" code="42" name="教学仪器设备维护与管理" />
+	<code category="dm_gwzy" category_name="岗位职业码" code="43" name="体育设备设施维护与管理" />
+	<code category="dm_gwzy" category_name="岗位职业码" code="44" name="文艺设备设施维护与管理" />
+	<code category="dm_gwzy" category_name="岗位职业码" code="45" name="图书教材工作与管理" />
+	<code category="dm_gwzy" category_name="岗位职业码" code="46" name="档案资料工作与管理" />
+	<code category="dm_gwzy" category_name="岗位职业码" code="47" name="电教设备维护与管理" />
+	<code category="dm_gwzy" category_name="岗位职业码" code="48" name="宣传教育工作与管理" />
+	<code category="dm_gwzy" category_name="岗位职业码" code="60" name="工勤" />
+	<code category="dm_gwzy" category_name="岗位职业码" code="61" name="医护保健工作与管理" />
+	<code category="dm_gwzy" category_name="岗位职业码" code="62" name="财务统计工作与管理" />
+	<code category="dm_gwzy" category_name="岗位职业码" code="63" name="校园维护与管理" />
+	<code category="dm_gwzy" category_name="岗位职业码" code="64" name="建筑维护与管理" />
+	<code category="dm_gwzy" category_name="岗位职业码" code="65" name="餐饮服务与管理" />
+	<code category="dm_gwzy" category_name="岗位职业码" code="66" name="生活服务与管理" />
+	<code category="dm_gwzy" category_name="岗位职业码" code="67" name="商贸服务与管理" />
+	<code category="dm_gwzy" category_name="岗位职业码" code="68" name="教学服务与管理" />
+	<code category="dm_gwzy" category_name="岗位职业码" code="70" name="校办企业" />
+	<code category="dm_gwzy" category_name="岗位职业码" code="71" name="校办企业负责人" />
+	<code category="dm_gwzy" category_name="岗位职业码" code="79" name="校办企业职工" />
+	<code category="dm_gwzy" category_name="岗位职业码" code="80" name="其他工作" />
+	<code category="gb_dzzw" category_name="曾任党政职务码12403" code="-"
+		name=" " />
+	<code category="gb_dzzw" category_name="曾任党政职务码12403" code="216A"
+		name="局长" />
+	<code category="gb_dzzw" category_name="曾任党政职务码12403" code="216B"
+		name="副局长" />
+	<code category="gb_dzzw" category_name="曾任党政职务码12403" code="219A"
+		name="处长" />
+	<code category="gb_dzzw" category_name="曾任党政职务码12403" code="219B"
+		name="副处长" />
+	<code category="gb_dzzw" category_name="曾任党政职务码12403" code="220A"
+		name="科长" />
+	<code category="gb_dzzw" category_name="曾任党政职务码12403" code="220B"
+		name="副科长" />
+	<code category="gb_dzzw" category_name="曾任党政职务码12403" code="258A"
+		name="县长" />
+	<code category="gb_dzzw" category_name="曾任党政职务码12403" code="258B"
+		name="副县长" />
+	<code category="gb_dzzw" category_name="曾任党政职务码12403" code="260A"
+		name="镇长" />
+	<code category="gb_dzzw" category_name="曾任党政职务码12403" code="260B"
+		name="副镇长" />
+	<code category="gb_dzzw" category_name="曾任党政职务码12403" code="261A"
+		name="乡长" />
+	<code category="gb_dzzw" category_name="曾任党政职务码12403" code="261B"
+		name="副乡长" />
+	<code category="gb_dzzw" category_name="曾任党政职务码12403" code="262A"
+		name="村长" />
+	<code category="gb_dzzw" category_name="曾任党政职务码12403" code="262B"
+		name="副村长" />
+	<code category="gb_jszw" category_name="曾任技术职务码8561" code="-"
+		name=" " />
+	<code category="gb_jszw" category_name="曾任技术职务码8561" code="01"
+		name="高等学校教师" />
+	<code category="gb_jszw" category_name="曾任技术职务码8561" code="02"
+		name="中等专业学校教师" />
+	<code category="gb_jszw" category_name="曾任技术职务码8561" code="05"
+		name="中学教师" />
+	<code category="gb_jszw" category_name="曾任技术职务码8561" code="052"
+		name="中学高级教师" />
+	<code category="gb_jszw" category_name="曾任技术职务码8561" code="053"
+		name="中学一级教师" />
+	<code category="gb_jszw" category_name="曾任技术职务码8561" code="054"
+		name="中学二级教师" />
+	<code category="gb_jszw" category_name="曾任技术职务码8561" code="055"
+		name="中学三级教师" />
+	<code category="gb_jszw" category_name="曾任技术职务码8561" code="072"
+		name="高级实验师" />
+	<code category="gb_jszw" category_name="曾任技术职务码8561" code="073"
+		name="实验师" />
+	<code category="gb_jszw" category_name="曾任技术职务码8561" code="074"
+		name="助理实验师" />
+	<code category="gb_jszw" category_name="曾任技术职务码8561" code="075"
+		name="实验员" />
+	<code category="gb_jszw" category_name="曾任技术职务码8561" code="099"
+		name="其他" />
+	<code category="gb_xw" category_name="学位码" code="-" name=" " />
+	<code category="gb_xw" category_name="学位码" code="1" name="名誉博士" />
+	<code category="gb_xw" category_name="学位码" code="2" name="博士" />
+	<code category="gb_xw" category_name="学位码" code="3" name="硕士" />
+	<code category="gb_xw" category_name="学位码" code="4" name="学士" />
+	<code category="gb_shjz" category_name="社会兼职码12408" code="-" name=" " />
+	<code category="gb_shjz" category_name="社会兼职码12408" code="0118"
+		name="全国人大代表" />
+	<code category="gb_shjz" category_name="社会兼职码12408" code="0128"
+		name="省(自治区、直辖市)人大代表" />
+	<code category="gb_shjz" category_name="社会兼职码12408" code="0148"
+		name="市(地级)人大代表" />
+	<code category="gb_shjz" category_name="社会兼职码12408" code="0168"
+		name="县(市、旗、区)人大代表" />
+	<code category="gb_shjz" category_name="社会兼职码12408" code="0216"
+		name="全国政协委员" />
+	<code category="gb_shjz" category_name="社会兼职码12408" code="0226"
+		name="省(自治区、直辖市)政协委员" />
+	<code category="gb_shjz" category_name="社会兼职码12408" code="0246"
+		name="市(地级)政协委员" />
+	<code category="gb_shjz" category_name="社会兼职码12408" code="0266"
+		name="县(市、旗、区)政协委员" />
+	<code category="gb_shjz" category_name="社会兼职码12408" code="0416"
+		name="民革委员" />
+	<code category="gb_shjz" category_name="社会兼职码12408" code="0496"
+		name="民革执行局委员" />
+	<code category="gb_shjz" category_name="社会兼职码12408" code="0426"
+		name="民革省(自治区、直辖市)委员" />
+	<code category="gb_shjz" category_name="社会兼职码12408" code="0446"
+		name="民革地(市、州、盟)委员" />
+	<code category="gb_shjz" category_name="社会兼职码12408" code="0466"
+		name="民革县(市、旗、区)委员" />
+	<code category="gb_shjz" category_name="社会兼职码12408" code="0516"
+		name="民盟委员" />
+	<code category="gb_shjz" category_name="社会兼职码12408" code="0596"
+		name="民盟执行局委员" />
+	<code category="gb_shjz" category_name="社会兼职码12408" code="0526"
+		name="民盟省(自治区、直辖市)委员" />
+	<code category="gb_shjz" category_name="社会兼职码12408" code="0546"
+		name="民盟地(市、州、盟)委员" />
+	<code category="gb_shjz" category_name="社会兼职码12408" code="0566"
+		name="民盟县(市、旗、区)委员" />
+	<code category="gb_shjz" category_name="社会兼职码12408" code="0616"
+		name="民建委员" />
+	<code category="gb_shjz" category_name="社会兼职码12408" code="0696"
+		name="民建执行局委员" />
+	<code category="gb_shjz" category_name="社会兼职码12408" code="0626"
+		name="民建省(自治区、直辖市)委员" />
+	<code category="gb_shjz" category_name="社会兼职码12408" code="0646"
+		name="民建地(市、州、盟)委员" />
+	<code category="gb_shjz" category_name="社会兼职码12408" code="0666"
+		name="民建县(市、旗、区)委员" />
+	<code category="gb_shjz" category_name="社会兼职码12408" code="0716"
+		name="民进委员" />
+	<code category="gb_shjz" category_name="社会兼职码12408" code="0796"
+		name="民进执行局委员" />
+	<code category="gb_shjz" category_name="社会兼职码12408" code="0726"
+		name="民进省(自治区、直辖市)委员" />
+	<code category="gb_shjz" category_name="社会兼职码12408" code="0746"
+		name="民进地(市、州、盟)委员" />
+	<code category="gb_shjz" category_name="社会兼职码12408" code="0766"
+		name="民进县(市、旗、区)委员" />
+	<code category="gb_shjz" category_name="社会兼职码12408" code="0816"
+		name="农工党委员" />
+	<code category="gb_shjz" category_name="社会兼职码12408" code="0896"
+		name="农工党执行局委员" />
+	<code category="gb_shjz" category_name="社会兼职码12408" code="0826"
+		name="农工党省(自治区、直辖市)委员" />
+	<code category="gb_shjz" category_name="社会兼职码12408" code="0846"
+		name="农工党地(市、州、盟)委员" />
+	<code category="gb_shjz" category_name="社会兼职码12408" code="0866"
+		name="农工党县(市、旗、区)委员" />
+	<code category="gb_shjz" category_name="社会兼职码12408" code="0916"
+		name="致公党委员" />
+	<code category="gb_shjz" category_name="社会兼职码12408" code="0996"
+		name="致公党执行局委员" />
+	<code category="gb_shjz" category_name="社会兼职码12408" code="0926"
+		name="致公党省(自治区、直辖市)委员" />
+	<code category="gb_shjz" category_name="社会兼职码12408" code="0946"
+		name="致公党地(市、州、盟)委员" />
+	<code category="gb_shjz" category_name="社会兼职码12408" code="0966"
+		name="致公党县(市、旗、区)委员" />
+	<code category="gb_shjz" category_name="社会兼职码12408" code="1016"
+		name="九三学社委员" />
+	<code category="gb_shjz" category_name="社会兼职码12408" code="1096"
+		name="九三学社执行局委员" />
+	<code category="gb_shjz" category_name="社会兼职码12408" code="1026"
+		name="九三学社省(自治区、直辖市)委员" />
+	<code category="gb_shjz" category_name="社会兼职码12408" code="1046"
+		name="九三学社地(市、州、盟)委员" />
+	<code category="gb_shjz" category_name="社会兼职码12408" code="1066"
+		name="九三学社县(市、旗、区)委员" />
+	<code category="gb_shjz" category_name="社会兼职码12408" code="1116"
+		name="台盟委员" />
+	<code category="gb_shjz" category_name="社会兼职码12408" code="1196"
+		name="台盟执行局委员" />
+	<code category="gb_shjz" category_name="社会兼职码12408" code="1126"
+		name="台盟省(自治区、直辖市)委员" />
+	<code category="gb_shjz" category_name="社会兼职码12408" code="1146"
+		name="台盟地(市、州、盟)委员" />
+	<code category="gb_shjz" category_name="社会兼职码12408" code="1166"
+		name="台盟县(市、旗、区)委员" />
+	<code category="gb_shjz" category_name="社会兼职码12408" code="4116"
+		name="全国总工会主席团委员" />
+	<code category="gb_shjz" category_name="社会兼职码12408" code="4126"
+		name="省(自治区、直辖市)工会委员" />
+	<code category="gb_shjz" category_name="社会兼职码12408" code="4146"
+		name="市(地级市)工会委员" />
+	<code category="gb_shjz" category_name="社会兼职码12408" code="4166"
+		name="县(市、旗、区)工会委员" />
+	<code category="gb_shjz" category_name="社会兼职码12408" code="4216"
+		name="团中央委员" />
+	<code category="gb_shjz" category_name="社会兼职码12408" code="4217"
+		name="团中央候补委员" />
+	<code category="gb_shjz" category_name="社会兼职码12408" code="4226"
+		name="省共青团(自治区、直辖市)委员" />
+	<code category="gb_shjz" category_name="社会兼职码12408" code="4227"
+		name="省共青团(自治区、直辖市)候补委员" />
+	<code category="gb_shjz" category_name="社会兼职码12408" code="4246"
+		name="市共青团(地级市)委员" />
+	<code category="gb_shjz" category_name="社会兼职码12408" code="4247"
+		name="市共青团(地级市)候补委员" />
+	<code category="gb_shjz" category_name="社会兼职码12408" code="4266"
+		name="县共青团(市、旗、区)委员" />
+	<code category="gb_shjz" category_name="社会兼职码12408" code="4267"
+		name="县共青团(市、旗、区)候补委员" />
+	<code category="gb_shjz" category_name="社会兼职码12408" code="5116"
+		name="全国侨联委员" />
+	<code category="gb_shjz" category_name="社会兼职码12408" code="5126"
+		name="省(自治区、直辖市)侨联委员" />
+	<code category="gb_shjz" category_name="社会兼职码12408" code="5246"
+		name="地(市、州、盟)侨联委员" />
+	<code category="gb_shjz" category_name="社会兼职码12408" code="5266"
+		name="县(市、旗、区)侨联委员" />
+	<code category="gb_shjz" category_name="社会兼职码12408" code="6116"
+		name="全国文联委员" />
+	<code category="gb_shjz" category_name="社会兼职码12408" code="6196"
+		name="全国文联主席团委员" />
+	<code category="gb_shjz" category_name="社会兼职码12408" code="6126"
+		name="省(自治区、直辖市)文联委员" />
+	<code category="gb_shjz" category_name="社会兼职码12408" code="6147"
+		name="地(市、州、盟)文联委员" />
+	<code category="gb_shjz" category_name="社会兼职码12408" code="6166"
+		name="县(市、旗、区)文联委员" />
+	<code category="gb_shjz" category_name="社会兼职码12408" code="6216"
+		name="作协会员" />
+	<code category="gb_shjz" category_name="社会兼职码12408" code="6226"
+		name="省(自治区、直辖市)作协会员" />
+	<code category="gb_shjz" category_name="社会兼职码12408" code="6246"
+		name="地(市、州、盟)作协会员" />
+	<code category="gb_shjz" category_name="社会兼职码12408" code="6266"
+		name="县(市、旗、区)作协会员" />
+	<code category="gb_shjz" category_name="社会兼职码12408" code="6316"
+		name="全国科协委员" />
+	<code category="gb_shjz" category_name="社会兼职码12408" code="6326"
+		name="省(自治区、直辖市)科协委员" />
+	<code category="gb_shjz" category_name="社会兼职码12408" code="6346"
+		name="地(市、州、盟)科协委员" />
+	<code category="gb_shjz" category_name="社会兼职码12408" code="6366"
+		name="县(市、旗、区)科协委员" />
+	<code category="gb_shjz" category_name="社会兼职码12408" code="6416"
+		name="中国科学院和社会科学院学部委员" />
+	<code category="gb_xl" category_name="学历码4658" code="10" name="研究生" />
+	<code category="gb_xl" category_name="学历码4658" code="11" name="研究生毕业" />
+	<code category="gb_xl" category_name="学历码4658" code="21" name="大学毕业" />
+	<code category="gb_xl" category_name="学历码4658" code="31" name="专科毕业" />
+	<code category="gb_xl" category_name="学历码4658" code="41" name="中专毕业" />
+	<code category="gb_xl" category_name="学历码4658" code="51" name="技工学校毕业" />
+	<code category="gb_xl" category_name="学历码4658" code="61" name="高中毕业" />
+	<code category="gb_xl" category_name="学历码4658" code="71" name="初中毕业" />
+	<code category="gb_xl" category_name="学历码4658" code="81" name="小学毕业" />
+	<code category="gb_xl" category_name="学历码4658" code="-" name="其他" />
+	<code category="dm_xxxs" category_name="学习形式码4658" code="01"
+		name="高等学校（学历教育）" />
+	<code category="dm_xxxs" category_name="学习形式码4658" code="02" name="高等教育自学考试" />
+	<code category="dm_xxxs" category_name="学习形式码4658" code="03" name="夜大学" />
+	<code category="dm_xxxs" category_name="学习形式码4658" code="04" name="职工大学" />
+	<code category="dm_xxxs" category_name="学习形式码4658" code="05" name="广播电视大学" />
+	<code category="dm_xxxs" category_name="学习形式码4658" code="06" name="业余大学" />
+	<code category="dm_xxxs" category_name="学习形式码4658" code="07" name="函授" />
+	<code category="dm_xxxs" category_name="学习形式码4658" code="08" name="研修班" />
+	<code category="dm_xxxs" category_name="学习形式码4658" code="09" name="高等学校进修" />
+	<code category="dm_xxxs" category_name="学习形式码4658" code="11" name="培训" />
+	<code category="dm_xxxs" category_name="学习形式码4658" code="21" name="网络教育" />
+	<code category="dm_xxxs" category_name="学习形式码4658" code="99" name="其他" />
+	<code category="dm_xxfs" category_name="学习方式码" code="1" name="脱产" />
+	<code category="dm_xxfs" category_name="学习方式码" code="2" name="半脱产" />
+	<code category="dm_xxfs" category_name="学习方式码" code="3" name="业余" />
+	<code category="dm_zwlb" category_name="职务类别码" code="-" name=" " />
+	<code category="dm_zwlb" category_name="职务类别码" code="11" name="党委正职" />
+	<code category="dm_zwlb" category_name="职务类别码" code="12" name="行政正职" />
+	<code category="dm_zwlb" category_name="职务类别码" code="13" name="学的职能部门正职" />
+	<code category="dm_zwlb" category_name="职务类别码" code="14" name="行政职能部门正职" />
+	<code category="dm_zwlb" category_name="职务类别码" code="15" name="民主党派正职" />
+	<code category="dm_zwlb" category_name="职务类别码" code="16" name="社会团体正职" />
+	<code category="dm_zwlb" category_name="职务类别码" code="21" name="党委副职" />
+	<code category="dm_zwlb" category_name="职务类别码" code="22" name="行政副职" />
+	<code category="dm_zwlb" category_name="职务类别码" code="23" name="党的职能部门副职" />
+	<code category="dm_zwlb" category_name="职务类别码" code="24" name="行政职能部门副职" />
+	<code category="dm_zwlb" category_name="职务类别码" code="25" name="民主党派副职" />
+	<code category="dm_zwlb" category_name="职务类别码" code="26" name="社会团体副职" />
+	<code category="dm_zwlb" category_name="职务类别码" code="31" name="党委其他职" />
+	<code category="dm_zwlb" category_name="职务类别码" code="32" name="行政其他职" />
+	<code category="dm_zwlb" category_name="职务类别码" code="33" name="党的职能部门其他职" />
+	<code category="dm_zwlb" category_name="职务类别码" code="34" name="行政职能部门其他职" />
+	<code category="dm_zwlb" category_name="职务类别码" code="35" name="民主党派其他职" />
+	<code category="dm_zwlb" category_name="职务类别码" code="36" name="社会团体其他职" />
+	<code category="gb_zwmc" category_name="职务名称码12403" code="-" name=" " />
+	<code category="gb_zwmc" category_name="职务名称码12403" code="216A"
+		name="局长" />
+	<code category="gb_zwmc" category_name="职务名称码12403" code="216B"
+		name="副局长" />
+	<code category="gb_zwmc" category_name="职务名称码12403" code="219A"
+		name="处长" />
+	<code category="dm_rzfs" category_name="任职方式码" code="1" name="任命" />
+	<code category="dm_rzfs" category_name="任职方式码" code="2" name="委任" />
+	<code category="dm_rzfs" category_name="任职方式码" code="3" name="选举" />
+	<code category="dm_rzfs" category_name="任职方式码" code="4" name="聘任" />
+	<code category="dm_rzfs" category_name="任职方式码" code="9" name="其他" />
+	<code category="dm_zwbdlb" category_name="职务变动类别码" code="1" name="逐级晋升" />
+	<code category="dm_zwbdlb" category_name="职务变动类别码" code="2" name="越级晋升" />
+	<code category="dm_zwbdlb" category_name="职务变动类别码" code="3" name="平级调整" />
+	<code category="dm_zwbdlb" category_name="职务变动类别码" code="4" name="平级兼职" />
+	<code category="dm_zwbdlb" category_name="职务变动类别码" code="5" name="向下兼职" />
+	<code category="dm_zwbdlb" category_name="职务变动类别码" code="6" name="降职" />
+	<code category="dm_zwbdlb" category_name="职务变动类别码" code="9" name="其他" />
+	<code category="dm_mzfs" category_name="免职方式码" code="-" name=" " />
+	<code category="dm_mzfs" category_name="免职方式码" code="1" name="落选" />
+	<code category="dm_mzfs" category_name="免职方式码" code="2" name="解聘" />
+	<code category="dm_mzfs" category_name="免职方式码" code="3" name="罢免" />
+	<code category="dm_mzfs" category_name="免职方式码" code="4" name="届满" />
+	<code category="dm_mzfs" category_name="免职方式码" code="9" name="其他" />
+	<code category="dm_mzyy" category_name="免职原因码" code="-" name=" " />
+	<code category="dm_mzyy" category_name="免职原因码" code="1" name="转换职位任职的" />
+	<code category="dm_mzyy" category_name="免职原因码" code="2" name="晋升或者降低职务的" />
+	<code category="dm_mzyy" category_name="免职原因码" code="3" name="离职学习期限超过一年的" />
+	<code category="dm_mzyy" category_name="免职原因码" code="4"
+		name="因健康原因不能坚持正常工作一年以上的" />
+	<code category="dm_mzyy" category_name="免职原因码" code="5" name="退休的" />
+	<code category="dm_mzyy" category_name="免职原因码" code="9" name="因其他原因职务发生变化的" />
+	<code category="gb_rzzgmc" category_name="任职资格名称码8561" code="-"
+		name=" " />
+	<code category="gb_rzzgmc" category_name="任职资格名称码8561" code="052"
+		name="高级教师(中学)" />
+	<code category="gb_rzzgmc" category_name="任职资格名称码8561" code="053"
+		name="一级教师(中学)" />
+	<code category="gb_rzzgmc" category_name="任职资格名称码8561" code="054"
+		name="二级教师(中学)" />
+	<code category="gb_rzzgmc" category_name="任职资格名称码8561" code="055"
+		name="三级教师(中学)" />
+	<code category="gb_rzzgmc" category_name="任职资格名称码8561" code="072"
+		name="高级实验师" />
+	<code category="gb_rzzgmc" category_name="任职资格名称码8561" code="073"
+		name="实验师" />
+	<code category="gb_rzzgmc" category_name="任职资格名称码8561" code="074"
+		name="助理实验师" />
+	<code category="gb_rzzgmc" category_name="任职资格名称码8561" code="075"
+		name="实验员" />
+	<code category="dm_qdzgtj" category_name="取得资格途径码" code="1" name="评审" />
+	<code category="dm_qdzgtj" category_name="取得资格途径码" code="2" name="考试" />
+	<code category="dm_qdzgtj" category_name="取得资格途径码" code="3" name="其他" />
+	<code category="gb_przw" category_name="聘任职务码6565" code="-" name=" " />
+	<code category="gb_przw" category_name="聘任职务码6565" code="16A"
+		name="局长" />
+	<code category="gb_przw" category_name="聘任职务码6565" code="16B"
+		name="副局长" />
+	<code category="gb_przw" category_name="聘任职务码6565" code="19A"
+		name="处长" />
+	<code category="gb_przw" category_name="聘任职务码6565" code="19B"
+		name="副处长" />
+	<code category="gb_przw" category_name="聘任职务码6565" code="20A"
+		name="科长" />
+	<code category="gb_przw" category_name="聘任职务码6565" code="20B"
+		name="副科长" />
+	<code category="gb_przw" category_name="聘任职务码6565" code="58A"
+		name="县长" />
+	<code category="gb_przw" category_name="聘任职务码6565" code="58B"
+		name="副县长" />
+	<code category="gb_przw" category_name="聘任职务码6565" code="60A"
+		name="镇长" />
+	<code category="gb_przw" category_name="聘任职务码6565" code="60B"
+		name="副镇长" />
+	<code category="gb_przw" category_name="聘任职务码6565" code="61A"
+		name="乡长" />
+	<code category="gb_przw" category_name="聘任职务码6565" code="61B"
+		name="副乡长" />
+	<code category="gb_przw" category_name="聘任职务码6565" code="62A"
+		name="村长" />
+	<code category="gb_przw" category_name="聘任职务码6565" code="62B"
+		name="副村长" />
+	<code category="dm_prqk" category_name="聘任情况码" code="1" name="已聘" />
+	<code category="dm_prqk" category_name="聘任情况码" code="2" name="高聘" />
+	<code category="dm_prqk" category_name="聘任情况码" code="3" name="低聘" />
+	<code category="dm_prqk" category_name="聘任情况码" code="4" name="待聘" />
+	<code category="dm_prqk" category_name="聘任情况码" code="5" name="未聘" />
+	<code category="dm_prqk" category_name="聘任情况码" code="9" name="其他" />
+	<code category="dm_jshjlb" category_name="获奖类别码" code="1" name="教学工作" />
+	<code category="dm_jshjlb" category_name="获奖类别码" code="2" name="科研工作" />
+	<code category="dm_jshjlb" category_name="获奖类别码" code="3" name="专业技术" />
+	<code category="dm_jshjlb" category_name="获奖类别码" code="4" name="工作业绩" />
+	<code category="dm_jshjlb" category_name="获奖类别码" code="5" name="科技竞赛" />
+	<code category="dm_jshjlb" category_name="获奖类别码" code="6" name="体育比赛" />
+	<code category="dm_jshjlb" category_name="获奖类别码" code="7" name="文艺比赛" />
+	<code category="dm_jshjlb" category_name="获奖类别码" code="8" name="公益事业" />
+	<code category="dm_jshjlb" category_name="获奖类别码" code="9" name="其他" />
+	<code category="gb_jlmc" category_name="奖励名称码8563（这个代码已经不用）2006/11/14"
+		code="1201" name="记功" />
+	<code category="gb_jlmc" category_name="奖励名称码8563（这个代码已经不用）2006/11/14"
+		code="1202" name="记大功" />
+	<code category="gb_jlmc" category_name="奖励名称码8563（这个代码已经不用）2006/11/14"
+		code="1204" name="晋一级" />
+	<code category="gb_jlmc" category_name="奖励名称码8563（这个代码已经不用）2006/11/14"
+		code="1205" name="晋二级" />
+	<code category="gb_jlmc" category_name="奖励名称码8563（这个代码已经不用）2006/11/14"
+		code="1208" name="通令嘉奖" />
+	<code category="gb_jlmc" category_name="奖励名称码8563（这个代码已经不用）2006/11/14"
+		code="1209" name="授予荣誉称号" />
+	<code category="gb_jlmc" category_name="奖励名称码8563（这个代码已经不用）2006/11/14"
+		code="1299" name="其他奖励" />
+	<code category="gb_jlmc" category_name="奖励名称码8563（这个代码已经不用）2006/11/14"
+		code="2001" name="国家发明特等奖" />
+	<code category="gb_jlmc" category_name="奖励名称码8563（这个代码已经不用）2006/11/14"
+		code="2002" name="国家发明一等奖" />
+	<code category="gb_jlmc" category_name="奖励名称码8563（这个代码已经不用）2006/11/14"
+		code="2003" name="国家发明二等奖" />
+	<code category="gb_jlmc" category_name="奖励名称码8563（这个代码已经不用）2006/11/14"
+		code="2004" name="国家发明三等奖" />
+	<code category="gb_jlmc" category_name="奖励名称码8563（这个代码已经不用）2006/11/14"
+		code="2005" name="国家发明四等奖" />
+	<code category="gb_jlmc" category_name="奖励名称码8563（这个代码已经不用）2006/11/14"
+		code="2011" name="国家自然科学特等奖" />
+	<code category="gb_jlmc" category_name="奖励名称码8563（这个代码已经不用）2006/11/14"
+		code="2012" name="国家自然科学一等奖" />
+	<code category="gb_jlmc" category_name="奖励名称码8563（这个代码已经不用）2006/11/14"
+		code="2013" name="国家自然科学二等奖" />
+	<code category="gb_jlmc" category_name="奖励名称码8563（这个代码已经不用）2006/11/14"
+		code="2014" name="国家自然科学三等奖" />
+	<code category="gb_jlmc" category_name="奖励名称码8563（这个代码已经不用）2006/11/14"
+		code="2015" name="国家自然科学四等奖" />
+	<code category="gb_jlmc" category_name="奖励名称码8563（这个代码已经不用）2006/11/14"
+		code="2021" name="国家科学技术进步特等奖" />
+	<code category="gb_jlmc" category_name="奖励名称码8563（这个代码已经不用）2006/11/14"
+		code="2022" name="国家科学技术进步一等奖" />
+	<code category="gb_jlmc" category_name="奖励名称码8563（这个代码已经不用）2006/11/14"
+		code="2023" name="国家科学技术进步二等奖" />
+	<code category="gb_jlmc" category_name="奖励名称码8563（这个代码已经不用）2006/11/14"
+		code="2024" name="国家科学技术进步三等奖" />
+	<code category="gb_jlmc" category_name="奖励名称码8563（这个代码已经不用）2006/11/14"
+		code="2031" name="全国科学大会奖" />
+	<code category="gb_jlmc" category_name="奖励名称码8563（这个代码已经不用）2006/11/14"
+		code="2099" name="国家级其他奖励" />
+	<code category="gb_jlmc" category_name="奖励名称码8563（这个代码已经不用）2006/11/14"
+		code="2201" name="省(部、委)科学技术进步一等奖" />
+	<code category="gb_jlmc" category_name="奖励名称码8563（这个代码已经不用）2006/11/14"
+		code="2202" name="省(部、委)科学技术进步二等奖" />
+	<code category="gb_jlmc" category_name="奖励名称码8563（这个代码已经不用）2006/11/14"
+		code="2203" name="省(部、委)科学技术进步三等奖" />
+	<code category="gb_jlmc" category_name="奖励名称码8563（这个代码已经不用）2006/11/14"
+		code="2204" name="省(部、委)科学技术进步四等奖" />
+	<code category="gb_jlmc" category_name="奖励名称码8563（这个代码已经不用）2006/11/14"
+		code="2211" name="合理化建议和技术改进一等奖" />
+	<code category="gb_jlmc" category_name="奖励名称码8563（这个代码已经不用）2006/11/14"
+		code="2212" name="合理化建议和技术改进二等奖" />
+	<code category="gb_jlmc" category_name="奖励名称码8563（这个代码已经不用）2006/11/14"
+		code="2213" name="合理化建议和技术改进三等奖" />
+	<code category="gb_jlmc" category_name="奖励名称码8563（这个代码已经不用）2006/11/14"
+		code="2214" name="合理化建议和技术改进四等奖" />
+	<code category="gb_rych" category_name="荣誉称号码8560" code="-" name=" " />
+	<code category="gb_rych" category_name="荣誉称号码8560" code="002"
+		name="全国劳动模范" />
+	<code category="gb_rych" category_name="荣誉称号码8560" code="009"
+		name="全国新长征突击手" />
+	<code category="gb_rych" category_name="荣誉称号码8560" code="010"
+		name="全国优秀团干部" />
+	<code category="gb_rych" category_name="荣誉称号码8560" code="011"
+		name="全国三八红旗手" />
+	<code category="gb_rych" category_name="荣誉称号码8560" code="099"
+		name="国家级其他荣誉称号" />
+	<code category="gb_rych" category_name="荣誉称号码8560" code="101"
+		name="省(自治区、直辖市)特级劳动模范" />
+	<code category="gb_rych" category_name="荣誉称号码8560" code="102"
+		name="省(自治区、直辖市)级劳动模范" />
+	<code category="gb_rych" category_name="荣誉称号码8560" code="105"
+		name="省(自治区、直辖市)级优秀党员" />
+	<code category="gb_rych" category_name="荣誉称号码8560" code="106"
+		name="省(自治区、直辖市)级优秀工会工作者" />
+	<code category="gb_rych" category_name="荣誉称号码8560" code="107"
+		name="省(自治区、直辖市)级优秀工会积极分子" />
+	<code category="gb_rych" category_name="荣誉称号码8560" code="108"
+		name="省(自治区、直辖市)级全国技术协作能手" />
+	<code category="gb_rych" category_name="荣誉称号码8560" code="109"
+		name="省(自治区、直辖市)级新长征突击手" />
+	<code category="gb_rych" category_name="荣誉称号码8560" code="110"
+		name="省(自治区、直辖市)级优秀团干部" />
+	<code category="gb_rych" category_name="荣誉称号码8560" code="111"
+		name="省(自治区、直辖市)级三八红旗手" />
+	<code category="gb_rych" category_name="荣誉称号码8560" code="112"
+		name="省(自治区、直辖市)级优秀知识分子" />
+	<code category="gb_rych" category_name="荣誉称号码8560" code="299"
+		name="省(自治区、直辖市)级其他荣誉称号" />
+	<code category="gb_rych" category_name="荣誉称号码8560" code="302"
+		name="部(委)级劳动模范" />
+	<code category="gb_rych" category_name="荣誉称号码8560" code="305"
+		name="部(委)级优秀党员" />
+	<code category="gb_rych" category_name="荣誉称号码8560" code="309"
+		name="部(委)级新长征突击手" />
+	<code category="gb_rych" category_name="荣誉称号码8560" code="310"
+		name="部(委)级优秀团干部" />
+	<code category="gb_rych" category_name="荣誉称号码8560" code="311"
+		name="部(委)级三八红旗手" />
+	<code category="gb_rych" category_name="荣誉称号码8560" code="312"
+		name="部(委)级优秀知识分子" />
+	<code category="gb_rych" category_name="荣誉称号码8560" code="499"
+		name="部(委)级其他荣誉称号" />
+	<code category="gb_rych" category_name="荣誉称号码8560" code="502"
+		name="地(市、厅、局)级劳动模范" />
+	<code category="gb_rych" category_name="荣誉称号码8560" code="505"
+		name="地(市、厅、局)级优秀党员" />
+	<code category="gb_rych" category_name="荣誉称号码8560" code="606"
+		name="地(市、厅、局)级优秀工作者" />
+	<code category="gb_rych" category_name="荣誉称号码8560" code="607"
+		name="地(市、厅、局)级优秀工会积极分子" />
+	<code category="gb_rych" category_name="荣誉称号码8560" code="608"
+		name="地(市、厅、局)级全国技术协作能手" />
+	<code category="gb_rych" category_name="荣誉称号码8560" code="609"
+		name="地(市、厅、局)级新长征突击手" />
+	<code category="gb_rych" category_name="荣誉称号码8560" code="610"
+		name="地(市、厅、局)级优秀团干部" />
+	<code category="gb_rych" category_name="荣誉称号码8560" code="611"
+		name="地(市、厅、局)级三八红旗手" />
+	<code category="gb_rych" category_name="荣誉称号码8560" code="612"
+		name="地(市、厅、局)级优秀知识分子" />
+	<code category="gb_rych" category_name="荣誉称号码8560" code="699"
+		name="地(市、厅、局)级其他荣誉称号" />
+	<code category="gb_rych" category_name="荣誉称号码8560" code="705"
+		name="基层企事业单位优秀党员" />
+	<code category="gb_rych" category_name="荣誉称号码8560" code="799"
+		name="基层企事业单位其他荣誉称号" />
+	<code category="dm_hjjs" category_name="获奖角色码" code="-" name=" " />
+	<code category="dm_hjjs" category_name="获奖角色码" code="410" name="获奖成果负责人" />
+	<code category="dm_hjjs" category_name="获奖角色码" code="411" name="获奖成果第一负责人" />
+	<code category="dm_hjjs" category_name="获奖角色码" code="412" name="获奖成果第二负责人" />
+	<code category="dm_hjjs" category_name="获奖角色码" code="413" name="获奖成果第三负责人" />
+	<code category="dm_hjjs" category_name="获奖角色码" code="419" name="获奖成果其他负责人" />
+	<code category="dm_hjjs" category_name="获奖角色码" code="420" name="获奖成果参加人" />
+	<code category="dm_hjjs" category_name="获奖角色码" code="421" name="获奖成果第一参加者" />
+	<code category="dm_hjjs" category_name="获奖角色码" code="422" name="获奖成果第二参加者" />
+	<code category="dm_hjjs" category_name="获奖角色码" code="423" name="获奖成果第三参加者" />
+	<code category="dm_hjjs" category_name="获奖角色码" code="424" name="获奖成果第四参加者" />
+	<code category="dm_hjjs" category_name="获奖角色码" code="425" name="获奖成果第五参加者" />
+	<code category="dm_hjjs" category_name="获奖角色码" code="429" name="获奖成果其他参加者" />
+	<code category="dm_jzgly" category_name="来源码" code="10" name="录用" />
+	<code category="dm_jzgly" category_name="来源码" code="11" name="城镇应届毕业生" />
+	<code category="dm_jzgly" category_name="来源码" code="12" name="农村应届毕业生" />
+	<code category="dm_jzgly" category_name="来源码" code="13" name="城镇非应届毕业生" />
+	<code category="dm_jzgly" category_name="来源码" code="14" name="农村非应届毕业生" />
+	<code category="dm_jzgly" category_name="来源码" code="20" name="军队转业、复员" />
+	<code category="dm_jzgly" category_name="来源码" code="21" name="军队转业" />
+	<code category="dm_jzgly" category_name="来源码" code="22" name="军队复员" />
+	<code category="dm_jzgly" category_name="来源码" code="30" name="调入" />
+	<code category="dm_jzgly" category_name="来源码" code="31" name="系统内调入" />
+	<code category="dm_jzgly" category_name="来源码" code="32" name="系统外调入" />
+	<code category="dm_jzgly" category_name="来源码" code="40" name="回国定居" />
+	<code category="dm_jzgly" category_name="来源码" code="99" name="其他" />
+	<code category="gb_xk" category_name="学科码13745" code="120" name="计算机科学技术" />
+	<code category="gb_xk" category_name="学科码13745" code="140" name="物理学" />
+	<code category="gb_xk" category_name="学科码13745" code="150" name="化学" />
+	<code category="gb_xk" category_name="学科码13745" code="170" name="地球科学" />
+	<code category="gb_xk" category_name="学科码13745" code="180" name="生物学" />
+	<code category="gb_xk" category_name="学科码13745" code="740" name="语言学" />
+	<code category="gb_xk" category_name="学科码13745" code="750" name="文学" />
+	<code category="gb_xk" category_name="学科码13745" code="770" name="历史学" />
+	<code category="gb_xk" category_name="学科码13745" code="810" name="政治学" />
+	<code category="gb_xk" category_name="学科码13745" code="890" name="体育科学" />
+	<code category="gb_xk" category_name="学科码13745" code="-" name="其他" />
+	<code category="dm_yclb" category_name="异常类别码" code="-" name=" " />
+	<code category="dm_yclb" category_name="异常类别码" code="01" name="入团转党" />
+	<code category="dm_yclb" category_name="异常类别码" code="02" name="重新入党" />
+	<code category="dm_yclb" category_name="异常类别码" code="11" name="延期转正" />
+	<code category="dm_yclb" category_name="异常类别码" code="21" name="未予登记" />
+	<code category="dm_yclb" category_name="异常类别码" code="22" name="暂缓登记" />
+	<code category="dm_yclb" category_name="异常类别码" code="31" name="自动脱党" />
+	<code category="dm_yclb" category_name="异常类别码" code="32" name="除名" />
+	<code category="dm_yclb" category_name="异常类别码" code="33" name="取消预备党员资格" />
+	<code category="dm_yclb" category_name="异常类别码" code="34" name="开除党籍" />
+	<code category="dm_yclb" category_name="异常类别码" code="99" name="其他" />
+	<code category="dm_grjsdj" category_name="工人技术等级资格码" code="1"
+		name="初级技术工人" />
+	<code category="dm_grjsdj" category_name="工人技术等级资格码" code="2"
+		name="中级技术工人" />
+	<code category="dm_grjsdj" category_name="工人技术等级资格码" code="3"
+		name="高级技术工人" />
+	<code category="dm_grjsdj" category_name="工人技术等级资格码" code="4"
+		name="技师" />
+	<code category="dm_grjsdj" category_name="工人技术等级资格码" code="5"
+		name="高级技师" />
+	<code category="dm_hrgzlb" category_name="工人工种名称码" code="01" name="机械加工类" />
+	<code category="dm_hrgzlb" category_name="工人工种名称码" code="02" name="电工电器工程类" />
+	<code category="dm_hrgzlb" category_name="工人工种名称码" code="03" name="建筑工程类" />
+	<code category="dm_hrgzlb" category_name="工人工种名称码" code="04" name="仪器仪表工程类" />
+	<code category="dm_hrgzlb" category_name="工人工种名称码" code="05" name="水暖通风工程类" />
+	<code category="dm_hrgzlb" category_name="工人工种名称码" code="06" name="机动车驾驶类" />
+	<code category="dm_hrgzlb" category_name="工人工种名称码" code="07" name="家具维修类" />
+	<code category="dm_hrgzlb" category_name="工人工种名称码" code="08"
+		name="宣传广告标本制作类" />
+	<code category="dm_hrgzlb" category_name="工人工种名称码" code="09" name="餐饮服务类" />
+	<code category="dm_hrgzlb" category_name="工人工种名称码" code="10" name="商贸服务类" />
+	<code category="dm_hrgzlb" category_name="工人工种名称码" code="11" name="护理保健类" />
+	<code category="dm_hrgzlb" category_name="工人工种名称码" code="12" name="花木养殖类" />
+	<code category="dm_hrgzlb" category_name="工人工种名称码" code="13" name="其他" />
+	<code category="dm_khlb" category_name="考察（考核）类别码" code="1" name="平时考核" />
+	<code category="dm_khlb" category_name="考察（考核）类别码" code="2" name="年度考核" />
+	<code category="dm_khlb" category_name="考察（考核）类别码" code="3" name="特写考核" />
+	<code category="dm_khlb" category_name="考察（考核）类别码" code="9" name="其他" />
+	<code category="dm_kcjg" category_name="考察（考核）结果码" code="1" name="优秀" />
+	<code category="dm_kcjg" category_name="考察（考核）结果码" code="2" name="称职" />
+	<code category="dm_kcjg" category_name="考察（考核）结果码" code="3" name="不称职" />
+	<code category="gb_wgyz" category_name="外国语种码4880" code="ea" name="英语" />
+	<code category="gb_wgyz" category_name="外国语种码4880" code="ab" name="阿面哈兹语" />
+	<code category="gb_wgyz" category_name="外国语种码4880" code="sq" name="阿尔巴尼亚语" />
+	<code category="gb_wgyz" category_name="外国语种码4880" code="aa" name="阿芳·奥洛莫话" />
+	<code category="gb_wgyz" category_name="外国语种码4880" code="cm" name="阿非利琪斯语" />
+	<code category="gb_wgyz" category_name="外国语种码4880" code="ar" name="阿拉伯语" />
+	<code category="gb_wgyz" category_name="外国语种码4880" code="am" name="阿姆哈拉语" />
+	<code category="gb_wgyz" category_name="外国语种码4880" code="as" name="阿萨姆语" />
+	<code category="gb_wgyz" category_name="外国语种码4880" code="az" name="阿塞拜疆语" />
+	<code category="gb_wgyz" category_name="外国语种码4880" code="ay" name="艾马拉语" />
+	<code category="gb_wgyz" category_name="外国语种码4880" code="ga" name="爱尔兰语" />
+	<code category="gb_wgyz" category_name="外国语种码4880" code="ct" name="爱沙尼亚语" />
+	<code category="gb_wgyz" category_name="外国语种码4880" code="oc" name="奥克西唐语" />
+	<code category="gb_wgyz" category_name="外国语种码4880" code="or" name="奥利亚语" />
+	<code category="gb_wgyz" category_name="外国语种码4880" code="ba" name="巴什基尔语" />
+	<code category="gb_wgyz" category_name="外国语种码4880" code="cu" name="巴斯克语" />
+	<code category="gb_wgyz" category_name="外国语种码4880" code="be" name="白俄罗斯语" />
+	<code category="gb_wgyz" category_name="外国语种码4880" code="bg" name="保加利亚语" />
+	<code category="gb_wgyz" category_name="外国语种码4880" code="bh" name="比哈尔语" />
+	<code category="gb_wgyz" category_name="外国语种码4880" code="bi" name="比斯拉玛语" />
+	<code category="gb_wgyz" category_name="外国语种码4880" code="is" name="冰岛语" />
+	<code category="gb_wgyz" category_name="外国语种码4880" code="pl" name="波兰语" />
+	<code category="gb_wgyz" category_name="外国语种码4880" code="fa" name="波斯语" />
+	<code category="gb_wgyz" category_name="外国语种码4880" code="dz" name="不丹语" />
+	<code category="gb_wgyz" category_name="外国语种码4880" code="br" name="布列塔尼语" />
+	<code category="gb_wgyz" category_name="外国语种码4880" code="ko" name="朝鲜语" />
+	<code category="gb_wgyz" category_name="外国语种码4880" code="th" name="傣语" />
+	<code category="gb_wgyz" category_name="外国语种码4880" code="da" name="丹麦语" />
+	<code category="gb_wgyz" category_name="外国语种码4880" code="de" name="德语" />
+	<code category="gb_wgyz" category_name="外国语种码4880" code="ru" name="俄语" />
+	<code category="gb_wgyz" category_name="外国语种码4880" code="fr" name="法语" />
+	<code category="gb_wgyz" category_name="外国语种码4880" code="fo" name="法罗斯语" />
+	<code category="gb_wgyz" category_name="外国语种码4880" code="sa" name="梵语" />
+	<code category="gb_wgyz" category_name="外国语种码4880" code="fj" name="斐济语" />
+	<code category="gb_wgyz" category_name="外国语种码4880" code="fi" name="芬兰语" />
+	<code category="gb_wgyz" category_name="外国语种码4880" code="fy" name="弗里西亚语" />
+	<code category="gb_wgyz" category_name="外国语种码4880" code="kl" name="格陵兰语" />
+	<code category="gb_wgyz" category_name="外国语种码4880" code="gn" name="瓜拉尼语" />
+	<code category="gb_wgyz" category_name="外国语种码4880" code="ia" name="国际语A " />
+	<code category="gb_wgyz" category_name="外国语种码4880" code="ie" name="国际语E " />
+	<code category="gb_wgyz" category_name="外国语种码4880" code="kk" name="哈萨克语" />
+	<code category="gb_wgyz" category_name="外国语种码4880" code="zh" name="汉语（中文）" />
+	<code category="gb_wgyz" category_name="外国语种码4880" code="ha" name="豪萨语" />
+	<code category="gb_wgyz" category_name="外国语种码4880" code="nl" name="荷兰语" />
+	<code category="gb_wgyz" category_name="外国语种码4880" code="ky" name="吉尔吉斯语" />
+	<code category="gb_wgyz" category_name="外国语种码4880" code="rw" name="基尼阿万达语" />
+	<code category="gb_wgyz" category_name="外国语种码4880" code="rn" name="基隆迪语" />
+	<code category="gb_wgyz" category_name="外国语种码4880" code="gl" name="加利西亚语" />
+	<code category="gb_wgyz" category_name="外国语种码4880" code="ca" name="加泰隆语" />
+	<code category="gb_wgyz" category_name="外国语种码4880" code="km" name="柬埔寨语" />
+	<code category="gb_wgyz" category_name="外国语种码4880" code="cs" name="捷克语" />
+	<code category="gb_wgyz" category_name="外国语种码4880" code="qu" name="凯笼亚语" />
+	<code category="gb_wgyz" category_name="外国语种码4880" code="kn" name="坎纳达语" />
+	<code category="gb_wgyz" category_name="外国语种码4880" code="hr" name="克罗地亚语" />
+	<code category="gb_wgyz" category_name="外国语种码4880" code="ks" name="克会米尔语" />
+	<code category="gb_wgyz" category_name="外国语种码4880" code="xh" name="科萨语" />
+	<code category="gb_wgyz" category_name="外国语种码4880" code="co" name="科西嘉语" />
+	<code category="gb_wgyz" category_name="外国语种码4880" code="ku" name="库尔德语" />
+	<code category="gb_wgyz" category_name="外国语种码4880" code="la" name="拉丁语" />
+	<code category="gb_wgyz" category_name="外国语种码4880" code="lw" name="拉脱维亚语" />
+	<code category="gb_wgyz" category_name="外国语种码4880" code="lo" name="老挝语" />
+	<code category="gb_wgyz" category_name="外国语种码4880" code="lt" name="立陶宛语" />
+	<code category="gb_wgyz" category_name="外国语种码4880" code="rm" name="利托——罗曼语" />
+	<code category="gb_wgyz" category_name="外国语种码4880" code="ln" name="林加拉语" />
+	<code category="gb_wgyz" category_name="外国语种码4880" code="ro" name="罗马尼亚语" />
+	<code category="gb_wgyz" category_name="外国语种码4880" code="mg" name="马达加斯加语" />
+	<code category="gb_wgyz" category_name="外国语种码4880" code="mt" name="马耳他语" />
+	<code category="gb_wgyz" category_name="外国语种码4880" code="nr" name="马拉提语" />
+	<code category="gb_wgyz" category_name="外国语种码4880" code="ml" name="马拉亚拉姆语" />
+	<code category="gb_wgyz" category_name="外国语种码4880" code="ms" name="马来语" />
+	<code category="gb_wgyz" category_name="外国语种码4880" code="mk" name="马其顿语" />
+	<code category="gb_wgyz" category_name="外国语种码4880" code="mi" name="毛利语" />
+	<code category="gb_wgyz" category_name="外国语种码4880" code="mn" name="蒙古语" />
+	<code category="gb_wgyz" category_name="外国语种码4880" code="bn" name="孟加拉语" />
+	<code category="gb_wgyz" category_name="外国语种码4880" code="my" name="缅甸语" />
+	<code category="gb_wgyz" category_name="外国语种码4880" code="mo" name="摩尔达维亚语" />
+	<code category="gb_wgyz" category_name="外国语种码4880" code="no" name="挪威语" />
+	<code category="gb_wgyz" category_name="外国语种码4880" code="na" name="瑙鲁语" />
+	<code category="gb_wgyz" category_name="外国语种码4880" code="ne" name="尼泊尔语" />
+	<code category="gb_wgyz" category_name="外国语种码4880" code="pa" name="旁遮普语" />
+	<code category="gb_wgyz" category_name="外国语种码4880" code="ps" name="普什图语" />
+	<code category="gb_wgyz" category_name="外国语种码4880" code="pt" name="葡萄牙语" />
+	<code category="gb_wgyz" category_name="外国语种码4880" code="ja" name="日语" />
+	<code category="gb_wgyz" category_name="外国语种码4880" code="sv" name="瑞典语" />
+	<code category="gb_wgyz" category_name="外国语种码4880" code="tn" name="塞茨瓦纳语" />
+	<code category="gb_wgyz" category_name="外国语种码4880" code="sr" name="塞尔维亚语" />
+	<code category="gb_wgyz" category_name="外国语种码4880" code="sh"
+		name="塞尔维亚——克罗地亚语" />
+	<code category="gb_wgyz" category_name="外国语种码4880" code="ss" name="塞斯瓦替语" />
+	<code category="gb_wgyz" category_name="外国语种码4880" code="st" name="塞索托语" />
+	<code category="gb_wgyz" category_name="外国语种码4880" code="sg" name="桑戈语" />
+	<code category="gb_wgyz" category_name="外国语种码4880" code="si" name="僧加罗语" />
+	<code category="gb_wgyz" category_name="外国语种码4880" code="sm" name="萨摩亚语" />
+	<code category="gb_wgyz" category_name="外国语种码4880" code="sn" name="绍纳语" />
+	<code category="gb_wgyz" category_name="外国语种码4880" code="eo" name="世界语" />
+	<code category="gb_wgyz" category_name="外国语种码4880" code="sk" name="斯洛伐克语" />
+	<code category="gb_wgyz" category_name="外国语种码4880" code="sl" name="斯洛文尼亚语" />
+	<code category="gb_wgyz" category_name="外国语种码4880" code="sw" name="斯瓦希里语" />
+	<code category="gb_wgyz" category_name="外国语种码4880" code="gd" name="苏格兰语" />
+	<code category="gb_wgyz" category_name="外国语种码4880" code="go" name="索马里语" />
+	<code category="gb_wgyz" category_name="外国语种码4880" code="tl" name="他加禄语" />
+	<code category="gb_wgyz" category_name="外国语种码4880" code="tg" name="塔吉克语" />
+	<code category="gb_wgyz" category_name="外国语种码4880" code="tt" name="塔塔尔语" />
+	<code category="gb_wgyz" category_name="外国语种码4880" code="ta" name="泰来尔语" />
+	<code category="gb_wgyz" category_name="外国语种码4880" code="te" name="泰声固语" />
+	<code category="gb_wgyz" category_name="外国语种码4880" code="to" name="汤加语" />
+	<code category="gb_wgyz" category_name="外国语种码4880" code="tw" name="特威语" />
+	<code category="gb_wgyz" category_name="外国语种码4880" code="ti" name="提格里尼亚语" />
+	<code category="gb_wgyz" category_name="外国语种码4880" code="tr" name="土耳其语" />
+	<code category="gb_wgyz" category_name="外国语种码4880" code="tk" name="土库曼语" />
+	<code category="gb_wgyz" category_name="外国语种码4880" code="cy" name="威尔士语" />
+	<code category="gb_wgyz" category_name="外国语种码4880" code="ug" name="维吾尔语" />
+	<code category="gb_wgyz" category_name="外国语种码4880" code="vo" name="沃拉普克语" />
+	<code category="gb_wgyz" category_name="外国语种码4880" code="wo" name="沃洛夫语" />
+	<code category="gb_wgyz" category_name="外国语种码4880" code="ur" name="乌尔都语" />
+	<code category="gb_wgyz" category_name="外国语种码4880" code="uk" name="乌克兰语" />
+	<code category="gb_wgyz" category_name="外国语种码4880" code="uz" name="乌兹别克语" />
+	<code category="gb_wgyz" category_name="外国语种码4880" code="es" name="西班牙" />
+	<code category="gb_wgyz" category_name="外国语种码4880" code="iw" name="希伯业语" />
+	<code category="gb_wgyz" category_name="外国语种码4880" code="el" name="希腊语" />
+	<code category="gb_wgyz" category_name="外国语种码4880" code="sd" name="信德语" />
+	<code category="gb_wgyz" category_name="外国语种码4880" code="su" name="巽他语" />
+	<code category="gb_wgyz" category_name="外国语种码4880" code="hy" name="亚美尼亚语" />
+	<code category="gb_wgyz" category_name="外国语种码4880" code="it" name="意大利语" />
+	<code category="gb_wgyz" category_name="外国语种码4880" code="ji" name="依地语" />
+	<code category="gb_wgyz" category_name="外国语种码4880" code="ik" name="依努庇克语" />
+	<code category="gb_wgyz" category_name="外国语种码4880" code="hi" name="印地语" />
+	<code category="gb_wgyz" category_name="外国语种码4880" code="in" name="印尼语" />
+	<code category="gb_wgyz" category_name="外国语种码4880" code="yo" name="约鲁巴语" />
+	<code category="gb_wgyz" category_name="外国语种码4880" code="vi" name="越南语" />
+	<code category="gb_wgyz" category_name="外国语种码4880" code="bo" name="藏语" />
+	<code category="gb_wgyz" category_name="外国语种码4880" code="jv" name="爪哇语" />
+	<code category="gb_wgyz" category_name="外国语种码4880" code="za" name="壮语" />
+	<code category="gb_wgyz" category_name="外国语种码4880" code="ts" name="宗加语" />
+	<code category="gb_wgyz" category_name="外国语种码4880" code="zu" name="祖鲁语" />
+	<code category="gb_wgyz" category_name="外国语种码4880" code="zz" name="其他语言" />
+	<code category="gb_yzslcd" category_name="语种熟练程度码6865" code="1"
+		name="精通" />
+	<code category="gb_yzslcd" category_name="语种熟练程度码6865" code="2"
+		name="熟练" />
+	<code category="gb_yzslcd" category_name="语种熟练程度码6865" code="3"
+		name="良好" />
+	<code category="gb_yzslcd" category_name="语种熟练程度码6865" code="4"
+		name="一般" />
+	<code category="gb_zgyz" category_name="中国语种码4881" code="211"
+		name="汉语（中文）" />
+	<code category="gb_zgyz" category_name="中国语种码4881" code="224"
+		name="壮语" />
+	<code category="gb_zgyz" category_name="中国语种码4881" code="217"
+		name="朝鲜语" />
+	<code category="gb_zgyz" category_name="中国语种码4881" code="501"
+		name="裕固语" />
+	<code category="gb_zgyz" category_name="中国语种码4881" code="506"
+		name="蒙古语" />
+	<code category="gb_zgyz" category_name="中国语种码4881" code="507"
+		name="保安语" />
+	<code category="gb_zgyz" category_name="中国语种码4881" code="508"
+		name="达斡尔语" />
+	<code category="gb_zgyz" category_name="中国语种码4881" code="509"
+		name="东乡语" />
+	<code category="gb_zgyz" category_name="中国语种码4881" code="513"
+		name="土语" />
+	<code category="gb_zgyz" category_name="中国语种码4881" code="514"
+		name="鄂温克语" />
+	<code category="gb_zgyz" category_name="中国语种码4881" code="517"
+		name="赫哲语" />
+	<code category="gb_zgyz" category_name="中国语种码4881" code="518"
+		name="满语" />
+	<code category="gb_zgyz" category_name="中国语种码4881" code="519"
+		name="锡伯语" />
+	<code category="gb_zgyz" category_name="中国语种码4881" code="161"
+		name="塔塔尔语" />
+	<code category="gb_zgyz" category_name="中国语种码4881" code="162"
+		name="柯尔克孜语" />
+	<code category="gb_zgyz" category_name="中国语种码4881" code="163"
+		name="哈萨克语" />
+	<code category="gb_zgyz" category_name="中国语种码4881" code="168"
+		name="乌孜别克语" />
+	<code category="gb_zgyz" category_name="中国语种码4881" code="223"
+		name="维吾尔语" />
+	<code category="gb_zgyz" category_name="中国语种码4881" code="524"
+		name="撒拉语" />
+	<code category="gb_zgyz" category_name="中国语种码4881" code="531"
+		name="瑶语" />
+	<code category="gb_zgyz" category_name="中国语种码4881" code="532"
+		name="仡佬语" />
+	<code category="gb_zgyz" category_name="中国语种码4881" code="536"
+		name="阿昌语" />
+	<code category="gb_zgyz" category_name="中国语种码4881" code="537"
+		name="独龙语" />
+	<code category="gb_zgyz" category_name="中国语种码4881" code="538"
+		name="基诺语" />
+	<code category="gb_zgyz" category_name="中国语种码4881" code="539"
+		name="珞巴语" />
+	<code category="gb_zgyz" category_name="中国语种码4881" code="540"
+		name="门巴语" />
+	<code category="gb_zgyz" category_name="中国语种码4881" code="541"
+		name="怒语" />
+	<code category="gb_zgyz" category_name="中国语种码4881" code="542"
+		name="普米语" />
+	<code category="gb_zgyz" category_name="中国语种码4881" code="543"
+		name="羌语" />
+	<code category="gb_zgyz" category_name="中国语种码4881" code="544"
+		name="土家语" />
+	<code category="gb_zgyz" category_name="中国语种码4881" code="548"
+		name="景颇语" />
+	<code category="gb_zgyz" category_name="中国语种码4881" code="551"
+		name="白语" />
+	<code category="gb_zgyz" category_name="中国语种码4881" code="552"
+		name="哈尼语" />
+	<code category="gb_zgyz" category_name="中国语种码4881" code="553"
+		name="拉祜语" />
+	<code category="gb_zgyz" category_name="中国语种码4881" code="554"
+		name="傈僳语" />
+	<code category="gb_zgyz" category_name="中国语种码4881" code="555"
+		name="纳西语" />
+	<code category="gb_zgyz" category_name="中国语种码4881" code="556"
+		name="彝语" />
+	<code category="gb_zgyz" category_name="中国语种码4881" code="215"
+		name="藏语" />
+	<code category="gb_zgyz" category_name="中国语种码4881" code="563"
+		name="黎语" />
+	<code category="gb_zgyz" category_name="中国语种码4881" code="567"
+		name="侗语" />
+	<code category="gb_zgyz" category_name="中国语种码4881" code="568"
+		name="--仡佬语" />
+	<code category="gb_zgyz" category_name="中国语种码4881" code="569"
+		name="毛难语" />
+	<code category="gb_zgyz" category_name="中国语种码4881" code="570"
+		name="水语" />
+	<code category="gb_zgyz" category_name="中国语种码4881" code="212"
+		name="傣语" />
+	<code category="gb_zgyz" category_name="中国语种码4881" code="574"
+		name="布依语" />
+	<code category="gb_zgyz" category_name="中国语种码4881" code="580"
+		name="苗语" />
+	<code category="gb_zgyz" category_name="中国语种码4881" code="584"
+		name="崩龙语" />
+	<code category="gb_zgyz" category_name="中国语种码4881" code="585"
+		name="布朗语" />
+	<code category="gb_zgyz" category_name="中国语种码4881" code="590"
+		name="高山语" />
+	<code category="gb_zgyz" category_name="中国语种码4881" code="061"
+		name="俄语" />
+	<code category="gb_zgyz" category_name="中国语种码4881" code="111"
+		name="塔吉尔克语" />
+	<code category="dm_jxlx" category_name="教学类型码" code="11" name="讲课" />
+	<code category="dm_jxlx" category_name="教学类型码" code="12" name="编写教材" />
+	<code category="dm_jxlx" category_name="教学类型码" code="13" name="辅导" />
+	<code category="dm_jxlx" category_name="教学类型码" code="21" name="带实验" />
+	<code category="dm_jxlx" category_name="教学类型码" code="22" name="带实习" />
+	<code category="dm_jxlx" category_name="教学类型码" code="23" name="带设计" />
+	<code category="dm_jxlx" category_name="教学类型码" code="24" name="带社会实践" />
+	<code category="dm_jxlx" category_name="教学类型码" code="31" name="带军训" />
+	<code category="dm_jxlx" category_name="教学类型码" code="32" name="带学工" />
+	<code category="dm_jxlx" category_name="教学类型码" code="33" name="带学农" />
+	<code category="dm_jxlx" category_name="教学类型码" code="41" name="班主任" />
+	<code category="dm_jxlx" category_name="教学类型码" code="42" name="指导员" />
+	<code category="dm_jxlx" category_name="教学类型码" code="43" name="政治辅导员" />
+	<code category="dm_jxlx" category_name="教学类型码" code="99" name="其他" />
+	<code category="dm_rkjs" category_name="任课角色码" code="1" name="主讲" />
+	<code category="dm_rkjs" category_name="任课角色码" code="2" name="辅导" />
+	<code category="dm_rkjs" category_name="任课角色码" code="3" name="实验" />
+	<code category="dm_rkjs" category_name="任课角色码" code="4" name="习题" />
+	<code category="dm_rkjs" category_name="任课角色码" code="9" name="其他" />
+	<code category="dm_gzlb" category_name="工资类别码" code="2221" name="中学高级教师一档" />
+	<code category="dm_gzlb" category_name="工资类别码" code="2222" name="中学高级教师二档" />
+	<code category="dm_gzlb" category_name="工资类别码" code="2223" name="中学高级教师三档" />
+	<code category="dm_gzlb" category_name="工资类别码" code="2224" name="中学高级教师四档" />
+	<code category="dm_gzlb" category_name="工资类别码" code="2225" name="中学高级教师五档" />
+	<code category="dm_gzlb" category_name="工资类别码" code="2226" name="中学高级教师六档" />
+	<code category="dm_gzlb" category_name="工资类别码" code="2227" name="中学高级教师七档" />
+	<code category="dm_gzlb" category_name="工资类别码" code="2228" name="中学高级教师八档" />
+	<code category="dm_gzlb" category_name="工资类别码" code="2229" name="中学高级教师九档" />
+	<code category="dm_gzlb" category_name="工资类别码" code="222A" name="中学高级教师十档" />
+	<code category="dm_gzlb" category_name="工资类别码" code="222B" name="中学高级教师十一档" />
+	<code category="dm_gzlb" category_name="工资类别码" code="222C" name="中学高级教师十二档" />
+	<code category="dm_gzlb" category_name="工资类别码" code="222D" name="中学高级教师十三档" />
+	<code category="dm_gzlb" category_name="工资类别码" code="222E" name="中学高级教师十四档" />
+	<code category="dm_gzlb" category_name="工资类别码" code="2231"
+		name="中学一级教师、小学高级教师一档" />
+	<code category="dm_gzlb" category_name="工资类别码" code="2232"
+		name="中学一级教师、小学高级教师二档" />
+	<code category="dm_gzlb" category_name="工资类别码" code="2233"
+		name="中学一级教师、小学高级教师三档" />
+	<code category="dm_gzlb" category_name="工资类别码" code="2234"
+		name="中学一级教师、小学高级教师四档" />
+	<code category="dm_gzlb" category_name="工资类别码" code="2235"
+		name="中学一级教师、小学高级教师五档" />
+	<code category="dm_gzlb" category_name="工资类别码" code="2236"
+		name="中学一级教师、小学高级教师六档" />
+	<code category="dm_gzlb" category_name="工资类别码" code="2237"
+		name="中学一级教师、小学高级教师七档" />
+	<code category="dm_gzlb" category_name="工资类别码" code="2238"
+		name="中学一级教师、小学高级教师八档" />
+	<code category="dm_gzlb" category_name="工资类别码" code="2239"
+		name="中学一级教师、小学高级教师九档" />
+	<code category="dm_gzlb" category_name="工资类别码" code="223A"
+		name="中学一级教师、小学高级教师十档" />
+	<code category="dm_gzlb" category_name="工资类别码" code="223B"
+		name="中学一级教师、小学高级教师十一档" />
+	<code category="dm_gzlb" category_name="工资类别码" code="223C"
+		name="中学一级教师、小学高级教师十二档" />
+	<code category="dm_gzlb" category_name="工资类别码" code="223D"
+		name="中学一级教师、小学高级教师十三档" />
+	<code category="dm_gzlb" category_name="工资类别码" code="223E"
+		name="中学一级教师、小学高级教师十四档" />
+	<code category="dm_gzlb" category_name="工资类别码" code="223F"
+		name="中学一级教师、小学高级教师十五档" />
+	<code category="dm_gzlb" category_name="工资类别码" code="223G"
+		name="中学一级教师、小学高级教师十六档" />
+	<code category="dm_gzlb" category_name="工资类别码" code="2241"
+		name="中学二级教师、小学一级教师一档" />
+	<code category="dm_gzlb" category_name="工资类别码" code="2242"
+		name="中学二级教师、小学一级教师二档" />
+	<code category="dm_gzlb" category_name="工资类别码" code="2243"
+		name="中学二级教师、小学一级教师三档" />
+	<code category="dm_gzlb" category_name="工资类别码" code="2244"
+		name="中学二级教师、小学一级教师四档" />
+	<code category="dm_gzlb" category_name="工资类别码" code="2245"
+		name="中学二级教师、小学一级教师五档" />
+	<code category="dm_gzlb" category_name="工资类别码" code="2246"
+		name="中学二级教师、小学一级教师六档" />
+	<code category="dm_gzlb" category_name="工资类别码" code="2247"
+		name="中学二级教师、小学一级教师七档" />
+	<code category="dm_gzlb" category_name="工资类别码" code="2248"
+		name="中学二级教师、小学一级教师八档" />
+	<code category="dm_gzlb" category_name="工资类别码" code="2249"
+		name="中学二级教师、小学一级教师九档" />
+	<code category="dm_gzlb" category_name="工资类别码" code="224A"
+		name="中学二级教师、小学一级教师十档" />
+	<code category="dm_gzlb" category_name="工资类别码" code="224B"
+		name="中学二级教师、小学一级教师十一档" />
+	<code category="dm_gzlb" category_name="工资类别码" code="224C"
+		name="中学二级教师、小学一级教师十二档" />
+	<code category="dm_gzlb" category_name="工资类别码" code="224D"
+		name="中学二级教师、小学一级教师十三档" />
+	<code category="dm_gzlb" category_name="工资类别码" code="224E"
+		name="中学二级教师、小学一级教师十四档" />
+	<code category="dm_gzlb" category_name="工资类别码" code="224F"
+		name="中学二级教师、小学一级教师十五档" />
+	<code category="dm_gzlb" category_name="工资类别码" code="224G"
+		name="中学二级教师、小学一级教师十六档" />
+	<code category="dm_gzlb" category_name="工资类别码" code="2251"
+		name="中学三级教师、小学二级教师一档" />
+	<code category="dm_gzlb" category_name="工资类别码" code="2252"
+		name="中学三级教师、小学二级教师二档" />
+	<code category="dm_gzlb" category_name="工资类别码" code="2253"
+		name="中学三级教师、小学二级教师三档" />
+	<code category="dm_gzlb" category_name="工资类别码" code="2254"
+		name="中学三级教师、小学二级教师四档" />
+	<code category="dm_gzlb" category_name="工资类别码" code="2255"
+		name="中学三级教师、小学二级教师五档" />
+	<code category="dm_gzlb" category_name="工资类别码" code="2256"
+		name="中学三级教师、小学二级教师六档" />
+	<code category="dm_gzlb" category_name="工资类别码" code="2257"
+		name="中学三级教师、小学二级教师七档" />
+	<code category="dm_gzlb" category_name="工资类别码" code="2258"
+		name="中学三级教师、小学二级教师八档" />
+	<code category="dm_gzlb" category_name="工资类别码" code="2259"
+		name="中学三级教师、小学二级教师九档" />
+	<code category="dm_gzlb" category_name="工资类别码" code="225A"
+		name="中学三级教师、小学二级教师十档" />
+	<code category="dm_gzlb" category_name="工资类别码" code="225B"
+		name="中学三级教师、小学二级教师十一档" />
+	<code category="dm_gzlb" category_name="工资类别码" code="225C"
+		name="中学三级教师、小学二级教师十二档" />
+	<code category="dm_gzlb" category_name="工资类别码" code="225D"
+		name="中学三级教师、小学二级教师十三档" />
+	<code category="dm_gzlb" category_name="工资类别码" code="225E"
+		name="中学三级教师、小学二级教师十四档" />
+	<code category="dm_gzbdyy" category_name="工资变动原因码" code="01" name="普调升级" />
+	<code category="dm_gzbdyy" category_name="工资变动原因码" code="02" name="正常升级" />
+	<code category="dm_gzbdyy" category_name="工资变动原因码" code="03" name="奖励升级" />
+	<code category="dm_gzbdyy" category_name="工资变动原因码" code="04" name="处分降级" />
+	<code category="dm_gzbdyy" category_name="工资变动原因码" code="11" name="职务变动" />
+	<code category="dm_gzbdyy" category_name="工资变动原因码" code="12" name="职称工资兑现" />
+	<code category="dm_gzbdyy" category_name="工资变动原因码" code="13" name="见习、临时工资" />
+	<code category="dm_gzbdyy" category_name="工资变动原因码" code="14" name="定级工资" />
+	<code category="dm_gzbdyy" category_name="工资变动原因码" code="15" name="考工升级" />
+	<code category="dm_gzbdyy" category_name="工资变动原因码" code="21" name="工资套改" />
+	<code category="dm_gzbdyy" category_name="工资变动原因码" code="22" name="工资集体转制" />
+	<code category="dm_gzbdyy" category_name="工资变动原因码" code="23" name="军人转业复退" />
+	<code category="dm_gzbdyy" category_name="工资变动原因码" code="24" name="调动工资" />
+	<code category="dm_gzbdyy" category_name="工资变动原因码" code="31" name="工资改革" />
+	<code category="dm_gzbdyy" category_name="工资变动原因码" code="32" name="提高工资标准" />
+	<code category="dm_gzbdyy" category_name="工资变动原因码" code="33" name="调整工资区" />
+	<code category="dm_gzbdyy" category_name="工资变动原因码" code="41" name="落实政策" />
+	<code category="dm_gzbdyy" category_name="工资变动原因码" code="42" name="离退休" />
+	<code category="dm_gzbdyy" category_name="工资变动原因码" code="99" name="其他" />
+	<code category="dm_bxflf" category_name="保险福利费细目码" code="02" name="职工生活困难补助" />
+	<code category="dm_bxflf" category_name="保险福利费细目码" code="03" name="职工计划生育补贴" />
+	<code category="dm_bxflf" category_name="保险福利费细目码" code="04"
+		name="职工上、下班交通补贴" />
+	<code category="dm_bxflf" category_name="保险福利费细目码" code="05" name="职工洗理卫生费" />
+	<code category="dm_bxflf" category_name="保险福利费细目码" code="11" name="职工医疗卫生费" />
+	<code category="dm_bxflf" category_name="保险福利费细目码" code="12" name="职工文体宣传费" />
+	<code category="dm_bxflf" category_name="保险福利费细目码" code="13"
+		name="职工集体福利事业补贴" />
+	<code category="dm_bxflf" category_name="保险福利费细目码" code="14"
+		name="职工集体福利设施费" />
+	<code category="dm_bxflf" category_name="保险福利费细目码" code="16" name="职工冬季取暖补贴" />
+	<code category="dm_bxflf" category_name="保险福利费细目码" code="19"
+		name="职工个人其他保险福利费用" />
+	<code category="dm_bxflf" category_name="保险福利费细目码" code="51"
+		name="职工集体保险福利其他费用" />
+	<code category="dm_bxflf" category_name="保险福利费细目码" code="01"
+		name="职工丧葬抚恤救济费" />
+	<code category="dm_bxflf" category_name="保险福利费细目码" code="52" name="离休金" />
+	<code category="dm_bxflf" category_name="保险福利费细目码" code="53" name="退休金" />
+	<code category="dm_bxflf" category_name="保险福利费细目码" code="54" name="退职生活费" />
+	<code category="dm_bxflf" category_name="保险福利费细目码" code="55"
+		name="离退人员医疗卫生费" />
+	<code category="dm_bxflf" category_name="保险福利费细目码" code="56" name="护理费" />
+	<code category="dm_bxflf" category_name="保险福利费细目码" code="57" name="生活补贴" />
+	<code category="dm_bxflf" category_name="保险福利费细目码" code="58" name="离休人员交通补贴" />
+	<code category="dm_bxflf" category_name="保险福利费细目码" code="60"
+		name="离休人员冬季取暖补贴" />
+	<code category="dm_bxflf" category_name="保险福利费细目码" code="61" name="离休人员物价补贴" />
+	<code category="dm_bxflf" category_name="保险福利费细目码" code="99"
+		name="离退人员保险福利其他费用" />
+	<code category="dm_bxflf" category_name="保险福利费细目码" code="59"
+		name="离休人员丧葬抚恤救济费" />
+	<code category="dm_zjlb" category_name="专家类别码" code="10" name="院士" />
+	<code category="dm_zjlb" category_name="专家类别码" code="11" name="中国科学院院士" />
+	<code category="dm_zjlb" category_name="专家类别码" code="12" name="中国工程院院士" />
+	<code category="dm_zjlb" category_name="专家类别码" code="13" name="两院院士" />
+	<code category="dm_zjlb" category_name="专家类别码" code="14" name="外国科学院院士" />
+	<code category="dm_zjlb" category_name="专家类别码" code="20" name="国家级专家" />
+	<code category="dm_zjlb" category_name="专家类别码" code="21"
+		name="国家主管部门批准的有突出贡献的专家" />
+	<code category="dm_zjlb" category_name="专家类别码" code="22"
+		name="享受政府特殊津贴（定期发放）专家" />
+	<code category="dm_zjlb" category_name="专家类别码" code="23"
+		name="享受政府特殊津贴（一次性发放）专家" />
+	<code category="dm_zjlb" category_name="专家类别码" code="29"
+		name="国家主管部门批准的其他专家" />
+	<code category="dm_zjlb" category_name="专家类别码" code="30" name="省、部级有突出贡献专家" />
+	<code category="dm_zjlb" category_name="专家类别码" code="40" name="地、市级有突出贡献专家" />
+	<code category="dm_zjlb" category_name="专家类别码" code="50" name="县级有突出贡献专家" />
+	<code category="dm_zjlb" category_name="专家类别码" code="80" name="解放军专家" />
+	<code category="dm_zjlb" category_name="专家类别码" code="81" name="全军有突出贡献专家" />
+	<code category="dm_zjlb" category_name="专家类别码" code="82" name="大军区有突出贡献专家" />
+	<code category="dm_zjlb" category_name="专家类别码" code="83" name="军级有突出贡献专家" />
+	<code category="dm_zjlb" category_name="专家类别码" code="84" name="师级有突出贡献专家" />
+	<code category="dm_zjlb" category_name="专家类别码" code="85" name="团级有突出贡献专家" />
+	<code category="dm_zjlb" category_name="专家类别码" code="99" name="其他专家" />
+	<code category="dm_xsttjb" category_name="团体级别码" code="1" name="国际" />
+	<code category="dm_xsttjb" category_name="团体级别码" code="2" name="国家" />
+	<code category="dm_xsttjb" category_name="团体级别码" code="3" name="省（生活区、直辖市）" />
+	<code category="dm_xsttjb" category_name="团体级别码" code="4" name="地（市、州）" />
+	<code category="dm_xsttjb" category_name="团体级别码" code="5" name="县（区、旗）" />
+	<code category="dm_xsttjb" category_name="团体级别码" code="-" name="其他" />
+	<code category="dm_cqshjz" category_name="团兼辞职原因码" code="-" name=" " />
+	<code category="dm_cqshjz" category_name="团兼辞职原因码" code="1" name="任职期满" />
+	<code category="dm_cqshjz" category_name="团兼辞职原因码" code="2" name="工作调动" />
+	<code category="dm_cqshjz" category_name="团兼辞职原因码" code="3" name="换届改选" />
+	<code category="dm_cqshjz" category_name="团兼辞职原因码" code="4" name="离退休" />
+	<code category="dm_cqshjz" category_name="团兼辞职原因码" code="5" name="健康原因" />
+	<code category="dm_cqshjz" category_name="团兼辞职原因码" code="6" name="辞职" />
+	<code category="dm_cqshjz" category_name="团兼辞职原因码" code="7" name="免职" />
+	<code category="dm_cqshjz" category_name="团兼辞职原因码" code="8" name="处分" />
+	<code category="dm_cqshjz" category_name="团兼辞职原因码" code="9" name="其他" />
+	<code category="dm_lxlzyy" category_name="离校原因码" code="11" name="离休" />
+	<code category="dm_lxlzyy" category_name="离校原因码" code="12" name="退休" />
+	<code category="dm_lxlzyy" category_name="离校原因码" code="21" name="系统内调出" />
+	<code category="dm_lxlzyy" category_name="离校原因码" code="22" name="调出至系统外" />
+	<code category="dm_lxlzyy" category_name="离校原因码" code="31" name="参军" />
+	<code category="dm_lxlzyy" category_name="离校原因码" code="32" name="进修学习" />
+	<code category="dm_lxlzyy" category_name="离校原因码" code="41" name="辞职" />
+	<code category="dm_lxlzyy" category_name="离校原因码" code="42" name="辞退" />
+	<code category="dm_lxlzyy" category_name="离校原因码" code="43" name="合同期满" />
+	<code category="dm_lxlzyy" category_name="离校原因码" code="51" name="除名" />
+	<code category="dm_lxlzyy" category_name="离校原因码" code="52" name="开除" />
+	<code category="dm_lxlzyy" category_name="离校原因码" code="53" name="死亡" />
+	<code category="dm_lxlzyy" category_name="离校原因码" code="54" name="失踪" />
+	<code category="dm_lxlzyy" category_name="离校原因码" code="55" name="借调期满" />
+	<code category="dm_lxlzyy" category_name="离校原因码" code="56" name="借调外出" />
+	<code category="dm_lxlzyy" category_name="离校原因码" code="99" name="其他" />
+	<code category="dm_bzyd" category_name="编制异动码" code="1" name="调至非教学岗位" />
+	<code category="dm_bzyd" category_name="编制异动码" code="2" name="调至教学岗位" />
+	<code category="dm_bzyd" category_name="编制异动码" code="3" name="其他" />
+	<code category="dm_lgyy" category_name="离岗原因码" code="1" name="出国（境）" />
+	<code category="dm_lgyy" category_name="离岗原因码" code="2" name="国内探亲" />
+	<code category="dm_lgyy" category_name="离岗原因码" code="3" name="事假" />
+	<code category="dm_lgyy" category_name="离岗原因码" code="4" name="病休" />
+	<code category="dm_lgyy" category_name="离岗原因码" code="5" name="国内进修学习" />
+	<code category="dm_lgyy" category_name="离岗原因码" code="6" name="借调" />
+	<code category="dm_lgyy" category_name="离岗原因码" code="7" name="不胜任工作" />
+	<code category="dm_lgyy" category_name="离岗原因码" code="8" name="处分" />
+	<code category="dm_lgyy" category_name="离岗原因码" code="9" name="其他" />
+	<code category="dm_jxxz" category_name="进修性质码" code="1" name="学历教育" />
+	<code category="dm_jxxz" category_name="进修性质码" code="2" name="非学历教育" />
+	<code category="dm_dwxz" category_name="主办单位性质码" code="10" name="机关" />
+	<code category="dm_dwxz" category_name="主办单位性质码" code="20" name="事业单位" />
+	<code category="dm_dwxz" category_name="主办单位性质码" code="21" name="科研设计单位" />
+	<code category="dm_dwxz" category_name="主办单位性质码" code="22" name="高级学校" />
+	<code category="dm_dwxz" category_name="主办单位性质码" code="23" name="其他教学单位" />
+	<code category="dm_dwxz" category_name="主办单位性质码" code="29" name="其他事业单位" />
+	<code category="dm_dwxz" category_name="主办单位性质码" code="30" name="企业" />
+	<code category="dm_dwxz" category_name="主办单位性质码" code="31" name="国有企业" />
+	<code category="dm_dwxz" category_name="主办单位性质码" code="32" name="三资企业" />
+	<code category="dm_dwxz" category_name="主办单位性质码" code="39" name="其他企业" />
+	<code category="dm_dwxz" category_name="主办单位性质码" code="40" name="部队" />
+	<code category="dm_dwxz" category_name="主办单位性质码" code="99" name="其他" />
+	<code category="dm_zxdwlb" category_name="在学单位类别码" code="1" name="高等学校" />
+	<code category="dm_zxdwlb" category_name="在学单位类别码" code="2" name="行政学院" />
+	<code category="dm_zxdwlb" category_name="在学单位类别码" code="3" name="研究所" />
+	<code category="dm_zxdwlb" category_name="在学单位类别码" code="4" name="企业" />
+	<code category="dm_zxdwlb" category_name="在学单位类别码" code="5" name="学会" />
+	<code category="dm_zxdwlb" category_name="在学单位类别码" code="6" name="党政机关" />
+	<code category="dm_zxdwlb" category_name="在学单位类别码" code="9" name="其他" />
+	<code category="gb_cgmd" category_name="出国（境）目的码" code="01"
+		name="常驻国外使馆、领事馆" />
+	<code category="gb_cgmd" category_name="出国（境）目的码" code="02"
+		name="常驻国际组织及其代表机构" />
+	<code category="gb_cgmd" category_name="出国（境）目的码" code="03" name="常驻国外其他组织" />
+	<code category="gb_cgmd" category_name="出国（境）目的码" code="05"
+		name="短期派驻国外使馆、领事馆" />
+	<code category="gb_cgmd" category_name="出国（境）目的码" code="06"
+		name="短期派驻国外其他代表机构" />
+	<code category="gb_cgmd" category_name="出国（境）目的码" code="08"
+		name="短期派驻国外其他组织" />
+	<code category="gb_cgmd" category_name="出国（境）目的码" code="10" name="党政代表团出访" />
+	<code category="gb_cgmd" category_name="出国（境）目的码" code="11" name="军事代表团出访" />
+	<code category="gb_cgmd" category_name="出国（境）目的码" code="12"
+		name="经济贸易和财务方面代表团出访与洽谈" />
+	<code category="gb_cgmd" category_name="出国（境）目的码" code="13"
+		name="学术、文艺、体育代表团和其它社会团体出访" />
+	<code category="gb_cgmd" category_name="出国（境）目的码" code="14"
+		name="参加国际性的各类比赛" />
+	<code category="gb_cgmd" category_name="出国（境）目的码" code="15" name="参加交易会和展览会" />
+	<code category="gb_cgmd" category_name="出国（境）目的码" code="20" name="引进技术和设备" />
+	<code category="gb_cgmd" category_name="出国（境）目的码" code="21" name="商务出国" />
+	<code category="gb_cgmd" category_name="出国（境）目的码" code="22" name="实习" />
+	<code category="gb_cgmd" category_name="出国（境）目的码" code="23" name="监造" />
+	<code category="gb_cgmd" category_name="出国（境）目的码" code="30" name="援外技术工作" />
+	<code category="gb_cgmd" category_name="出国（境）目的码" code="31" name="援建工作" />
+	<code category="gb_cgmd" category_name="出国（境）目的码" code="32" name="援外培训工作" />
+	<code category="gb_cgmd" category_name="出国（境）目的码" code="33" name="劳务出口" />
+	<code category="gb_cgmd" category_name="出国（境）目的码" code="34" name="合营工程" />
+	<code category="gb_cgmd" category_name="出国（境）目的码" code="36"
+		name="航空、邮电、海运、公路等国际联运业务" />
+	<code category="gb_cgmd" category_name="出国（境）目的码" code="37" name="随船工作" />
+	<code category="gb_cgmd" category_name="出国（境）目的码" code="39" name="科技合作项目" />
+	<code category="gb_cgmd" category_name="出国（境）目的码" code="40" name="考察" />
+	<code category="gb_cgmd" category_name="出国（境）目的码" code="41" name="领奖" />
+	<code category="gb_cgmd" category_name="出国（境）目的码" code="42" name="参加各种会议" />
+	<code category="gb_cgmd" category_name="出国（境）目的码" code="43" name="进修" />
+	<code category="gb_cgmd" category_name="出国（境）目的码" code="44" name="讲学" />
+	<code category="gb_cgmd" category_name="出国（境）目的码" code="45" name="公派留学" />
+	<code category="gb_cgmd" category_name="出国（境）目的码" code="46" name="自费留学" />
+	<code category="gb_cgmd" category_name="出国（境）目的码" code="47" name="自费公派留学" />
+	<code category="gb_cgmd" category_name="出国（境）目的码" code="60" name="旅游" />
+	<code category="gb_cgmd" category_name="出国（境）目的码" code="61" name="探亲" />
+	<code category="gb_cgmd" category_name="出国（境）目的码" code="62" name="会友" />
+	<code category="gb_cgmd" category_name="出国（境）目的码" code="63" name="结婚" />
+	<code category="gb_cgmd" category_name="出国（境）目的码" code="64" name="继承财产" />
+	<code category="gb_cgmd" category_name="出国（境）目的码" code="65" name="就业" />
+	<code category="gb_cgmd" category_name="出国（境）目的码" code="66" name="定居" />
+	<code category="gb_cgmd" category_name="出国（境）目的码" code="70" name="特殊任务" />
+	<code category="gb_cgmd" category_name="出国（境）目的码" code="99" name="其它原因出国" />
+	<code category="dm_cgjfly" category_name="出国（境）经费来源码" code="1"
+		name="国家出资" />
+	<code category="dm_cgjfly" category_name="出国（境）经费来源码" code="2"
+		name="单位出资" />
+	<code category="dm_cgjfly" category_name="出国（境）经费来源码" code="3"
+		name="外方出资" />
+	<code category="dm_cgjfly" category_name="出国（境）经费来源码" code="4"
+		name="自费" />
+	<code category="dm_cgjfly" category_name="出国（境）经费来源码" code="9"
+		name="其他" />
+	<code category="dm_khjg" category_name="考核结论码" code="1" name="优秀" />
+	<code category="dm_khjg" category_name="考核结论码" code="2" name="称职" />
+	<code category="dm_khjg" category_name="考核结论码" code="3" name="不称职" />
+	<code category="dm_hygzlb" category_name="考核工种码dmhygzlb" code="01"
+		name="机械加工类" />
+	<code category="dm_hygzlb" category_name="考核工种码dmhygzlb" code="02"
+		name="电工电器工程类" />
+	<code category="dm_hygzlb" category_name="考核工种码dmhygzlb" code="03"
+		name="建筑工程类" />
+	<code category="dm_hygzlb" category_name="考核工种码dmhygzlb" code="04"
+		name="仪器仪表工程类" />
+	<code category="dm_hygzlb" category_name="考核工种码dmhygzlb" code="05"
+		name="水暖通风工程类" />
+	<code category="dm_hygzlb" category_name="考核工种码dmhygzlb" code="06"
+		name="机动车驾驶类" />
+	<code category="dm_hygzlb" category_name="考核工种码dmhygzlb" code="07"
+		name="家具维修类" />
+	<code category="dm_hygzlb" category_name="考核工种码dmhygzlb" code="08"
+		name="宣传广告标本制作类" />
+	<code category="dm_hygzlb" category_name="考核工种码dmhygzlb" code="09"
+		name="餐饮服务类" />
+	<code category="dm_hygzlb" category_name="考核工种码dmhygzlb" code="10"
+		name="商贸服务类" />
+	<code category="dm_hygzlb" category_name="考核工种码dmhygzlb" code="11"
+		name="护理保健类" />
+	<code category="dm_hygzlb" category_name="考核工种码dmhygzlb" code="12"
+		name="花木养殖类" />
+	<code category="dm_hygzlb" category_name="考核工种码dmhygzlb" code="13"
+		name="其他" />
+	<code category="dm_jzwjg" category_name="建筑物结构码" code="1" name="框架结构" />
+	<code category="dm_jzwjg" category_name="建筑物结构码" code="2" name="砖混结构" />
+	<code category="dm_jzwjg" category_name="建筑物结构码" code="3" name="砖木结构" />
+	<code category="dm_jzwjg" category_name="建筑物结构码" code="4" name="土木结构" />
+	<code category="dm_jzwjg" category_name="建筑物结构码" code="9" name="其他" />
+	<code category="dm_fwlx" category_name="房屋类型码" code="1" name="楼房" />
+	<code category="dm_fwlx" category_name="房屋类型码" code="2" name="平房" />
+	<code category="dm_fwlx" category_name="房屋类型码" code="9" name="其他" />
+	<code category="dm_ltlb" category_name="离退类别码" code="1" name="离休" />
+	<code category="dm_ltlb" category_name="离退类别码" code="2" name="退休" />
+	<code category="dm_dwjb" category_name="批准单位级别码" code="01" name="中央级" />
+	<code category="dm_dwjb" category_name="批准单位级别码" code="03" name="部、省级" />
+	<code category="dm_dwjb" category_name="批准单位级别码" code="04" name="副部、副省级" />
+	<code category="dm_dwjb" category_name="批准单位级别码" code="05" name="司、局、地、厅级" />
+	<code category="dm_dwjb" category_name="批准单位级别码" code="06"
+		name="副司、副局、副地、副厅级" />
+	<code category="dm_dwjb" category_name="批准单位级别码" code="07" name="县、处级" />
+	<code category="dm_dwjb" category_name="批准单位级别码" code="08" name="副县、副处级" />
+	<code category="dm_dwjb" category_name="批准单位级别码" code="09" name="正科级" />
+	<code category="dm_dwjb" category_name="批准单位级别码" code="10" name="副科级" />
+	<code category="dm_dwjb" category_name="批准单位级别码" code="11" name="股级" />
+	<code category="dm_dwjb" category_name="批准单位级别码" code="99" name="其他" />
+	<code category="dm_fwcq" category_name="房屋产权码" code="01" name="自购福利住房" />
+	<code category="dm_fwcq" category_name="房屋产权码" code="02" name="自购经济实用住房" />
+	<code category="dm_fwcq" category_name="房屋产权码" code="03" name="自购商品住房" />
+	<code category="dm_fwcq" category_name="房屋产权码" code="04" name="自建住房" />
+	<code category="dm_fwcq" category_name="房屋产权码" code="05" name="租住本校公有住房" />
+	<code category="dm_fwcq" category_name="房屋产权码" code="06" name="租住外单位公有住房" />
+	<code category="dm_fwcq" category_name="房屋产权码" code="07" name="租住私有住房" />
+	<code category="dm_fwcq" category_name="房屋产权码" code="08" name="集体宿舍" />
+	<code category="dm_fwcq" category_name="房屋产权码" code="09" name="本校暂住" />
+	<code category="dm_fwcq" category_name="房屋产权码" code="10" name="外单位暂借" />
+	<code category="dm_fwcq" category_name="房屋产权码" code="99" name="其他" />
+	<code category="dm_fwwzzk" category_name="房屋位置状况()2006/11/14"
+		code="1" name="校内" />
+	<code category="dm_fwwzzk" category_name="房屋位置状况()2006/11/14"
+		code="0" name="校外" />
+	<code category="dm_zwfl" category_name="职位分类码" code="-" name=" " />
+	<code category="dm_zwfl" category_name="职位分类码" code="01" name="国务院总理级" />
+	<code category="dm_zwfl" category_name="职位分类码" code="02" name="国务院副总理,国务委员级" />
+	<code category="dm_zwfl" category_name="职位分类码" code="03" name="部级正职,省级正职级" />
+	<code category="dm_zwfl" category_name="职位分类码" code="04" name="部级副级,省级副职级" />
+	<code category="dm_zwfl" category_name="职位分类码" code="05"
+		name="司级正职,厅级正职,巡视员级" />
+	<code category="dm_zwfl" category_name="职位分类码" code="06"
+		name="司级副职,厅级副职,助理巡视员级" />
+	<code category="dm_zwfl" category_name="职位分类码" code="07"
+		name="处级正职,县级正职,调研员级" />
+	<code category="dm_zwfl" category_name="职位分类码" code="08"
+		name="处级副职,县级副职,助理调研员级" />
+	<code category="dm_zwfl" category_name="职位分类码" code="09"
+		name="科级正职,乡级正职,主任科员级" />
+	<code category="dm_zwfl" category_name="职位分类码" code="10"
+		name="科级副职,乡级副职,副主任科员级" />
+	<code category="dm_zwfl" category_name="职位分类码" code="11" name="科员级" />
+	<code category="dm_zwfl" category_name="职位分类码" code="12" name="办事员级" />
+	<code category="dm_gzjb" category_name="工资级别代码" code="01" name="一级" />
+	<code category="dm_gzjb" category_name="工资级别代码" code="02" name="二级" />
+	<code category="dm_gzjb" category_name="工资级别代码" code="03" name="三级" />
+	<code category="dm_gzjb" category_name="工资级别代码" code="04" name="四级" />
+	<code category="dm_gzjb" category_name="工资级别代码" code="05" name="五级" />
+	<code category="dm_gzjb" category_name="工资级别代码" code="06" name="六级" />
+	<code category="dm_gzjb" category_name="工资级别代码" code="07" name="七级" />
+	<code category="dm_gzjb" category_name="工资级别代码" code="08" name="八级" />
+	<code category="dm_gzjb" category_name="工资级别代码" code="09" name="九级" />
+	<code category="dm_gzjb" category_name="工资级别代码" code="10" name="十级" />
+	<code category="dm_gzjb" category_name="工资级别代码" code="11" name="十一级" />
+	<code category="dm_gzjb" category_name="工资级别代码" code="12" name="十二级" />
+	<code category="dm_gzjb" category_name="工资级别代码" code="13" name="十三级" />
+	<code category="dm_gzjb" category_name="工资级别代码" code="14" name="十四级" />
+	<code category="dm_gzjb" category_name="工资级别代码" code="15" name="十五级" />
+	<code category="gb_xb" category_name="性别码2261" code="1" name="男" />
+	<code category="gb_xb" category_name="性别码2261" code="2" name="女" />
+	<code category="gb_csd" category_name="出生地码226" code="0" name="测试数据--贵港" />
+	<code category="gb_csd" category_name="出生地码226" code="1" name="测试数据--覃塘" />
+	<code category="gb_csd" category_name="出生地码226" code="2" name="测试数据--蒙公" />
+	<code category="dm_xx" category_name="血型码" code="-" name=" " />
+	<code category="dm_xx" category_name="血型码" code="0" name="未知血型" />
+	<code category="dm_xx" category_name="血型码" code="1" name="A型" />
+	<code category="dm_xx" category_name="血型码" code="2" name="B型" />
+	<code category="dm_xx" category_name="血型码" code="3" name="AB型" />
+	<code category="dm_xx" category_name="血型码" code="4" name="O型" />
+	<code category="dm_xx" category_name="血型码" code="5" name="其他血型" />
+	<code category="dm_xx" category_name="血型码" code="9" name="未定血型" />
+	<code category="gb_jg" category_name="籍贯码2260" code="0" name="测试数据--贵港" />
+	<code category="gb_jg" category_name="籍贯码2260" code="1" name="测试数据--覃塘" />
+	<code category="gb_jg" category_name="籍贯码2260" code="2" name="测试数据--蒙公" />
+	<code category="gb_mz" category_name="民族码3304" code="01" name="汉族" />
+	<code category="gb_mz" category_name="民族码3304" code="08" name="壮族" />
+	<code category="gb_mz" category_name="民族码3304" code="02" name="蒙古族" />
+	<code category="gb_mz" category_name="民族码3304" code="03" name="回族" />
+	<code category="gb_mz" category_name="民族码3304" code="04" name="藏族" />
+	<code category="gb_mz" category_name="民族码3304" code="05" name="维吾尔族" />
+	<code category="gb_mz" category_name="民族码3304" code="06" name="苗族" />
+	<code category="gb_mz" category_name="民族码3304" code="07" name="彝族" />
+	<code category="gb_mz" category_name="民族码3304" code="09" name="布依族" />
+	<code category="gb_mz" category_name="民族码3304" code="10" name="朝鲜族" />
+	<code category="gb_mz" category_name="民族码3304" code="11" name="满族" />
+	<code category="gb_mz" category_name="民族码3304" code="12" name="侗族" />
+	<code category="gb_mz" category_name="民族码3304" code="13" name="瑶族" />
+	<code category="gb_mz" category_name="民族码3304" code="14" name="白族" />
+	<code category="gb_mz" category_name="民族码3304" code="15" name="土家族" />
+	<code category="gb_mz" category_name="民族码3304" code="16" name="哈尼族" />
+	<code category="gb_mz" category_name="民族码3304" code="17" name="哈萨克族" />
+	<code category="gb_mz" category_name="民族码3304" code="18" name="傣族" />
+	<code category="gb_mz" category_name="民族码3304" code="19" name="黎族" />
+	<code category="gb_mz" category_name="民族码3304" code="20" name="傈僳族" />
+	<code category="gb_mz" category_name="民族码3304" code="21" name="佤族" />
+	<code category="gb_mz" category_name="民族码3304" code="22" name="畲族" />
+	<code category="gb_mz" category_name="民族码3304" code="23" name="高山族" />
+	<code category="gb_mz" category_name="民族码3304" code="24" name="拉祜族" />
+	<code category="gb_mz" category_name="民族码3304" code="25" name="水族" />
+	<code category="gb_mz" category_name="民族码3304" code="26" name="东乡族" />
+	<code category="gb_mz" category_name="民族码3304" code="27" name="纳西族" />
+	<code category="gb_mz" category_name="民族码3304" code="28" name="景颇族" />
+	<code category="gb_mz" category_name="民族码3304" code="29" name="柯尔克孜族" />
+	<code category="gb_mz" category_name="民族码3304" code="30" name="土族" />
+	<code category="gb_mz" category_name="民族码3304" code="31" name="达斡尔族" />
+	<code category="gb_mz" category_name="民族码3304" code="32" name="仫佬族" />
+	<code category="gb_mz" category_name="民族码3304" code="33" name="羌族" />
+	<code category="gb_mz" category_name="民族码3304" code="34" name="布朗族" />
+	<code category="gb_mz" category_name="民族码3304" code="35" name="撒拉族" />
+	<code category="gb_mz" category_name="民族码3304" code="36" name="毛南族" />
+	<code category="gb_mz" category_name="民族码3304" code="37" name="仡佬族" />
+	<code category="gb_mz" category_name="民族码3304" code="38" name="锡伯族" />
+	<code category="gb_mz" category_name="民族码3304" code="39" name="阿昌族" />
+	<code category="gb_mz" category_name="民族码3304" code="40" name="普米族" />
+	<code category="gb_mz" category_name="民族码3304" code="41" name="塔吉克族" />
+	<code category="gb_mz" category_name="民族码3304" code="42" name="怒族" />
+	<code category="gb_mz" category_name="民族码3304" code="43" name="乌孜别克族" />
+	<code category="gb_mz" category_name="民族码3304" code="44" name="俄罗斯族" />
+	<code category="gb_mz" category_name="民族码3304" code="45" name="鄂温克族" />
+	<code category="gb_mz" category_name="民族码3304" code="46" name="德昂族" />
+	<code category="gb_mz" category_name="民族码3304" code="47" name="保安族" />
+	<code category="gb_mz" category_name="民族码3304" code="48" name="裕固族" />
+	<code category="gb_mz" category_name="民族码3304" code="49" name="京族" />
+	<code category="gb_mz" category_name="民族码3304" code="50" name="塔塔尔族" />
+	<code category="gb_mz" category_name="民族码3304" code="51" name="独龙族" />
+	<code category="gb_mz" category_name="民族码3304" code="52" name="鄂伦春族" />
+	<code category="gb_mz" category_name="民族码3304" code="53" name="赫哲族" />
+	<code category="gb_mz" category_name="民族码3304" code="54" name="门巴族" />
+	<code category="gb_mz" category_name="民族码3304" code="55" name="珞巴族" />
+	<code category="gb_mz" category_name="民族码3304" code="56" name="基诺族" />
+	<code category="dm_gatq" category_name="港澳台侨码" code="0" name="无" />
+	<code category="dm_gatq" category_name="港澳台侨码" code="1" name="归侨" />
+	<code category="dm_gatq" category_name="港澳台侨码" code="2" name="华侨" />
+	<code category="dm_gatq" category_name="港澳台侨码" code="3" name="侨眷" />
+	<code category="dm_gatq" category_name="港澳台侨码" code="4" name="港澳" />
+	<code category="dm_gatq" category_name="港澳台侨码" code="5" name="台胞" />
+	<code category="dm_gatq" category_name="港澳台侨码" code="6" name="外籍华人" />
+	<code category="dm_gatq" category_name="港澳台侨码" code="7" name="华籍外人" />
+	<code category="dm_gatq" category_name="港澳台侨码" code="8" name="非华裔外人" />
+	<code category="dm_gatq" category_name="港澳台侨码" code="9" name="其他" />
+	<code category="gb_jkzk" category_name="健康状况码4767" code="10" name="健康" />
+	<code category="gb_jkzk" category_name="健康状况码4767" code="11" name="良好" />
+	<code category="gb_jkzk" category_name="健康状况码4767" code="20" name="一般或较弱" />
+	<code category="gb_jkzk" category_name="健康状况码4767" code="30" name="有慢性病" />
+	<code category="gb_jkzk" category_name="健康状况码4767" code="31" name="心血管病" />
+	<code category="gb_jkzk" category_name="健康状况码4767" code="32" name="脑血管病" />
+	<code category="gb_jkzk" category_name="健康状况码4767" code="33" name="慢性呼吸系统病" />
+	<code category="gb_jkzk" category_name="健康状况码4767" code="34"
+		name="慢性消化系统病（包括溃疡、肝炎及肝硬化）" />
+	<code category="gb_jkzk" category_name="健康状况码4767" code="35" name="慢性肾炎" />
+	<code category="gb_jkzk" category_name="健康状况码4767" code="36" name="结核病" />
+	<code category="gb_jkzk" category_name="健康状况码4767" code="37" name="糖尿病" />
+	<code category="gb_jkzk" category_name="健康状况码4767" code="38" name="神经或精神疾病" />
+	<code category="gb_jkzk" category_name="健康状况码4767" code="39" name="其他慢性病" />
+	<code category="gb_jkzk" category_name="健康状况码4767" code="40" name="有生理缺陷" />
+	<code category="gb_jkzk" category_name="健康状况码4767" code="41" name="聋哑" />
+	<code category="gb_jkzk" category_name="健康状况码4767" code="42" name="盲人" />
+	<code category="gb_jkzk" category_name="健康状况码4767" code="43" name="高度近视" />
+	<code category="gb_jkzk" category_name="健康状况码4767" code="49" name="其他缺陷" />
+	<code category="gb_jkzk" category_name="健康状况码4767" code="50" name="残废" />
+	<code category="gb_jkzk" category_name="健康状况码4767" code="51" name="特等残废" />
+	<code category="gb_jkzk" category_name="健康状况码4767" code="52" name="一等残废" />
+	<code category="gb_jkzk" category_name="健康状况码4767" code="53" name="二等甲级残废" />
+	<code category="gb_jkzk" category_name="健康状况码4767" code="54" name="二等乙级残废" />
+	<code category="gb_jkzk" category_name="健康状况码4767" code="55" name="三等甲级残废" />
+	<code category="gb_jkzk" category_name="健康状况码4767" code="56" name="三等乙级残废" />
+	<code category="gb_jkzk" category_name="健康状况码4767" code="59" name="其他残废" />
+	<code category="gb_zzmm" category_name="政治面貌码4762" code="01" name="中国共产党党员" />
+	<code category="gb_zzmm" category_name="政治面貌码4762" code="02"
+		name="中国共产党预备党员" />
+	<code category="gb_zzmm" category_name="政治面貌码4762" code="03"
+		name="中国共产主义青年团团员" />
+	<code category="gb_zzmm" category_name="政治面貌码4762" code="04"
+		name="中国国民党革命委员会会员" />
+	<code category="gb_zzmm" category_name="政治面貌码4762" code="05" name="中国民主同盟盟员" />
+	<code category="gb_zzmm" category_name="政治面貌码4762" code="06"
+		name="中国民主建国会会员" />
+	<code category="gb_zzmm" category_name="政治面貌码4762" code="07"
+		name="中国民主促进会会员" />
+	<code category="gb_zzmm" category_name="政治面貌码4762" code="08"
+		name="中国农工民主党党员" />
+	<code category="gb_zzmm" category_name="政治面貌码4762" code="09" name="中国致公党党员" />
+	<code category="gb_zzmm" category_name="政治面貌码4762" code="10" name="九三学社社员" />
+	<code category="gb_zzmm" category_name="政治面貌码4762" code="11"
+		name="台湾民主自治同盟盟员" />
+	<code category="gb_zzmm" category_name="政治面貌码4762" code="12" name="无党派民主人士" />
+	<code category="gb_zzmm" category_name="政治面貌码4762" code="13" name="群众" />
+	<code category="gb_zzmm" category_name="政治面貌码4762" code="AB" name="少先队员" />
+	<code category="gb_zzmm" category_name="政治面貌码4762" code="-" name="其他" />
+	<code category="dm_hkxz" category_name="户口性质码" code="1" name="农业户口" />
+	<code category="dm_hkxz" category_name="户口性质码" code="2" name="非农业户口" />
+	<code category="gb_gb" category_name="国别码2659" code="156" name="中国" />
+	<code category="gb_gb" category_name="国别码2659" code="036" name="澳大利亚" />
+	<code category="gb_gb" category_name="国别码2659" code="076" name="巴西" />
+	<code category="gb_gb" category_name="国别码2659" code="124" name="加拿大" />
+	<code category="gb_gb" category_name="国别码2659" code="818" name="埃及" />
+	<code category="gb_gb" category_name="国别码2659" code="251" name="法国" />
+	<code category="gb_gb" category_name="国别码2659" code="276" name="德国" />
+	<code category="gb_gb" category_name="国别码2659" code="356" name="印度" />
+	<code category="gb_gb" category_name="国别码2659" code="392" name="日本" />
+	<code category="gb_gb" category_name="国别码2659" code="410" name="韩国" />
+	<code category="gb_gb" category_name="国别码2659" code="458" name="马来西亚" />
+	<code category="gb_gb" category_name="国别码2659" code="484" name="墨西哥" />
+	<code category="gb_gb" category_name="国别码2659" code="826" name="英国" />
+	<code category="gb_gb" category_name="国别码2659" code="840" name="美国" />
+	<code category="gb_gb" category_name="国别码2659" code="-" name="其他" />
+	<code category="gb_gx" category_name="关系码4761" code="1" name="配偶" />
+	<code category="gb_gx" category_name="关系码4761" code="2" name="子" />
+	<code category="gb_gx" category_name="关系码4761" code="3" name="女" />
+	<code category="gb_gx" category_name="关系码4761" code="4"
+		name="孙子、孙女或外孙子、外孙女" />
+	<code category="gb_gx" category_name="关系码4761" code="5" name="父母" />
+	<code category="gb_gx" category_name="关系码4761" code="6" name="祖父母或外祖父母" />
+	<code category="gb_gx" category_name="关系码4761" code="7" name="兄、弟、姐、妹" />
+	<code category="gb_gx" category_name="关系码4761" code="8" name="其他" />
+	<code category="gb_zy" category_name="职业码6565" code="0"
+		name="国家机关、党群组织、企业、事业单位负责人" />
+	<code category="gb_zy" category_name="职业码6565" code="01"
+		name="中国共产党中央委员会和地方各级组织负责人" />
+	<code category="gb_zy" category_name="职业码6565" code="02"
+		name="国家机关及其工作机构负责人" />
+	<code category="gb_zy" category_name="职业码6565" code="03"
+		name="民主党派和社会团体及其工作机构负责人" />
+	<code category="gb_zy" category_name="职业码6565" code="04" name="事业单位负责人" />
+	<code category="gb_zy" category_name="职业码6565" code="05" name="企业负责人" />
+	<code category="gb_zy" category_name="职业码6565" code="1" name="专业技术人员" />
+	<code category="gb_zy" category_name="职业码6565" code="11" name="科学研究人员" />
+	<code category="gb_zy" category_name="职业码6565" code="13" name="工程技术人员" />
+	<code category="gb_zy" category_name="职业码6565" code="17" name="农业技术人员" />
+	<code category="gb_zy" category_name="职业码6565" code="18" name="飞机和船舶技术人员" />
+	<code category="gb_zy" category_name="职业码6565" code="19" name="卫生专业技术人员" />
+	<code category="gb_zy" category_name="职业码6565" code="191" name="西医医师" />
+	<code category="gb_zy" category_name="职业码6565" code="192" name="中医医师" />
+	<code category="gb_zy" category_name="职业码6565" code="193" name="中西医结合医师" />
+	<code category="gb_zy" category_name="职业码6565" code="198" name="护理人员" />
+	<code category="gb_zy" category_name="职业码6565" code="21" name="经济业务人员" />
+	<code category="gb_zy" category_name="职业码6565" code="31" name="行政办公人员" />
+	<code category="gb_zy" category_name="职业码6565" code="32" name="安全保卫和消防人员" />
+	<code category="gb_zy" category_name="职业码6565" code="33" name="邮政和电信业务人员" />
+	<code category="gb_zy" category_name="职业码6565" code="39" name="其他办事人员和有关人员" />
+	<code category="gb_zy" category_name="职业码6565" code="4" name="商业、服务业人员" />
+	<code category="gb_zy" category_name="职业码6565" code="41" name="购销人员" />
+	<code category="gb_zy" category_name="职业码6565" code="42" name="仓储人员" />
+	<code category="gb_zy" category_name="职业码6565" code="43" name="餐饮服务人员" />
+	<code category="gb_zy" category_name="职业码6565" code="44"
+		name="饭店、旅游及健身娱乐场所服务人员" />
+	<code category="gb_zy" category_name="职业码6565" code="45" name="运输服务人员" />
+	<code category="gb_zy" category_name="职业码6565" code="46" name="医疗卫生辅助服务人员" />
+	<code category="gb_zy" category_name="职业码6565" code="47"
+		name="社会服务和居民生活服务人员" />
+	<code category="gb_zy" category_name="职业码6565" code="49" name="其他商业、服务业人员" />
+	<code category="gb_zy" category_name="职业码6565" code="5"
+		name="农、林、牧、渔、水利业生产人员" />
+	<code category="gb_zy" category_name="职业码6565" code="51" name="种植业生产人员" />
+	<code category="gb_zy" category_name="职业码6565" code="52"
+		name="林业生产及野生动植物保护人员" />
+	<code category="gb_zy" category_name="职业码6565" code="53" name="畜牧业生产人员" />
+	<code category="gb_zy" category_name="职业码6565" code="54" name="渔业生产人员" />
+	<code category="gb_zy" category_name="职业码6565" code="55" name="水利设备管理养护人员" />
+	<code category="gb_zy" category_name="职业码6565" code="59"
+		name="其他农、林、牧、鱼、水利业生产人员" />
+	<code category="gb_zy" category_name="职业码6565" code="6"
+		name="生产、运输设备操作人员及有关人员" />
+	<code category="gb_zy" category_name="职业码6565" code="61" name="勘测及矿物开采人员" />
+	<code category="gb_zy" category_name="职业码6565" code="62" name="金属冶炼、轧制人员" />
+	<code category="gb_zy" category_name="职业码6565" code="64" name="化工产品生产人员" />
+	<code category="gb_zy" category_name="职业码6565" code="66" name="机械制造加工人员" />
+	<code category="gb_zy" category_name="职业码6565" code="67" name="机电产品装配人员" />
+	<code category="gb_zy" category_name="职业码6565" code="71" name="机械设备修理人员" />
+	<code category="gb_zy" category_name="职业码6565" code="72"
+		name="电力设备安装、运行、检修及供电人员" />
+	<code category="gb_zy" category_name="职业码6565" code="73"
+		name="电子元器件与设备制造、装配、调试用维修人员" />
+	<code category="gb_zy" category_name="职业码6565" code="74" name="橡胶和塑料制品生产人员" />
+	<code category="gb_zy" category_name="职业码6565" code="75" name="纺织、针织、印染人员" />
+	<code category="gb_zy" category_name="职业码6565" code="76"
+		name="裁剪、缝纫和皮革、毛皮制品加工制作人员" />
+	<code category="gb_zy" category_name="职业码6565" code="77"
+		name="粮油、食品、饮料生产加工及饮料生产加工人员" />
+	<code category="gb_zy" category_name="职业码6565" code="78" name="烟草及其制品加工人员" />
+	<code category="gb_zy" category_name="职业码6565" code="79" name="药品生产人员" />
+	<code category="gb_zy" category_name="职业码6565" code="81"
+		name="木材加工、人造板生产、木制品品制作及制浆、造纸和纸制品生产加工人员" />
+	<code category="gb_zy" category_name="职业码6565" code="82" name="建筑材料生产加工人员" />
+	<code category="gb_zy" category_name="职业码6565" code="83"
+		name="玻璃、陶瓷、搪瓷及其制品生产加工人员" />
+	<code category="gb_zy" category_name="职业码6565" code="84"
+		name="广播影视制品制作、播放及文物保护作业人员" />
+	<code category="gb_zy" category_name="职业码6565" code="85" name="印刷人员" />
+	<code category="gb_zy" category_name="职业码6565" code="86" name="工艺、美术品制作人员" />
+	<code category="gb_zy" category_name="职业码6565" code="87"
+		name="文化教育、体育用品制作人员" />
+	<code category="gb_zy" category_name="职业码6565" code="88" name="工程施工人员" />
+	<code category="gb_zy" category_name="职业码6565" code="91"
+		name="运输设备操作人员及有关人员" />
+	<code category="gb_zy" category_name="职业码6565" code="92" name="环境监测及废物处理人员" />
+	<code category="gb_zy" category_name="职业码6565" code="93" name="检验、计量人员" />
+	<code category="gb_zy" category_name="职业码6565" code="99"
+		name="其他生产、运输设备操作人员及有关人员" />
+	<code category="gb_zy" category_name="职业码6565" code="x" name="军人" />
+	<code category="gb_zy" category_name="职业码6565" code="y" name="不便分类的其他从业人员" />
+	
+	<!--专业技术职务码8561 -->	
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="01" name="高等学校教师" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="02" name="中等专业学校教师" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="010" name="高等学校教师" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="011" name="教授" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="012" name="副教授" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="013" name="讲师(高校)" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="014" name="助教(高校)" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="020" name="中等专业学校教师" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="022" name="高级讲师(中专)" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="023" name="讲师(中专)" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="024" name="助理讲师(中专)" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="025" name="教员(中专)" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="030" name="技工学校教师" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="032" name="高级讲师(技校)" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="033" name="讲师(技校)" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="034" name="助理讲师(技校)" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="035" name="教员(技校)" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="040" name="技工学校教师（实习指导）" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="042" name="高级实习指导教师" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="043" name="一级实习指导教师" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="044" name="二级实习指导教师" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="045" name="三级实习指导教师" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="050" name="中学教师" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="052" name="高级教师（中学）" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="053" name="一级教师（中学）" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="054" name="二级教师（中学）" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="055" name="三级教师（中学）" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="070" name="实验技术人员" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="072" name="高级实验师" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="073" name="实验师" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="074" name="助理实验师" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="075" name="实验员" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="080" name="工程技术人员" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="082" name="高级工程师" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="083" name="工程师" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="084" name="助理工程师" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="085" name="技术员" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="090" name="农业技术人员（农艺）" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="091" name="农业技术推广研究员（农艺）" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="092" name="农高级农艺师" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="093" name="农艺师）" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="094" name="助理农艺师" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="095" name="农业技术人员（农艺）" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="100" name="农业技术人员（兽医）" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="101" name="农业技术推广研究员（兽医）" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="102" name="高级兽医师" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="103" name="兽医师" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="104" name="助理兽医师" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="105" name="兽医技术员" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="110" name="农业技术人员（畜牧）" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="111" name="农业技术推广研究员（畜牧）" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="112" name="高级畜牧师" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="113" name="畜牧师" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="114" name="助理畜牧师" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="115" name="畜牧技术人员" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="120" name="经济专业人员" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="122" name="高级经济师" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="123" name="经济师" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="124" name="助理经济师" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="125" name="经济员" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="130" name="会计专业人员" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="132" name="高级会计师" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="133" name="会计师" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="134" name="助理会计师" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="135" name="会计员" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="140" name="统计专业人员" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="142" name="高级统计师" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="143" name="统计师" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="144" name="助理统计师" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="145" name="统计员" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="150" name="出版专业人员（编审）" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="151" name="编审" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="152" name="副编审" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="153" name="编辑" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="154" name="助理编辑" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="160" name="出版专业人员（技术编辑）" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="163" name="技术编辑" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="164" name="助理技术编辑" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="165" name="技术设计员" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="170" name="出版专业人员（校对）" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="173" name="一级校对" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="174" name="二级校对" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="175" name="三级校对" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="180" name="翻译人员" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="181" name="译审" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="182" name="副译审" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="183" name="翻译" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="184" name="助理翻译" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="190" name="新闻专业人员（记者）" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="191" name="高级记者）" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="192" name="主任记者" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="193" name="记者" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="194" name="助理记者" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="200" name="新闻专业人员（编辑）" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="201" name="高级编辑" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="202" name="主任编辑）" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="203" name="编辑" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="204" name="助理编辑" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="220" name="播音员" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="221" name="播音指导" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="222" name="主任播音员" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="223" name="一级播音员" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="224" name="二级播音员" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="225" name="三级播音员" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="230" name="卫生技术人员（医师）" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="231" name="主任医师" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="232" name="副主任医师" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="233" name="主治医师" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="234" name="医师" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="235" name="医士" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="240" name="卫生技术人员（药剂）" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="241" name="主任药师" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="242" name="副主任药师" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="243" name="主管药师" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="244" name="药师" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="245" name="药士" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="250" name="卫生技术人员（护理）" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="251" name="主任护师" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="252" name="副主任护师" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="253" name="主管护师" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="254" name="护师" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="255" name="护士" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="260" name="卫生技术人员（技师）" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="261" name="主任技师" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="262" name="副主任技师" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="263" name="主管技师" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="264" name="技师" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="265" name="技士" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="270" name="工艺美术人员" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="272" name="高级工艺美术师" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="273" name="工艺美术师" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="274" name="助理工艺美术师" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="275" name="工艺美术员" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="280" name="艺术人员（演员）" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="281" name="一级演员" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="282" name="二级演员" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="283" name="三级演员" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="284" name="四级演员" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="290" name="艺术人员（演奏员）" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="291" name="一级演奏员" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="292" name="二级演奏员" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="293" name="三级演奏员" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="294" name="四级演奏员" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="300" name="艺术人员（编剧）" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="301" name="一级编剧" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="302" name="二级编剧" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="303" name="三级编剧" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="304" name="四级编剧" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="310" name="艺术人员（导演）" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="311" name="一级导演" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="312" name="二级导演" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="313" name="三级导演" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="314" name="四级导演" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="320" name="艺术人员（指挥）" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="321" name="一级指挥" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="322" name="二级指挥" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="323" name="三级指挥" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="324" name="四级指挥" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="330" name="艺术人员（作曲）" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="331" name="一级作曲" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="332" name="二级作曲" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="333" name="三级作曲" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="334" name="四级作曲" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="340" name="艺术人员（美术）" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="341" name="一级美术" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="342" name="二级美术" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="343" name="三级美术" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="344" name="美术员" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="350" name="艺术人员（舞美设计）" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="351" name="一级舞美设计" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="352" name="二级舞美设计" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="353" name="三级舞美设计" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="354" name="舞美设计员" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="360" name="艺术人员（舞台技术）" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="362" name="主任舞台技师" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="363" name="舞台技师" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="364" name="舞台技术员" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="370" name="体育锻炼" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="371" name="国家级教练" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="372" name="高级教练" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="373" name="一级教练" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="374" name="二级教练" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="375" name="三级教练" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="390" name="律师" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="391" name="一级律师" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="392" name="二级律师" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="393" name="三级律师" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="394" name="四级律师" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="395" name="律师助理" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="400" name="公证员" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="401" name="一级公证员" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="402" name="二级公证员" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="403" name="三级公证员" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="404" name="四级公证员" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="405" name="公证助理员" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="410" name="小学教师" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="413" name="高级教师（小学）" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="414" name="一级教师（小学）" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="415" name="二级教师（小学）" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="416" name="三级教师（小学）" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="420" name="船舶技术人员（驾驶）" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="422" name="高级船长" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="423" name="船长（大副）" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="424" name="二副" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="425" name="三副" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="430" name="船舶技术人员（轮机）" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="432" name="高级轮机长" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="433" name="轮机长（大管轮）" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="434" name="二管轮" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="435" name="三管轮" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="440" name="船舶技术人员（电机）" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="442" name="高级电机员" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="443" name="通用电机员（一等电机员）" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="444" name="二等电机员" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="450" name="船舶技术人员（报务）" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="452" name="高级报务员" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="453" name="通用报务员" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="454" name="二等报务员" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="455" name="限用报务员" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="460" name="飞行技术人员（驾驶）" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="462" name="一级飞行员" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="463" name="二级飞行员" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="464" name="三级飞行员" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="465" name="四级飞行员" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="470" name="飞行技术人员（领航）" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="472" name="一级领航员" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="473" name="二级领航员" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="474" name="三级领航员" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="475" name="四级领航员" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="480" name="飞行技术人员（通信）" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="482" name="一级通信员" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="483" name="二级通信员" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="484" name="三级通信员" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="485" name="四级通信员" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="490" name="飞行技术人员（机械）" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="492" name="一级机械员" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="493" name="二级机械员" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="494" name="三级机械员" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="495" name="四级机械员" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="500" name="船舶技术人员（引航）" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="502" name="高级引航员" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="503" name="一、二级引航员" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="504" name="三、四级引航员" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="610" name="自然科学研究人员" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="611" name="研究员（自然科学）" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="612" name="副研究员（自然科学）" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="613" name="助理研究员（自然科学）" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="614" name="研究实习员（自然科学）" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="620" name="社会科学研究人员" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="621" name="研究员（社会科学）" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="622" name="副研究员（社会科学）" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="623" name="助理研究员（社会科学）" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="624" name="研究实习员（社会科学）" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="640" name="图书、资料专业人员" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="641" name="研究馆员（图书）" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="642" name="副研究馆员（图书）" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="643" name="馆员（图书）" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="644" name="助理馆员（图书）" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="645" name="管理员（图书）" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="650" name="文博专业人员" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="651" name="研究馆员（文博）" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="652" name="副研究馆员（文博）" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="653" name="馆员（文博）" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="654" name="助理馆员（文博）" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="655" name="管理员（文博）" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="660" name="档案专业人员" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="661" name="研究馆员（档案）" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="662" name="副研究馆员（档案）" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="663" name="馆员（档案）" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="664" name="助理馆员（档案）" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="665" name="管理员（档案）" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="670" name="群众文化专业人员" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="671" name="研究馆员（群众文化）" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="672" name="副研究馆员（群众文化）" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="673" name="馆员（群众文化）" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="674" name="助理馆员（群众文化）" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="675" name="管理员（群众文化）" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="680" name="审计专业人员" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="682" name="高级审计师" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="683" name="审计师" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="684" name="助理审计师" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="685" name="审计员" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="690" name="法医专业人员" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="691" name="主任法医师" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="692" name="副主任法医师" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="693" name="主检法医师" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="694" name="法医师" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="695" name="法医士" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="980" name="思想政治工作人员" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="982" name="高级政工师" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="983" name="政工师" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="984" name="助理政工师" />
+	<code category="gb_zyjszw" category_name="专业技术职务码8561" code="985" name="思政工员" />	
+	
+	<code category="gb_zwjb" category_name="职务级别码12407" code="-" name=" " />
+	<code category="gb_zwjb" category_name="职务级别码12407" code="02"
+		name="副总理、常务委员级" />
+	<code category="gb_zwjb" category_name="职务级别码12407" code="03"
+		name="部、省级" />
+	<code category="gb_zwjb" category_name="职务级别码12407" code="04"
+		name="副部、副省级" />
+	<code category="gb_zwjb" category_name="职务级别码12407" code="05"
+		name="司、局、地、厅级" />
+	<code category="gb_zwjb" category_name="职务级别码12407" code="06"
+		name="副司、副局、副地、副厅级" />
+	<code category="gb_zwjb" category_name="职务级别码12407" code="07"
+		name="县级、处级" />
+	<code category="gb_zwjb" category_name="职务级别码12407" code="08"
+		name="副县、副处级" />
+	<code category="gb_zwjb" category_name="职务级别码12407" code="09"
+		name="正科级" />
+	<code category="gb_zwjb" category_name="职务级别码12407" code="10"
+		name="副科级" />
+	<code category="gb_zwjb" category_name="职务级别码12407" code="11"
+		name="科员级" />
+	<code category="gb_zwjb" category_name="职务级别码12407" code="12"
+		name="办事员级" />
+	<code category="gb_hyzk" category_name="婚姻状况码4766" code="1" name="未婚" />
+	<code category="gb_hyzk" category_name="婚姻状况码4766" code="2" name="已婚" />
+	<code category="gb_hyzk" category_name="婚姻状况码4766" code="3" name="丧婚" />
+	<code category="gb_hyzk" category_name="婚姻状况码4766" code="4" name="离婚" />
+	<code category="gb_hyzk" category_name="婚姻状况码4766" code="9" name="其他" />
+	<code category="gb_qjd" category_name="侨居地码2659" code="-" name=" " />
+	<code category="gb_qjd" category_name="侨居地码2659" code="04" name="阿富汗" />
+	<code category="gb_qjd" category_name="侨居地码2659" code="032" name="阿根廷" />
+	<code category="gb_qjd" category_name="侨居地码2659" code="036" name="澳大利亚" />
+	<code category="gb_qjd" category_name="侨居地码2659" code="040" name="奥地利" />
+	<code category="gb_qjd" category_name="侨居地码2659" code="112" name="白俄罗斯" />
+	<code category="gb_qjd" category_name="侨居地码2659" code="076" name="巴西" />
+	<code category="gb_qjd" category_name="侨居地码2659" code="096" name="文莱" />
+	<code category="gb_qjd" category_name="侨居地码2659" code="124" name="加拿大" />
+	<code category="gb_qjd" category_name="侨居地码2659" code="152" name="智利" />
+	<code category="gb_qjd" category_name="侨居地码2659" code="156" name="中国" />
+	<code category="gb_qjd" category_name="侨居地码2659" code="344" name="香港" />
+	<code category="gb_qjd" category_name="侨居地码2659" code="446" name="澳门" />
+	<code category="gb_qjd" category_name="侨居地码2659" code="158" name="台湾" />
+	<code category="gb_qjd" category_name="侨居地码2659" code="192" name="古巴" />
+	<code category="gb_qjd" category_name="侨居地码2659" code="203" name="捷克" />
+	<code category="gb_qjd" category_name="侨居地码2659" code="208" name="丹麦" />
+	<code category="gb_qjd" category_name="侨居地码2659" code="818" name="埃及" />
+	<code category="gb_qjd" category_name="侨居地码2659" code="246" name="芬兰" />
+	<code category="gb_qjd" category_name="侨居地码2659" code="250" name="法国" />
+	<code category="gb_qjd" category_name="侨居地码2659" code="276" name="德国" />
+	<code category="gb_qjd" category_name="侨居地码2659" code="300" name="希腊" />
+	<code category="gb_qjd" category_name="侨居地码2659" code="348" name="匈牙利" />
+	<code category="gb_qjd" category_name="侨居地码2659" code="356" name="印度" />
+	<code category="gb_qjd" category_name="侨居地码2659" code="364" name="伊朗" />
+	<code category="gb_qjd" category_name="侨居地码2659" code="372" name="爱尔兰" />
+	<code category="gb_qjd" category_name="侨居地码2659" code="376" name="以色列" />
+	<code category="gb_qjd" category_name="侨居地码2659" code="380" name="意大利" />
+	<code category="gb_qjd" category_name="侨居地码2659" code="392" name="日本" />
+	<code category="gb_qjd" category_name="侨居地码2659" code="408" name="朝鲜" />
+	<code category="gb_qjd" category_name="侨居地码2659" code="410" name="韩国" />
+	<code category="gb_qjd" category_name="侨居地码2659" code="418" name="老挝" />
+	<code category="gb_qjd" category_name="侨居地码2659" code="422" name="黎巴嫩" />
+	<code category="gb_qjd" category_name="侨居地码2659" code="458" name="马来西亚" />
+	<code category="gb_qjd" category_name="侨居地码2659" code="496" name="蒙古" />
+	<code category="gb_qjd" category_name="侨居地码2659" code="104" name="缅甸" />
+	<code category="gb_qjd" category_name="侨居地码2659" code="528" name="荷兰" />
+	<code category="gb_qjd" category_name="侨居地码2659" code="554" name="新西兰" />
+	<code category="gb_qjd" category_name="侨居地码2659" code="608" name="菲律宾" />
+	<code category="gb_qjd" category_name="侨居地码2659" code="620" name="葡萄牙" />
+	<code category="gb_qjd" category_name="侨居地码2659" code="643" name="俄罗斯联邦" />
+	<code category="gb_qjd" category_name="侨居地码2659" code="702" name="新加坡" />
+	<code category="gb_qjd" category_name="侨居地码2659" code="710" name="南非" />
+	<code category="gb_qjd" category_name="侨居地码2659" code="752" name="瑞典" />
+	<code category="gb_qjd" category_name="侨居地码2659" code="756" name="瑞士" />
+	<code category="gb_qjd" category_name="侨居地码2659" code="764" name="泰国" />
+	<code category="gb_qjd" category_name="侨居地码2659" code="826" name="英国" />
+	<code category="gb_qjd" category_name="侨居地码2659" code="840" name="美国" />
+	<code category="gb_qjd" category_name="侨居地码2659" code="704" name="越南" />
+	<code category="dm_ydlb" category_name="异动类别码" code="00" name="升级" />
+	<code category="dm_ydlb" category_name="异动类别码" code="01" name="留级" />
+	<code category="dm_ydlb" category_name="异动类别码" code="02" name="降级" />
+	<code category="dm_ydlb" category_name="异动类别码" code="03" name="跳级" />
+	<code category="dm_ydlb" category_name="异动类别码" code="04" name="试读" />
+	<code category="dm_ydlb" category_name="异动类别码" code="11" name="休学" />
+	<code category="dm_ydlb" category_name="异动类别码" code="12" name="复学" />
+	<code category="dm_ydlb" category_name="异动类别码" code="13" name="停学" />
+	<code category="dm_ydlb" category_name="异动类别码" code="14" name="保留入学资格" />
+	<code category="dm_ydlb" category_name="异动类别码" code="15" name="恢复入学资格" />
+	<code category="dm_ydlb" category_name="异动类别码" code="16" name="恢复学籍" />
+	<code category="dm_ydlb" category_name="异动类别码" code="17" name="取消学籍" />
+	<code category="dm_ydlb" category_name="异动类别码" code="21" name="转学（转出）" />
+	<code category="dm_ydlb" category_name="异动类别码" code="22" name="转学（转入）" />
+	<code category="dm_ydlb" category_name="异动类别码" code="31" name="退学" />
+	<code category="dm_ydlb" category_name="异动类别码" code="32" name="勒令退学" />
+	<code category="dm_ydlb" category_name="异动类别码" code="33" name="开除学籍" />
+	<code category="dm_ydlb" category_name="异动类别码" code="51" name="正常死亡" />
+	<code category="dm_ydlb" category_name="异动类别码" code="52" name="非正常死亡" />
+	<code category="dm_ydlb" category_name="异动类别码" code="99" name="其他" />
+	<code category="dm_rxfs" category_name="入学方式码" code="1" name="普通入学" />
+	<code category="dm_rxfs" category_name="入学方式码" code="2" name="民族班" />
+	<code category="dm_rxfs" category_name="入学方式码" code="3" name="体育特招" />
+	<code category="dm_rxfs" category_name="入学方式码" code="4" name="外校转入" />
+	<code category="dm_rxfs" category_name="入学方式码" code="5" name="恢复入学资格" />
+	<code category="dm_rxfs" category_name="入学方式码" code="9" name="其他" />
+	<code category="dm_xsly" category_name="学生来源码" code="1" name="正常入学" />
+	<code category="dm_xsly" category_name="学生来源码" code="2" name="借读" />
+	<code category="dm_xsly" category_name="学生来源码" code="9" name="其他" />
+	<code category="dm_jdfs" category_name="就读方式码" code="2" name="住校" />
+	<code category="dm_jdfs" category_name="就读方式码" code="1" name="走读" />
+	<code category="dm_jdfs" category_name="就读方式码" code="3" name="借宿" />
+	<code category="dm_jdfs" category_name="就读方式码" code="9" name="其他" />
+	<code category="dm_jyjg" category_name="教育结果代码" code="2" name="结业" />
+	<code category="dm_jyjg" category_name="教育结果代码" code="3" name="未结业" />
+	<code category="dm_jyjg" category_name="教育结果代码" code="4" name="肆业" />
+	<code category="dm_byqx" category_name="毕业去向码" code="10" name="升学" />
+	<code category="dm_byqx" category_name="毕业去向码" code="11" name="本科" />
+	<code category="dm_byqx" category_name="毕业去向码" code="12" name="专科" />
+	<code category="dm_byqx" category_name="毕业去向码" code="13" name="中专" />
+	<code category="dm_byqx" category_name="毕业去向码" code="14" name="技校" />
+	<code category="dm_byqx" category_name="毕业去向码" code="15" name="高职" />
+	<code category="dm_byqx" category_name="毕业去向码" code="16" name="职业高中" />
+	<code category="dm_byqx" category_name="毕业去向码" code="17" name="职业初中" />
+	<code category="dm_byqx" category_name="毕业去向码" code="18" name="普通高中" />
+	<code category="dm_byqx" category_name="毕业去向码" code="20" name="就业" />
+	<code category="dm_byqx" category_name="毕业去向码" code="30" name="参军" />
+	<code category="dm_byqx" category_name="毕业去向码" code="40" name="出国(境)" />
+	<code category="dm_byqx" category_name="毕业去向码" code="50" name="赴港澳台" />
+	<code category="dm_byqx" category_name="毕业去向码" code="60" name="待就业" />
+	<code category="dm_byqx" category_name="毕业去向码" code="99" name="其他" />
+	<code category="dm_jljb" category_name="奖励级别码" code="60" name="学校级" />
+	<code category="dm_jljb" category_name="奖励级别码" code="10" name="国家级" />
+	<code category="dm_jljb" category_name="奖励级别码" code="20" name="省、部委级" />
+	<code category="dm_jljb" category_name="奖励级别码" code="21" name="教育部" />
+	<code category="dm_jljb" category_name="奖励级别码" code="22" name="中央其他部委" />
+	<code category="dm_jljb" category_name="奖励级别码" code="23" name="省（自治区、直辖市）级" />
+	<code category="dm_jljb" category_name="奖励级别码" code="30" name="省部门级、地（市、州）级" />
+	<code category="dm_jljb" category_name="奖励级别码" code="31" name="省级教育主管部门" />
+	<code category="dm_jljb" category_name="奖励级别码" code="32" name="省级其他部门" />
+	<code category="dm_jljb" category_name="奖励级别码" code="33" name="地（市、州）级" />
+	<code category="dm_jljb" category_name="奖励级别码" code="40"
+		name="地（市、州）部门级、县（区、旗）级" />
+	<code category="dm_jljb" category_name="奖励级别码" code="41" name="地级教育主管部门" />
+	<code category="dm_jljb" category_name="奖励级别码" code="42" name="地级其他部门" />
+	<code category="dm_jljb" category_name="奖励级别码" code="43" name="县级" />
+	<code category="dm_jljb" category_name="奖励级别码" code="50" name="县部门级、乡（镇）级" />
+	<code category="dm_jljb" category_name="奖励级别码" code="51" name="县级教育主管部门" />
+	<code category="dm_jljb" category_name="奖励级别码" code="52" name="县级其他部门" />
+	<code category="dm_jljb" category_name="奖励级别码" code="53" name="乡（镇）级" />
+	<code category="dm_jljb" category_name="奖励级别码" code="70" name="国外" />
+	<code category="dm_jljb" category_name="奖励级别码" code="99" name="其他" />
+	<code category="dm_xshjlb" category_name="学生获奖类别码" code="1" name="学科获奖" />
+	<code category="dm_xshjlb" category_name="学生获奖类别码" code="2" name="科技获奖" />
+	<code category="dm_xshjlb" category_name="学生获奖类别码" code="3" name="文艺获奖" />
+	<code category="dm_xshjlb" category_name="学生获奖类别码" code="4" name="体育获奖" />
+	<code category="dm_xshjlb" category_name="学生获奖类别码" code="5" name="综合获奖" />
+	<code category="dm_xshjlb" category_name="学生获奖类别码" code="6" name="社会工作获奖" />
+	<code category="dm_xshjlb" category_name="学生获奖类别码" code="7" name="公益事业获奖" />
+	<code category="dm_xshjlb" category_name="学生获奖类别码" code="9" name="其他" />
+	<code category="dm_cfmc" category_name="处分原因" code="1" name="警告" />
+	<code category="dm_cfmc" category_name="处分原因" code="2" name="记过" />
+	<code category="dm_cfmc" category_name="处分原因" code="7" name="记大过" />
+	<code category="dm_cfmc" category_name="处分原因" code="3" name="严重警告" />
+	<code category="dm_cfmc" category_name="处分原因" code="4" name="留校察看" />
+	<code category="dm_cfmc" category_name="处分原因" code="5" name="勒令退学" />
+	<code category="dm_cfmc" category_name="处分原因" code="6" name="开除学籍" />
+	<code category="dm_cfmc" category_name="处分原因" code="9" name="其他" />
+	<code category="dm_ksfs" category_name="考试方式码" code="1" name="笔试" />
+	<code category="dm_ksfs" category_name="考试方式码" code="2" name="口试" />
+	<code category="dm_ksfs" category_name="考试方式码" code="3" name="考查" />
+	<code category="dm_ksfs" category_name="考试方式码" code="4" name="操作" />
+	<code category="dm_ksfs" category_name="考试方式码" code="5" name="网上考试" />
+	<code category="dm_ksfs" category_name="考试方式码" code="9" name="其他" />
+	<code category="dm_xslb" category_name="学生类别dmxslb" code="00"
+		name="普通学生" />
+	<code category="dm_xslb" category_name="学生类别dmxslb" code="10"
+		name="随班就读学生" />
+	<code category="dm_xslb" category_name="学生类别dmxslb" code="11"
+		name="视力残疾学生" />
+	<code category="dm_xslb" category_name="学生类别dmxslb" code="12"
+		name="听力残疾学生" />
+	<code category="dm_xslb" category_name="学生类别dmxslb" code="13"
+		name="智力残疾学生" />
+	<code category="dm_xslb" category_name="学生类别dmxslb" code="19"
+		name="其他随班就读学生" />
+	<code category="dm_tjxmlb" category_name="体检项目类别代码" code="01"
+		name="内科" />
+	<code category="dm_tjxmlb" category_name="体检项目类别代码" code="02"
+		name="外科" />
+	<code category="dm_tjxmlb" category_name="体检项目类别代码" code="03"
+		name="眼科" />
+	<code category="dm_tjxmlb" category_name="体检项目类别代码" code="04"
+		name="五官科" />
+	<code category="dm_tjxmlb" category_name="体检项目类别代码" code="05"
+		name="口腔科" />
+	<code category="dm_tjxmlb" category_name="体检项目类别代码" code="06"
+		name="妇科" />
+	<code category="dm_tjxmlb" category_name="体检项目类别代码" code="07"
+		name="生化检查" />
+	<code category="dm_tjxmlb" category_name="体检项目类别代码" code="08"
+		name="物理（仪器）检查" />
+	<code category="dm_tjxmlb" category_name="体检项目类别代码" code="09"
+		name="体能、形态" />
+	<code category="dm_tjxmlb" category_name="体检项目类别代码" code="99"
+		name="其他" />
+	<code category="dm_kslb" category_name="考试类别码" code="01" name="期末考试" />
+	<code category="dm_kslb" category_name="考试类别码" code="02" name="期中考试" />
+	<code category="dm_kslb" category_name="考试类别码" code="03" name="月考" />
+	<code category="dm_kslb" category_name="考试类别码" code="04" name="周考" />
+	<code category="dm_kslb" category_name="考试类别码" code="05" name="平时考试" />
+	<code category="dm_kslb" category_name="考试类别码" code="09" name="其他" />
+	<code category="dm_ldrkzk" category_name="流动人口状况新增代码2006/11/14"
+		code="0" name="否" />
+	<code category="dm_ldrkzk" category_name="流动人口状况新增代码2006/11/14"
+		code="1" name="是" />
+	<code category="dm_xxbb" category_name="学校办别码dmxxbb" code="1"
+		name="教育部门和集体办" />
+	<code category="dm_xxbb" category_name="学校办别码dmxxbb" code="2"
+		name="社会力量办" />
+	<code category="dm_xxbb" category_name="学校办别码dmxxbb" code="3"
+		name="其他部门办" />
+	<code category="dm_xxbb" category_name="学校办别码dmxxbb" code="9"
+		name="其他" />
+	<code category="dm_xxlb" category_name="学校类别码" code="11" name="小学" />
+	<code category="dm_xxlb" category_name="学校类别码" code="12" name="独立设置少数民族小学" />
+	<code category="dm_xxlb" category_name="学校类别码" code="17" name="贯制学校小学部" />
+	<code category="dm_xxlb" category_name="学校类别码" code="18" name="小学教学点" />
+	<code category="dm_xxlb" category_name="学校类别码" code="19" name="其他学校辅设小学班" />
+	<code category="dm_xxlb" category_name="学校类别码" code="21" name="完全中学" />
+	<code category="dm_xxlb" category_name="学校类别码" code="22" name="初级中学" />
+	<code category="dm_xxlb" category_name="学校类别码" code="23" name="高级中学" />
+	<code category="dm_xxlb" category_name="学校类别码" code="24" name="一贯制学校" />
+	<code category="dm_xxlb" category_name="学校类别码" code="29" name="其他学校附设中学班" />
+	<code category="dm_xxlb" category_name="学校类别码" code="31" name="独立设置少数民族完全中学" />
+	<code category="dm_xxlb" category_name="学校类别码" code="32" name="独立设置少数民族高中" />
+	<code category="dm_xxlb" category_name="学校类别码" code="33" name="独立设置少数民族初中" />
+	<code category="dm_xxlb" category_name="学校类别码" code="34"
+		name="独立设置一贯制少数民族学校" />
+	<code category="dm_szdqjjsx" category_name="所在地经济属性码" code="0"
+		name="非贫困县" />
+	<code category="dm_szdqjjsx" category_name="所在地经济属性码" code="1"
+		name="国家级贫困县" />
+	<code category="dm_szdqjjsx" category_name="所在地经济属性码" code="2"
+		name="省级贫困县" />
+	<code category="dm_szdmzsx" category_name="所在地民族属性" code="0" name="民族自治县" />
+	<code category="dm_szdmzsx" category_name="所在地民族属性" code="1" name="非民族自治县" />
+	<code category="dm_dbqk" category_name="达标情况码" code="0" name="未达标" />
+	<code category="dm_dbqk" category_name="达标情况码" code="1" name="达标" />
+	<code category="dm_szdlb" category_name="所在地区类别码" code="1" name="城市" />
+	<code category="dm_szdlb" category_name="所在地区类别码" code="2" name="县镇" />
+	<code category="dm_szdlb" category_name="所在地区类别码" code="3" name="农村" />
+	<code category="dm_bjlx" category_name="班级类型代码" code="20" name="普通初中班" />
+	<code category="dm_bjlx" category_name="班级类型代码" code="40" name="普通高中班" />
+	<code category="dm_bjlx" category_name="班级类型代码" code="10" name="普通小学班" />
+	<code category="dm_bjlx" category_name="班级类型代码" code="11" name="少数民族班" />
+	<code category="dm_bjlx" category_name="班级类型代码" code="12" name="小学复式班" />
+	<code category="dm_bjlx" category_name="班级类型代码" code="13" name="小学教学点班" />
+	<code category="dm_bjlx" category_name="班级类型代码" code="14"
+		name="小学特长班(文体艺智等班)" />
+	<code category="dm_bjlx" category_name="班级类型代码" code="15" name="小学视力残疾班" />
+	<code category="dm_bjlx" category_name="班级类型代码" code="16" name="小学听力残疾班" />
+	<code category="dm_bjlx" category_name="班级类型代码" code="17" name="小学智力残疾班" />
+	<code category="dm_bjlx" category_name="班级类型代码" code="21" name="少数民族初中班" />
+	<code category="dm_bjlx" category_name="班级类型代码" code="22" name="初中复式班" />
+	<code category="dm_bjlx" category_name="班级类型代码" code="23" name="初中教学点班" />
+	<code category="dm_bjlx" category_name="班级类型代码" code="24"
+		name="初中特长班(文体艺智等班)" />
+	<code category="dm_bjlx" category_name="班级类型代码" code="25" name="初中视力残疾班" />
+	<code category="dm_bjlx" category_name="班级类型代码" code="26" name="初中听力残疾班" />
+	<code category="dm_bjlx" category_name="班级类型代码" code="27" name="初中智力残疾班" />
+	<code category="dm_bjlx" category_name="班级类型代码" code="41" name="少数民族高中班" />
+	<code category="dm_bjlx" category_name="班级类型代码" code="42"
+		name="高中特长班(文体艺智等班)" />
+	<code category="dm_jxzylx" category_name="教学资源类型" code="00" name="普通教室" />
+	<code category="dm_jxzylx" category_name="教学资源类型" code="11" name="物理实验" />
+	<code category="dm_jxzylx" category_name="教学资源类型" code="12" name="化学实验" />
+	<code category="dm_jxzylx" category_name="教学资源类型" code="13" name="生物实验" />
+	<code category="dm_jxzylx" category_name="教学资源类型" code="14" name="其他实验" />
+	<code category="dm_jxzylx" category_name="教学资源类型" code="21" name="音乐室" />
+	<code category="dm_jxzylx" category_name="教学资源类型" code="31" name="语音室" />
+	<code category="dm_jxzylx" category_name="教学资源类型" code="41" name="计算机房" />
+	<code category="dm_jxzylx" category_name="教学资源类型" code="51" name="体育场地" />
+	<code category="dm_skfs" category_name="授课方式" code="1" name="面授讲课" />
+	<code category="dm_skfs" category_name="授课方式" code="2" name="辅导" />
+	<code category="dm_skfs" category_name="授课方式" code="3" name="录像讲课" />
+	<code category="dm_skfs" category_name="授课方式" code="4" name="网络教学" />
+	<code category="dm_skfs" category_name="授课方式" code="5" name="实验" />
+	<code category="dm_skfs" category_name="授课方式" code="6" name="实习" />
+	<code category="dm_skfs" category_name="授课方式" code="9" name="其他" />
+	<code category="bui_pthdj" category_name="普通话等级码" code="1" name="一级甲等" />
+	<code category="bui_pthdj" category_name="普通话等级码" code="2" name="一级乙等" />
+	<code category="bui_pthdj" category_name="普通话等级码" code="3" name="二级甲等" />
+	<code category="bui_pthdj" category_name="普通话等级码" code="4" name="二级乙等" />
+	<code category="bui_pthdj" category_name="普通话等级码" code="5" name="三级甲等" />
+	<code category="bui_pthdj" category_name="普通话等级码" code="6" name="三级乙等" />
+	<code category="bui_pthdj" category_name="普通话等级码" code="7" name="其他" />
+	
+	<code category="dm_njlx" category_name="年级类型码" code="1" name="一年级" />
+	<code category="dm_njlx" category_name="年级类型码" code="2" name="二年级" />
+	<code category="dm_njlx" category_name="年级类型码" code="3" name="三年级" />
+	<code category="dm_njlx" category_name="年级类型码" code="4" name="四年级" />
+	<code category="dm_njlx" category_name="年级类型码" code="5" name="五年级" />
+	<code category="dm_njlx" category_name="年级类型码" code="6" name="六年级" />
+	<code category="dm_njlx" category_name="年级类型码" code="7" name="七年级" />
+	<code category="dm_njlx" category_name="年级类型码" code="8" name="八年级" />
+	<code category="dm_njlx" category_name="年级类型码" code="9" name="九年级" />
+	<code category="dm_njlx" category_name="年级类型码" code="10" name="高一年级" />
+	<code category="dm_njlx" category_name="年级类型码" code="11" name="高二年级" />
+	<code category="dm_njlx" category_name="年级类型码" code="12" name="高三年级" />
+	
+	<!-- 
+		<code category="dm_kslb" category_name="考试类别码" code="1" name="平时测验" />
+		<code category="dm_kslb" category_name="考试类别码" code="2" name="阶段考试" />
+		<code category="dm_kslb" category_name="考试类别码" code="3" name="期中考试 " />
+		<code category="dm_kslb" category_name="考试类别码" code="4" name="期末考试 " />
+		 -->
+	
+	<code category="dm_kskmlb" category_name="考试科目类别码" code="1" name="主科 " />
+	<code category="dm_kskmlb" category_name="考试科目类别码" code="2" name="副科 " />
+	
+	<code category="dm_xqxnlx" category_name="学期类型码" code="1" name="上学期 " />
+	<code category="dm_xqxnlx" category_name="学期类型码" code="2" name="下学期 " />
+	
+	<code category="dm_pylx" category_name="评语类型码" code="1" name="平时评语 " />
+	<code category="dm_pylx" category_name="评语类型码" code="2" name="周评语 " />
+	<code category="dm_pylx" category_name="评语类型码" code="3" name="期末评语 " />
+	
+	<code category="dm_pyk_pylx" category_name="评语库评语类型码" code="1" name="优秀 " />
+	<code category="dm_pyk_pylx" category_name="评语库评语类型码" code="2" name="中等 " />
+	<code category="dm_pyk_pylx" category_name="评语库评语类型码" code="3" name="差 " />
+	
+	<code category="dm_njglz_zw" category_name="年级领导职务" code="1" name="年级主任" />
+	<code category="dm_njglz_zw" category_name="年级领导职务" code="2" name="年级副主任 " />
+	
+	<code category="dm_bjglz_zw" category_name="班级领导职务" code="1" name="班级主任" />
+	<code category="dm_bjglz_zw" category_name="班级领导职务" code="2" name="班级副主任 " />
+	
+	<code category="dm_bgb_zw" category_name="班干部职务" code="01" name="班长" />
+	<code category="dm_bgb_zw" category_name="班干部职务" code="02" name="副班长" />
+	<code category="dm_bgb_zw" category_name="班干部职务" code="03" name="学习委员" />
+	<code category="dm_bgb_zw" category_name="班干部职务" code="04" name="纪律委员" />
+	<code category="dm_bgb_zw" category_name="班干部职务" code="05" name="劳动委员" />
+	<code category="dm_bgb_zw" category_name="班干部职务" code="06" name="文娱委员" />
+	
+	<code category="dm_ksglz_zw" category_name="科室领导职务" code="01" name="科主任" />
+	<code category="dm_ksglz_zw" category_name="科室领导职务" code="02" name="科室副主任" />
+	
+	<code category="notification_lx" category_name="新闻类型" code="01" name="新闻" />
+	<code category="notification_lx" category_name="新闻类型" code="02" name="通知" />
+	
+	<!-- 资产状态 -->
+	<code category="eam-zczt" category_name="资产状态" code="401001" name="库存-待用" />
+	<code category="eam-zczt" category_name="资产状态" code="401002" name="库存-退库" />
+	<code category="eam-zczt" category_name="资产状态" code="401003" name="库存-借用" />
+	<code category="eam-zczt" category_name="资产状态" code="402001" name="在使用" />
+	<code category="eam-zczt" category_name="资产状态" code="403001" name="维修" />
+	
+	<code category="eam-zczt" category_name="资产状态" code="404001" name="出租" />
+	<code category="eam-zczt" category_name="资产状态" code="405001" name="报废-待处理" />
+	<code category="eam-zczt" category_name="资产状态" code="405002" name="报废-已内卖" />
+	<code category="eam-zczt" category_name="资产状态" code="405003" name="报废-已外卖" />
+	
+	<!-- 资产类型 -->
+	<code category="eam-zclx" category_name="资产类型" code="201001" name="固定资产" />
+	<code category="eam-zclx" category_name="资产类型" code="202001" name="低值易耗品" />
+	<code category="eam-zclx" category_name="资产类型" code="201002" name="融资租入固定资产" />
+	
+	<!-- 资产用途 -->
+	<code category="eam-zcyt" category_name="资产用途" code="301001" name="管理用" />
+	<code category="eam-zcyt" category_name="资产用途" code="301002" name="销售用" />
+	<code category="eam-zcyt" category_name="资产用途" code="301003" name="操作用" />
+	<code category="eam-zcyt" category_name="资产用途" code="301004" name="租出用" />
+	<code category="eam-zcyt" category_name="资产用途" code="301005" name="福利用" />
+	<code category="eam-zcyt" category_name="资产用途" code="301006" name="培训用" />
+	<code category="eam-zcyt" category_name="资产用途" code="301007" name="研发用费用化" />
+	<code category="eam-zcyt" category_name="资产用途" code="301008" name="研发用资本化" />
+	
+	<!-- 闲置设置 -->
+	<code category="eam-xzsz" category_name="闲置设置" code="601001" name="非闲置" />
+	<code category="eam-xzsz" category_name="闲置设置" code="602001" name="闲置可调拨" />
+	<code category="eam-xzsz" category_name="闲置设置" code="602002" name="闲置不可调拨" />
+	<code category="eam-xzsz" category_name="闲置设置" code="603001" name="报废" />
+	
+	<!-- 报废类型 -->
+	<code category="eam-bflx" category_name="报废类型" code="101001" name="注销公司报废" />
+	<code category="eam-bflx" category_name="报废类型" code="101002" name="对内变卖报废" />
+	<code category="eam-bflx" category_name="报废类型" code="101003" name="对外变卖报废" />
+	<code category="eam-bflx" category_name="报废类型" code="101004" name="正常报废" />
+	<code category="eam-bflx" category_name="报废类型" code="101005" name="盘亏" />
+	<code category="eam-bflx" category_name="报废类型" code="101006" name="捐赠转出" />
+	<code category="eam-bflx" category_name="报废类型" code="101007" name="毁损" />
+	<code category="eam-bflx" category_name="报废类型" code="101008" name="其它方式减少" />
+	
+	<!-- 资产来源 -->
+	<code category="eam-zcly" category_name="资产来源" code="001001" name="统购" />
+	<code category="eam-zcly" category_name="资产来源" code="001002" name="自购" />
+	<code category="eam-zcly" category_name="资产来源" code="001003" name="团购" />	
+	<code category="eam-zcly" category_name="资产来源" code="002001" name="融资租入" />
+	<code category="eam-zcly" category_name="资产来源" code="003001" name="盘盈" />
+	<code category="eam-zcly" category_name="资产来源" code="004001" name="在建工程转入" />
+	<code category="eam-zcly" category_name="资产来源" code="005001" name="捐赠" />
+	<code category="eam-zcly" category_name="资产来源" code="006001" name="其它增加方式" />
+	<code category="eam-zcly" category_name="资产来源" code="007001" name="对内变卖增加" />
+	<code category="eam-zcly" category_name="资产来源" code="007002" name="注销公司转入" />
+	
+	<code category="dm_yqsyfx" category_name="仪器使用方向代码" code="1" name="教学" />
+	<code category="dm_yqsyfx" category_name="仪器使用方向代码" code="2" name="科研" />
+	<code category="dm_yqsyfx" category_name="仪器使用方向代码" code="3" name="行政" />
+	<code category="dm_yqsyfx" category_name="仪器使用方向代码" code="4" name="生活与后勤" />
+	<code category="dm_yqsyfx" category_name="仪器使用方向代码" code="5" name="生产" />
+	<code category="dm_yqsyfx" category_name="仪器使用方向代码" code="6" name="技术开发" />
+	<code category="dm_yqsyfx" category_name="仪器使用方向代码" code="7" name="社会服务" />
+	<code category="dm_yqsyfx" category_name="仪器使用方向代码" code="9" name="其他" />
+	
+	<code category="dm_yqxz" category_name="仪器现状代码" code="1" name="在用" />
+	<code category="dm_yqxz" category_name="仪器现状代码" code="2" name="闲置" />
+	<code category="dm_yqxz" category_name="仪器现状代码" code="3" name="待修" />
+	<code category="dm_yqxz" category_name="仪器现状代码" code="4" name="待报废" />
+	<code category="dm_yqxz" category_name="仪器现状代码" code="5" name="丢失" />
+	<code category="dm_yqxz" category_name="仪器现状代码" code="6" name="报废" />
+	<code category="dm_yqxz" category_name="仪器现状代码" code="7" name="调出" />
+	<code category="dm_yqxz" category_name="仪器现状代码" code="8" name="降档" />
+	<code category="dm_yqxz" category_name="仪器现状代码" code="9" name="其他" />
+	
+	<code category="dm_jfkm" category_name="经费科目代码" code="1" name="教育事业费" />
+	<code category="dm_jfkm" category_name="经费科目代码" code="2" name="科研专款及基金" />
+	<code category="dm_jfkm" category_name="经费科目代码" code="3" name="基建设备费" />
+	<code category="dm_jfkm" category_name="经费科目代码" code="4" name="自筹经费" />
+	<code category="dm_jfkm" category_name="经费科目代码" code="5" name="世界银行贷款" />
+	<code category="dm_jfkm" category_name="经费科目代码" code="6" name="捐款" />
+	<code category="dm_jfkm" category_name="经费科目代码" code="7" name="其他" />
+	
+	<code category="dm_syzlb" category_name="实验者类别代码" code="1" name="学生" />
+	<code category="dm_syzlb" category_name="实验者类别代码" code="2" name="教师" />
+	<code category="dm_syzlb" category_name="实验者类别代码" code="3" name="工程与实验技术人员" />
+	<code category="dm_syzlb" category_name="实验者类别代码" code="4" name="研究人员" />
+	<code category="dm_syzlb" category_name="实验者类别代码" code="5" name="其他" />
+	
+	<code category="dm_syyq" category_name="实验要求代码" code="1" name="必修" />
+	<code category="dm_syyq" category_name="实验要求代码" code="2" name="选修" />
+	<code category="dm_syyq" category_name="实验要求代码" code="9" name="其他" />
+	
+	<code category="dm_sylb" category_name="实验类别代码" code="1" name="基础、专业基础或技术基础" />
+	<code category="dm_sylb" category_name="实验类别代码" code="2" name="专业" />
+	<code category="dm_sylb" category_name="实验类别代码" code="3" name="科研" />
+	<code category="dm_sylb" category_name="实验类别代码" code="4" name="生产或技术开发" />
+	<code category="dm_sylb" category_name="实验类别代码" code="9" name="其他（含毕业论文和毕业设计实验）" />
+	
+	<code category="dm_syslb" category_name="实验室类别代码" code="1" name="基础、专业基础或技术基础" />
+	<code category="dm_syslb" category_name="实验室类别代码" code="2" name="专业" />
+	<code category="dm_syslb" category_name="实验室类别代码" code="3" name="科研" />
+	<code category="dm_syslb" category_name="实验室类别代码" code="9" name="其他" />
+</codes>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menus isUpdateMenus="true">	
+	<menu text="学校管理">
+		<meun text="学校基本信息管理" xtype="School" url="school/Schools"/>
+	</menu>
+	<menu text="学生管理">
+		<menu text="学生基本信息管理" xtype="Student" url="student/Students"/>			
+		<meun text="统计报表">
+			<meun text="月报表" xtype="yue"/>	
+		</meun>
+	</menu>	
+	<menu text="成绩管理">
+		<meun text="成绩统计" xtype="CJTJ"/>
+		<meun text="成绩分析" xtype="CJFX"/>		
+	</menu>	
+</menus>

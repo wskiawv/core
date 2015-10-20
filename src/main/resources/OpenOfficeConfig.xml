@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<openoffice>
+	<!--配置openOffice安装路径和运行openOffice服务命令-->
+	<path>C:\Program Files (x86)\OpenOffice 4\program\</path>
+	<command>soffice -headless -accept="socket,host=127.0.0.1,port=8100;urp;</command>
+</openoffice>

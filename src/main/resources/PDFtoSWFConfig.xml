@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pdfswf>
+    <!-- PDF2SWF软件安装路径和系统平台配置 默认是window平台以及转换命令-->
+	<path>C:\Program Files (x86)\SWFTools\pdf2swf.exe -t</path>
+	<os>window</os>
+	<cmd>-s languagedir=C:\xpdfbin-win-3.04\xpdf\xpdf-chinese-simplified -s flashversion=9 -o</cmd>
+</pdfswf>
