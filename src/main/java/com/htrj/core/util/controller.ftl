@@ -22,24 +22,24 @@ public class ${controller} extends ${cextend}<${model}> {
 	
 	
 	@RequestMapping(value="/save", method=RequestMethod.POST)
-	public void save(${model} model) throws Exception {
+	public void save(${model} model) {
 		_Save(model);
 	}
 	@RequestMapping(value="/delete", method=RequestMethod.POST)
-	public void delete(String id) throws Exception {
+	public void delete(String id) {
 		_Delete(${model}.class,id);
 	}
 	@RequestMapping(value="/update", method=RequestMethod.POST)
-	public void update(${model} model) throws IOException{
+	public void update(${model} model) {
 		_Update(model);		
 	}
 	@RequestMapping(value="/search", method=RequestMethod.GET)
-	public void search() throws Exception{
+	public void search() {
 		_Search(${model}.class);
 	}
 	@RequestMapping(value="/show", method=RequestMethod.POST)
 	public ${model} show(Long id){
-		return _Show(${model}.class, id);
+		return (${model})_Show(${model}.class, id);
 	}
 	
 	

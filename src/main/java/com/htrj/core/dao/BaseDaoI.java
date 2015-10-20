@@ -5,9 +5,10 @@ import java.math.BigInteger;
 import java.util.List;
 import java.util.Map;
 
+import com.htrj.core.util.JqGridPage;
 import com.htrj.core.util.Page;
 
-public interface BaseDaoI<T> {
+public interface BaseDaoI {
 	
 	/**
 	 * 保存一个对象
@@ -16,7 +17,7 @@ public interface BaseDaoI<T> {
 	 *            对象
 	 * @return 对象的ID
 	 */
-	public Serializable save(T o);
+	public Serializable save(Object o);
 
 	/**
 	 * 删除一个对象
@@ -24,7 +25,7 @@ public interface BaseDaoI<T> {
 	 * @param o
 	 *            对象
 	 */
-	public void delete(T o);
+	public void delete(Object o);
 
 	/**
 	 * 更新一个对象
@@ -32,7 +33,7 @@ public interface BaseDaoI<T> {
 	 * @param o
 	 *            对象
 	 */
-	public void update(T o);
+	public void update(Object o);
 
 	/**
 	 * 保存或更新一个对象
@@ -40,7 +41,7 @@ public interface BaseDaoI<T> {
 	 * @param o
 	 *            对象
 	 */
-	public void saveOrUpdate(T o);
+	public void saveOrUpdate(Object o);
 
 	/**
 	 * 通过主键获得对象
@@ -51,7 +52,7 @@ public interface BaseDaoI<T> {
 	 *            主键
 	 * @return 对象
 	 */
-	public T getById(Class<T> c, Serializable id);
+	public Object getById(Class c, Serializable id);
 
 	/**
 	 * 通过HQL语句获取一个对象
@@ -60,7 +61,7 @@ public interface BaseDaoI<T> {
 	 *            HQL语句
 	 * @return 对象
 	 */
-	public T getByHql(String hql);
+	public Object getByHql(String hql);
 
 	/**
 	 * 通过HQL语句获取一个对象
@@ -71,7 +72,7 @@ public interface BaseDaoI<T> {
 	 *            参数
 	 * @return 对象
 	 */
-	public T getByHql(String hql, Map<String, Object> params);
+	public Object getByHql(String hql, Map<String, Object> params);
 
 	/**
 	 * 获得对象列表
@@ -80,7 +81,7 @@ public interface BaseDaoI<T> {
 	 *            HQL语句
 	 * @return List
 	 */
-	public List<T> find(String hql);
+	public List find(String hql);
 
 	/**
 	 * 获得对象列表
@@ -91,7 +92,7 @@ public interface BaseDaoI<T> {
 	 *            参数
 	 * @return List
 	 */
-	public List<T> find(String hql, Map<String, Object> params);
+	public List find(String hql, Map<String, Object> params);
 
 	/**
 	 * 获得分页后的对象列表
@@ -104,7 +105,7 @@ public interface BaseDaoI<T> {
 	 *            每页显示多少条
 	 * @return List
 	 */
-	public List<T> find(String hql, int pageNo, int pageSize);
+	public List find(String hql, int pageNo, int pageSize);
 
 	/**
 	 * 获得分页后的对象列表
@@ -119,7 +120,7 @@ public interface BaseDaoI<T> {
 	 *            每页显示多少条
 	 * @return List
 	 */
-	public List<T> find(String hql, Map<String, Object> params, int pageNo, int pageSize);
+	public List find(String hql, Map<String, Object> params, int pageNo, int pageSize);
 
 	/**
 	 * 统计数目
@@ -130,12 +131,14 @@ public interface BaseDaoI<T> {
 	 */
 	public Long count(String hql);
 	/**
-	 * 根据实体和查询参数返回实体List
+	 * 根据实体和查询参数返回实体List extjs分页
 	 * @param clazz
 	 * @param params
 	 * @return
 	 */
-	public Page<T> find(Class clazz,Map<String, Object> params);
+	public Page find(Class clazz,Map<String, Object> params);
+	
+	
 	
 	/**
 	 * 根据实体类和查询参数统计
@@ -262,4 +265,11 @@ public interface BaseDaoI<T> {
 	 * @return 数目
 	 */
 	public BigInteger countBySql(String sql, Map<String, Object> params);
+	/**
+	 * jqGrid组件分页
+	 * @param clazz
+	 * @param params
+	 * @return
+	 */
+	public JqGridPage findJqGridPage(Class clazz,Map<String, Object> params);
 }

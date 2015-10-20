@@ -18,10 +18,11 @@ import org.hibernate.transform.Transformers;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
+import com.htrj.core.util.JqGridPage;
 import com.htrj.core.util.Page;
 
 @Repository
-public class BaseDao<T> implements BaseDaoI<T> {
+public class BaseDao implements BaseDaoI {
 
 	@Autowired
 	private SessionFactory sessionFactory;
@@ -36,64 +37,64 @@ public class BaseDao<T> implements BaseDaoI<T> {
 	}
 	
 	//接口实现方法
-	public Serializable save(T o) {
+	public Serializable save(Object o) {
 		if(o !=null){
 			return getSession().save(o);
 		}
 		return null;
 	}
 
-	public void delete(T o) {
+	public void delete(Object o) {
 		if(o != null){
 			getSession().delete(o);
 		}		
 	}
 
-	public void update(T o) {
+	public void update(Object o) {
 		if(o != null){
 			getSession().update(o);
 		}		
 	}
 
-	public void saveOrUpdate(T o) {
+	public void saveOrUpdate(Object o) {
 		if(o != null){
 			getSession().saveOrUpdate(o);
 		}
 	}
 
-	public T getById(Class<T> c, Serializable id) {
-		return (T)getSession().get(c, id);
+	public Object getById(Class c, Serializable id) {
+		return (Object)getSession().get(c, id);
 	}
 
-	public T getByHql(String hql) {
+	public Object getByHql(String hql) {
 		Query q=getSession().createQuery(hql);
-		List<T> l=q.list();
+		List l=q.list();
 		if (l != null && l.size() > 0) {
 			return l.get(0);
 		}
 		return null;
 	}
 
-	public T getByHql(String hql, Map<String, Object> params) {
+	public Object getByHql(String hql, Map<String, Object> params) {
 		Query q=getSession().createQuery(hql);
 		if (params != null && !params.isEmpty()) {
 			for (String key : params.keySet()) {
 				q.setParameter(key, params.get(key));
 			}
 		}
-		List<T> l = q.list();
+		List l = q.list();
 		if (l != null && l.size() > 0) {
 			return l.get(0);
 		}
 		return null;
 	}
 
-	public List<T> find(String hql) {
+	public List find(String hql) {
 		Query q=getSession().createQuery(hql);		
 		return q.list();
 	}
 
-	public List<T> find(String hql, Map<String, Object> params) {
+	public List find(String hql, Map<String, Object> params) {
 		Query q=getSession().createQuery(hql);	
 		if (params != null && !params.isEmpty()) {
 			for (String key : params.keySet()) {
@@ -103,12 +104,12 @@ public class BaseDao<T> implements BaseDaoI<T> {
 		return q.list();		
 	}
 
-	public List<T> find(String hql, int pageNo, int pageSize) {
+	public List find(String hql, int pageNo, int pageSize) {
 		Query q=getSession().createQuery(hql);		
 		return q.setFirstResult((pageNo - 1) * pageSize).setMaxResults(pageSize).list();
 	}
 
-	public List<T> find(String hql, Map<String, Object> params, int pageNo, int pageSize) {
+	public List find(String hql, Map<String, Object> params, int pageNo, int pageSize) {
 		Query q=getSession().createQuery(hql);
 		if (params != null && !params.isEmpty()) {
 			for (String key : params.keySet()) {
@@ -209,7 +210,7 @@ public class BaseDao<T> implements BaseDaoI<T> {
 	}
 
 	@SuppressWarnings("unchecked")
-	public Page<T> find(Class clazz, Map<String, Object> params) {
+	public Page find(Class clazz, Map<String, Object> params) {
 		Page page=new Page(params);
 		Criteria  c= properyFiter(clazz,params);
 		Long totalCount=count(clazz,params);		
@@ -260,6 +261,21 @@ public class BaseDao<T> implements BaseDaoI<T> {
 	public Long count(Class clazz, Map<String, Object> params) {
 		Criteria  c= properyFiter(clazz,params);
 		return (long) c.list().size()<=0?0:(long) c.list().size();
+	}
+
+	@Override
+	public JqGridPage findJqGridPage(Class clazz, Map<String, Object> params) {
+		// TODO Auto-generated method stub
+		JqGridPage page=new JqGridPage(params);
+		Criteria  c= properyFiter(clazz,params);
+		Long totalCount=count(clazz,params);
+		Long p=totalCount%page.getLimit()==0? (totalCount/page.getLimit()):(totalCount/page.getLimit())+1;
+		page.setTotal(p);		
+		c.setFirstResult(page.getStart());
+		c.setMaxResults(page.getLimit());
+		c.addOrder(Order.desc("id"));
+		page.setRows(c.list());	
+		return page;
 	}
 
 }

@@ -15,11 +15,11 @@ import com.htrj.core.controller.base.BaseController;
  */
 @Controller
 @RequestMapping("/Tasks")
-public class Tasks extends BaseController<Task> {
+public class Tasks extends BaseController {
 	
 	
 	@RequestMapping(value="/save", method=RequestMethod.POST)
-	public void save(Task model) throws Exception {
+	public void save(Task model){
 		_Save(model);
 	}
 	@RequestMapping(value="/delete", method=RequestMethod.POST)
@@ -27,16 +27,16 @@ public class Tasks extends BaseController<Task> {
 		_Delete(Task.class,id);
 	}
 	@RequestMapping(value="/update", method=RequestMethod.POST)
-	public void update(Task model) throws IOException{
+	public void update(Task model){
 		_Update(model);		
 	}
 	@RequestMapping(value="/search", method=RequestMethod.GET)
-	public void search() throws Exception{
+	public void search(){
 		_Search(Task.class);
 	}
 	@RequestMapping(value="/show", method=RequestMethod.POST)
 	public Task show(Long id){
-		return _Show(Task.class, id);
+		return (Task)_Show(Task.class, id);
 	}
 	
 	

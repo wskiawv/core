@@ -10,139 +10,173 @@ import org.springframework.stereotype.Repository;
 import org.springframework.stereotype.Service;
 
 import com.htrj.core.dao.BaseDaoI;
+import com.htrj.core.util.JqGridPage;
 import com.htrj.core.util.Page;
 
 @Service
 //@Repository
-public class BaseService<T> implements BaseServiceI<T> {
+public class BaseService implements BaseServiceI {
 	
 	@Autowired
-	private BaseDaoI<T> baseDao;
-	
-	public Serializable save(T o) {
-		
+	private BaseDaoI baseDao;
+
+	@Override
+	public Serializable save(Object o) {
+		// TODO Auto-generated method stub
 		return baseDao.save(o);
 	}
 
-	public void delete(T o) {
+	@Override
+	public void delete(Object o) {
+		// TODO Auto-generated method stub
 		baseDao.delete(o);
-		
 	}
 
-	public void update(T o) {
+	@Override
+	public void update(Object o) {
+		// TODO Auto-generated method stub
 		baseDao.update(o);
-		
 	}
 
-	public void saveOrUpdate(T o) {
+	@Override
+	public void saveOrUpdate(Object o) {
+		// TODO Auto-generated method stub
 		baseDao.saveOrUpdate(o);
-		
 	}
 
-	public T getById(Class<T> c, Serializable id) {
-		
+	@Override
+	public Object getById(Class c, Serializable id) {
+		// TODO Auto-generated method stub
 		return baseDao.getById(c, id);
 	}
 
-	public T getByHql(String hql) {
-		
+	@Override
+	public Object getByHql(String hql) {
+		// TODO Auto-generated method stub
 		return baseDao.getByHql(hql);
 	}
 
-	public T getByHql(String hql, Map<String, Object> params) {
-	
+	@Override
+	public Object getByHql(String hql, Map params) {
+		// TODO Auto-generated method stub
 		return baseDao.getByHql(hql, params);
 	}
 
-	public List<T> find(String hql) {
-		
+	@Override
+	public List find(String hql) {
+		// TODO Auto-generated method stub
 		return baseDao.find(hql);
 	}
 
-	public List<T> find(String hql, Map<String, Object> params) {
-		
+	@Override
+	public List find(String hql, Map params) {
+		// TODO Auto-generated method stub
 		return baseDao.find(hql, params);
 	}
 
-	public List<T> find(String hql, int pageNo, int pageSize) {
-		
+	@Override
+	public List find(String hql, int pageNo, int pageSize) {
+		// TODO Auto-generated method stub
 		return baseDao.find(hql, pageNo, pageSize);
 	}
 
-	public List<T> find(String hql, Map<String, Object> params, int pageNo, int pageSize) {
-		
+	@Override
+	public List find(String hql, Map params, int pageNo, int pageSize) {
+		// TODO Auto-generated method stub
 		return baseDao.find(hql, params, pageNo, pageSize);
 	}
 
+	@Override
 	public Long count(String hql) {
-		
+		// TODO Auto-generated method stub
 		return baseDao.count(hql);
 	}
 
-	public Page<T> find(Class clazz, Map<String, Object> params) {
-		
+	@Override
+	public Page find(Class clazz, Map params) {
+		// TODO Auto-generated method stub
 		return baseDao.find(clazz, params);
 	}
 
-	public Long count(Class clazz, Map<String, Object> params) {
-		
+	@Override
+	public Long count(Class clazz, Map params) {
+		// TODO Auto-generated method stub
 		return baseDao.count(clazz, params);
 	}
 
-	public Long count(String hql, Map<String, Object> params) {
-		
+	@Override
+	public Long count(String hql, Map params) {
+		// TODO Auto-generated method stub
 		return baseDao.count(hql, params);
 	}
 
+	@Override
 	public int executeHql(String hql) {
-		
+		// TODO Auto-generated method stub
 		return baseDao.executeHql(hql);
 	}
 
-	public int executeHql(String hql, Map<String, Object> params) {
-		
+	@Override
+	public int executeHql(String hql, Map params) {
+		// TODO Auto-generated method stub
 		return baseDao.executeHql(hql, params);
 	}
 
-	public List<Map> findBySql(String sql) {
-		
+	@Override
+	public List findBySql(String sql) {
+		// TODO Auto-generated method stub
 		return baseDao.findBySql(sql);
 	}
 
-	public List<Map> findBySql(String sql, int pageNo, int pageSize) {
-	
+	@Override
+	public List findBySql(String sql, int pageNo, int pageSize) {
+		// TODO Auto-generated method stub
 		return baseDao.findBySql(sql, pageNo, pageSize);
 	}
 
-	public List<Map> findBySql(String sql, Map<String, Object> params) {
-		
+	@Override
+	public List findBySql(String sql, Map params) {
+		// TODO Auto-generated method stub
 		return baseDao.findBySql(sql, params);
 	}
 
-	public List<Map> findBySql(String sql, Map<String, Object> params, int pageNo, int pageSize) {
-		
+	@Override
+	public List findBySql(String sql, Map params, int pageNo, int pageSize) {
+		// TODO Auto-generated method stub
 		return baseDao.findBySql(sql, params, pageNo, pageSize);
 	}
 
+	@Override
 	public int executeSql(String sql) {
-		
+		// TODO Auto-generated method stub
 		return baseDao.executeHql(sql);
 	}
 
-	public int executeSql(String sql, Map<String, Object> params) {
-		
+	@Override
+	public int executeSql(String sql, Map params) {
+		// TODO Auto-generated method stub
 		return baseDao.executeHql(sql, params);
 	}
 
+	@Override
 	public BigInteger countBySql(String sql) {
-	
+		// TODO Auto-generated method stub
 		return baseDao.countBySql(sql);
 	}
 
-	public BigInteger countBySql(String sql, Map<String, Object> params) {
-		
+	@Override
+	public BigInteger countBySql(String sql, Map params) {
+		// TODO Auto-generated method stub
 		return baseDao.countBySql(sql, params);
 	}
+
+	@Override
+	public JqGridPage findJqGridPage(Class clazz, Map params) {
+		// TODO Auto-generated method stub
+		return baseDao.findJqGridPage(clazz, params);
+	}
+	
+	
 
 	
 }
