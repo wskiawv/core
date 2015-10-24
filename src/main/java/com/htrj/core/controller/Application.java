@@ -6,12 +6,11 @@ import java.util.Set;
 
 import javax.servlet.http.HttpServletRequest;
 
-import org.springframework.http.HttpRequest;
+
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.context.request.RequestContextHolder;
-import org.springframework.web.context.request.ServletRequestAttributes;
+
 
 import com.htrj.core.controller.base.BaseController;
 import com.htrj.core.model.User;
@@ -38,8 +37,7 @@ public class Application extends BaseController {
 		for(String name:params.keySet()){
 			System.out.println(name);
 			System.out.println(params.get(name));
-		}
-		
+		}		
 		System.out.println("login success");
 		return "main";
 	}

@@ -1,47 +1,44 @@
-package com.htrj.core.controller${_package};
+package com.htrj.core.controller;
 
-
+import java.io.IOException;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import com.htrj.core.model${_package}.${model};
-import com.htrj.core.controller.base.${cextend};
+import com.htrj.core.model.Role;
+import com.htrj.core.controller.base.BaseController;
 
-<#if (controllerImports?has_content)>
-	${controllerImports}
-</#if>
 
 /**
- * ${desc} 控制器
+ * 角色 控制器
  * 
  * @author he
  */
 @Controller
-@RequestMapping("/${controller}")
-public class ${controller} extends ${cextend} {
+@RequestMapping("/Roles")
+public class Roles extends BaseController {
 	
 	
 	@RequestMapping(value="/save", method=RequestMethod.POST)
-	public void save(${model} model) {
+	public void save(Role model) {
 		_Save(model);
 	}
 	@RequestMapping(value="/delete", method=RequestMethod.POST)
 	public void delete(String id) {
-		_Delete(${model}.class,id);
+		_Delete(Role.class,id);
 	}
 	@RequestMapping(value="/update", method=RequestMethod.POST)
-	public void update(${model} model) {
+	public void update(Role model) {
 		_Update(model);		
 	}
 	@RequestMapping(value="/search", method=RequestMethod.GET)
 	public void search() {
-		_Search(${model}.class);
+		_Search(Role.class);
 	}
 	@RequestMapping(value="/show", method=RequestMethod.POST)
-	public ${model} show(Long id){
-		return (${model})_Show(${model}.class, id);
+	public Role show(Long id){
+		return (Role)_Show(Role.class, id);
 	}
 	
 	
-	${controllerBusCode}
+	
 }

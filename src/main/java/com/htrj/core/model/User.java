@@ -12,6 +12,7 @@ public class User extends Model {
 	private String username;
 	private String password;
 	private Date registertime;
+	private String status;
 	public String getUsername() {
 		return username;
 	}
@@ -29,5 +30,11 @@ public class User extends Model {
 	}
 	public void setRegistertime(Date registertime) {
 		this.registertime = registertime;
+	}
+	public String getStatus() {
+		return status;
+	}
+	public void setStatus(String status) {
+		this.status = status;
 	}
 }

@@ -13,10 +13,10 @@ public class Auto  {
 	@Test
 	public void create() throws Exception{
 		Map<String, String> maps = new HashMap<String, String>();
-		maps.put("cls", "model.Task");
-		maps.put("desc", "任务");
+		maps.put("cls", "model.RoleSystemResources");
+		maps.put("desc", "角色与系统资源中间");
 		maps.put("cextend", "BaseController");
-		maps.put("appPath", "E:/workspace/core/src/main/java/");
+		maps.put("appPath", "E:/newworkspace/core/src/main/java/");
 		
 		com.htrj.core.util.Auto.init();
 		com.htrj.core.util.Auto.generate(maps);
