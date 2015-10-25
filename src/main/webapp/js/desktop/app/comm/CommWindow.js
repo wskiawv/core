@@ -1,5 +1,5 @@
 
-Ext.define('CommWindow',{
+Ext.define('desktop.app.comm.CommWindow',{
 	extend:'Ext.ux.desktop.Module',
 	requires: [    	
     	'Ext.panel.Panel',

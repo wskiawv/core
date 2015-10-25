@@ -4,7 +4,7 @@
 
 Ext.define('desktop.app.user.User', {
     extend: 'Ext.ux.desktop.Module',
-
+    alias:['widget.User'],
     requires: [    	
     	'Ext.data.Model',
         'Ext.data.Store',

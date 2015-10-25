@@ -4,7 +4,7 @@
  * @class DefaultJsonStore
  * @extends Ext.data.JsonStore
  */
-Ext.define('DefaultJsonStore',{
+Ext.define('desktop.app.comm.DefaultJsonStore',{
 	extend:'Ext.data.JsonStore',
 	
 	requires: [    	

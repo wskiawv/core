@@ -1,4 +1,4 @@
-Ext.define('SearchPanel',{
+Ext.define('desktop.app.comm.SearchPanel',{
 	extend:'Ext.form.Panel',
 	alias:['widget.SearchPanel'],
 	requires: [    	

@@ -84,7 +84,7 @@ StoreUtil = function() {
  * @class app.comm.DefaultJsonStore
  * @extends Ext.data.JsonStore
  */
-Ext.define('app.comm.DefaultJsonStore',{
+Ext.define('desktop.app.comm.DefaultJsonStore',{
 	extend:'Ext.data.JsonStore',
 	
 	requires: [    	
@@ -107,7 +107,7 @@ Ext.define('app.comm.DefaultJsonStore',{
 	}
 
 });
-Ext.define('app.comm.GridJsonStore',{
+Ext.define('desktop.app.comm.GridJsonStore',{
 	extend:'Ext.data.JsonStore',
 	requires: [    	
     	'Ext.data.Model',

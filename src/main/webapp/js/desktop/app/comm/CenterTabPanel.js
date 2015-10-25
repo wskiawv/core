@@ -1,4 +1,4 @@
-Ext.define('CenterTabPanel',{
+Ext.define('desktop.app.comm.CenterTabPanel',{
 	extend:'Ext.tab.Panel',
 	alias:['widget.CenterTabPanel'],
 	requires:['Ext.tab.Panel'],

@@ -1,4 +1,4 @@
-Ext.define('WestPanel',{
+Ext.define('desktop.app.comm.WestPanel',{
 	extend:'Ext.panel.Panel',
 	alias:['widget.WestPanel'],
 	requires:[

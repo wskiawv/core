@@ -1,4 +1,4 @@
-Ext.define('CenterGrid',{
+Ext.define('desktop.app.comm.CenterGrid',{
 	extend:'Ext.grid.Panel',
 	alias:['widget.CenterGrid'],
 	requires:[

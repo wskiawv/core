@@ -1,4 +1,4 @@
-Ext.define('commButton',{
+Ext.define('desktop.app.comm.commButton',{
 	extend:'Ext.button.Button',
 	requires:[
 		'Ext.button.Button'		
@@ -22,11 +22,11 @@ Ext.define('commButton',{
 /**
  * 新增
  */
-Ext.define('AddButton',{
-	extend:'commButton',
+Ext.define('desktop.app.comm.AddButton',{
+	extend:'desktop.app.comm.commButton',
 	
 	requires:[
-		'commButton'		
+		'desktop.app.comm.commButton'		
 	],
 	constructor : function(config){
 		config = Ext.apply({
@@ -41,11 +41,11 @@ Ext.define('AddButton',{
 /**
  * 编辑
  */
-Ext.define('EditButton',{
-	extend:'commButton',
+Ext.define('desktop.app.comm.EditButton',{
+	extend:'desktop.app.comm.commButton',
 	
 	requires:[
-		'commButton'		
+		'desktop.app.comm.commButton'		
 	],
 	constructor : function(config){
 		config = Ext.apply({
@@ -61,11 +61,11 @@ Ext.define('EditButton',{
 /**
  * 删除
  */
-Ext.define('DeleteButton',{
-	extend:'commButton',
+Ext.define('desktop.app.comm.DeleteButton',{
+	extend:'desktop.app.comm.commButton',
 	
 	requires:[
-		'commButton'		
+		'desktop.app.comm.commButton'		
 	],
 	
 	constructor : function(config){
@@ -82,11 +82,11 @@ Ext.define('DeleteButton',{
 /**
  * 保存
  */
-Ext.define('SaveButton',{
-	extend:'commButton',
+Ext.define('desktop.app.comm.SaveButton',{
+	extend:'desktop.app.comm.commButton',
 	
 	requires:[
-		'commButton'		
+		'desktop.app.comm.commButton'		
 	],
 	
 	constructor : function(config){
@@ -102,11 +102,11 @@ Ext.define('SaveButton',{
 /**
  * 取消
  */
-Ext.define('CancelButton',{
-	extend:'commButton',
+Ext.define('desktop.app.comm.CancelButton',{
+	extend:'desktop.app.comm.commButton',
 	
 	requires:[
-		'commButton'		
+		'desktop.app.comm.commButton'		
 	],
 	
 	constructor : function(config){
@@ -122,11 +122,11 @@ Ext.define('CancelButton',{
 /**
  * 搜索
  */
-Ext.define('SearchButton',{
-	extend:'commButton',
+Ext.define('desktop.app.comm.SearchButton',{
+	extend:'desktop.app.comm.commButton',
 	
 	requires:[
-		'commButton'		
+		'desktop.app.comm.commButton'		
 	],
 	
 	constructor : function(config){
@@ -143,11 +143,11 @@ Ext.define('SearchButton',{
 /**
  * 导出
  */
-Ext.define('ExportButton',{
-	extend:'commButton',
+Ext.define('desktop.app.comm.ExportButton',{
+	extend:'desktop.app.comm.commButton',
 	
 	requires:[
-		'commButton'		
+		'desktop.app.comm.commButton'		
 	],
 	
 	constructor : function(config){
@@ -163,11 +163,11 @@ Ext.define('ExportButton',{
 /**
  * 导入
  */
-Ext.define('ImportButton',{
-	extend:'commButton',
+Ext.define('desktop.app.comm.ImportButton',{
+	extend:'desktop.app.comm.commButton',
 	
 	requires:[
-		'commButton'		
+		'desktop.app.comm.commButton'		
 	],
 	
 	constructor : function(config){
@@ -183,11 +183,11 @@ Ext.define('ImportButton',{
 /**
  * 打印
  */
-Ext.define('PrintButton',{
-	extend:'commButton',
+Ext.define('desktop.app.comm.PrintButton',{
+	extend:'desktop.app.comm.commButton',
 	
 	requires:[
-		'commButton'		
+		'desktop.app.comm.commButton'		
 	],
 	
 	constructor : function(config){
@@ -200,10 +200,10 @@ Ext.define('PrintButton',{
 	}		
 });
 
-Ext.define('DownloadButton',{
-	extend:'commButton',
+Ext.define('desktop.app.comm.DownloadButton',{
+	extend:'desktop.app.comm.commButton',
 	
-	requires:['commButton'],
+	requires:['desktop.app.comm.commButton'],
 	
 	constructor:function(config){
 		config=Ext.apply({
@@ -214,10 +214,10 @@ Ext.define('DownloadButton',{
 	}
 });
 
-Ext.define('UploadButton',{
-	extend:'commButton',
+Ext.define('desktop.app.comm.UploadButton',{
+	extend:'desktop.app.comm.commButton',
 	
-	requires:['commButton'],
+	requires:['desktop.app.comm.commButton'],
 	
 	constructor:function(config){
 		config=Ext.apply({
@@ -230,9 +230,9 @@ Ext.define('UploadButton',{
 	
 });
 
-Ext.define('CutButton',{
-	extend:'commButton',
-	requires:['commButton'],
+Ext.define('desktop.app.comm.CutButton',{
+	extend:'desktop.app.comm.commButton',
+	requires:['desktop.app.comm.commButton'],
 	
 	
 	constructor:function(config){
@@ -244,9 +244,9 @@ Ext.define('CutButton',{
 	}
 });
 
-Ext.define('CopyButton',{
-	extend:'commButton',
-	requires:['commButton'],
+Ext.define('desktop.app.comm.CopyButton',{
+	extend:'desktop.app.comm.commButton',
+	requires:['desktop.app.comm.commButton'],
 	
 	
 	constructor:function(config){
@@ -258,9 +258,9 @@ Ext.define('CopyButton',{
 	}
 });
 
-Ext.define('PasteButton',{
-	extend:'commButton',
-	requires:['commButton'],
+Ext.define('desktop.app.comm.PasteButton',{
+	extend:'desktop.app.comm.commButton',
+	requires:['desktop.app.comm.commButton'],
 	
 	
 	constructor:function(config){

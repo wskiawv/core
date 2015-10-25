@@ -2,7 +2,7 @@
  * 增删改查组件
  */
 
-Ext.define('CRUDPanel',{
+Ext.define('desktop.app.comm.CRUDPanel',{
 	extend:'Ext.panel.Panel',
 	alias:['widget.CRUDPanel'],
 	
@@ -13,16 +13,16 @@ Ext.define('CRUDPanel',{
         'Ext.data.JsonStore',
         'Ext.data.Store',
         'Ext.data.*',    
-        'AddButton',
-        'EditButton',
-        'DeleteButton',
-        'SearchButton',
-        'SaveButton',
-        'CancelButton',
-        'ExportButton',
-        'SearchPanel',
-        'CommWindow',   
-        'CenterGrid', 
+        'desktop.app.comm.AddButton',
+        'desktop.app.comm.EditButton',
+        'desktop.app.comm.DeleteButton',
+        'desktop.app.comm.SearchButton',
+        'desktop.app.comm.SaveButton',
+        'desktop.app.comm.CancelButton',
+        'desktop.app.comm.ExportButton',
+        'desktop.app.comm.SearchPanel',
+        'desktop.app.comm.CommWindow',   
+        'desktop.app.comm.CenterGrid', 
         'Ext.grid.plugin.*',
 		'Ext.grid.*',
 		'Ext.panel.Panel',
@@ -153,7 +153,7 @@ Ext.define('CRUDPanel',{
     getAddButton : function(config){
     	
     	if(Ext.isEmpty(this.addButton)){
-			this.addButton =Ext.create('AddButton',{			
+			this.addButton =Ext.create('desktop.app.comm.AddButton',{			
 	            url : this.getUrl()+"/create", 
 	            text:'新增',
 	            handler: this.addButtonClick,
@@ -164,7 +164,7 @@ Ext.define('CRUDPanel',{
     },
     getEditButton : function(config){
     	if(Ext.isEmpty(this.editButton)){
-			this.editButton = Ext.create('EditButton',{
+			this.editButton = Ext.create('desktop.app.comm.EditButton',{
                 url : this.getUrl()+"/save", 
                 scope: this,
                 handler: this.editButtonClick
@@ -174,7 +174,7 @@ Ext.define('CRUDPanel',{
     },
     getDeleteButton : function(config){
     	if(Ext.isEmpty(this.deleteButton)){
-			this.deleteButton = Ext.create('DeleteButton',{
+			this.deleteButton = Ext.create('desktop.app.comm.DeleteButton',{
                 url : this.getUrl()+"/delete", 
                 scope: this,
                 handler: this.deleteButtonClick
@@ -184,7 +184,7 @@ Ext.define('CRUDPanel',{
     },
     getSearchButton : function(config){
     	if(Ext.isEmpty(this.searchButton)){
-			this.searchButton = Ext.create('SearchButton',{
+			this.searchButton = Ext.create('desktop.app.comm.SearchButton',{
                 url : this.getUrl()+"/search", 
                 text:'搜索',
                 scope : this,
@@ -195,7 +195,7 @@ Ext.define('CRUDPanel',{
     },
     getSaveButton : function(config){
     	if(Ext.isEmpty(this.saveButton)){
-			this.saveButton = Ext.create('SaveButton',{
+			this.saveButton = Ext.create('desktop.app.comm.SaveButton',{
                 url : this.getUrl()+"/create" || this.getUrl()+"/save",
                 scope : this,
                 handler: this.saveButtonClick
@@ -205,7 +205,7 @@ Ext.define('CRUDPanel',{
     },
     getCancelButton : function(config){
     	if(Ext.isEmpty(this.cancelButton)){
-            this.cancelButton = Ext.create('CancelButton',{
+            this.cancelButton = Ext.create('desktop.app.comm.CancelButton',{
                   scope : this,
                   text:'取消',
                   handler: this.cancelButtonClick
@@ -215,7 +215,7 @@ Ext.define('CRUDPanel',{
     },
     getExportButton : function(config){
     	if(Ext.isEmpty(this.exportButton)){
-    		this.exportButton = Ext.create('ExportButton',{
+    		this.exportButton = Ext.create('desktop.app.comm.ExportButton',{
     			url : this.getUrl()+"/export", 
     			scope : this,
     			handler: this.exportButtonClick
