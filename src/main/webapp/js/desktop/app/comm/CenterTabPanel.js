@@ -5,7 +5,7 @@ Ext.define('desktop.app.comm.CenterTabPanel',{
 	
 	
 	id:'mainTab',
-	constructor : function(){
+	initComponent : function(){
 		var me=this;
 		Ext.apply(this,{
 			id:me.id,

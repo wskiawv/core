@@ -1,12 +1,12 @@
 /**
  * 教育信息管理系统
  */
-Ext.define('Eims',{
+Ext.define('desktop.app.eims.Eims',{
 	extend: 'Ext.ux.desktop.Module',
 	requires:[
 	'Ext.ux.desktop.Module',
-	'WestPanel',
-	'CenterTabPanel'
+	'desktop.app.comm.WestPanel',
+	'desktop.app.comm.CenterTabPanel'
 	],
 	id:'eims',
 	init: function(){

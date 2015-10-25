@@ -7,7 +7,7 @@ Ext.define('desktop.app.comm.SearchPanel',{
 	
 	
 	
-	constructor:function(config){
+    initComponent:function(config){
 		config=Ext.apply({
 			region: 'north', 
 			height: 75,
@@ -21,7 +21,8 @@ Ext.define('desktop.app.comm.SearchPanel',{
 			frame: true,
 			autoScroll : true
 		},config);
-		this.callParent(arguments);
+		Ext.apply(this,config);
+		this.callParent();
 		
 	},
 	/**

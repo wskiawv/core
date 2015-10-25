@@ -3,7 +3,7 @@ Ext.define('desktop.app.comm.WestTreePanel',{
 	alias:['widget.WestTreePanel'],
 	requires:['Ext.tree.Panel'],
 	
-	constructor : function(config){
+	initComponent : function(config){
 		var me=this;
 		var mainTab=me.getMainTab();
 		me.store=Ext.create('Ext.data.TreeStore',{

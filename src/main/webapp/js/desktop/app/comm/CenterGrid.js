@@ -8,9 +8,9 @@ Ext.define('desktop.app.comm.CenterGrid',{
 	
 	
 	
-	constructor : function(config){
+	initComponent : function(config){
 		var me=this;
-		Ext.apply(this,{
+		config=Ext.apply(config,{
 			stripeRows: true,
         	border: true,
         	region:'center',
@@ -31,7 +31,8 @@ Ext.define('desktop.app.comm.CenterGrid',{
 	         })
 			
 		});
-		this.callParent(arguments);
+		Ext.apply(this,config);
+		this.callParent();
 	},
 	getStore:function(){
 		

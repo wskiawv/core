@@ -8,7 +8,7 @@ Ext.define('desktop.app.comm.WestPanel',{
 	
 	id:'westPanel',
 	//eimsMenuData:null,//菜单数据
-	constructor : function(config){
+	initComponent : function(config){
 		var me=this;
 			//me.getData();
 		//var menus=me.getMenus(eimsMenuData);
@@ -38,7 +38,7 @@ Ext.define('desktop.app.comm.WestPanel',{
 			'add':me.getData()
 			
 		});
-		me.callParent(arguments);
+		me.callParent();
 		
 	},
 	

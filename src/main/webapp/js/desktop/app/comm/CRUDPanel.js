@@ -59,35 +59,35 @@ Ext.define('desktop.app.comm.CRUDPanel',{
         //this.callParent(arguments);
     },*/
     
-	/*initComponent : function(){
+	initComponent : function(config){
         
         
         this.addEvents(
-            *//**
+            /**
              * fire before gird record is deleted,
              * if return false,will not delete the record
              * @event
              * @param grid that record of it
              * @param grid of store
              * @param records Array that will be deleted
-             *//*
+             */
             'beforeDeleteRecord',
-            *//**
+            /**
              * fire gird record is deleted,
              * if  delete the record success will return true, or return false
              * @event
              * @param grid that record of it
              * @param grid of store
              * @param records Array that will be deleted
-             *//*
+             */
             'deleteRecord',
-            *//**
+            /**
              * fire when edit button click,
              * if neet to add the head photo ,can do something 
              * @event
              * @param window
              * @param record
-             *//*
+             */
             'addPhotoHead'
          )     
          
@@ -112,7 +112,7 @@ Ext.define('desktop.app.comm.CRUDPanel',{
          
          this.getCancelButton().setHandler(this.cancelButtonClick, this);
          this.callParent();
-	},*/
+	},
 	
 	//搜索Panel相关函数
 	/**

@@ -104,8 +104,7 @@ Ext.define('Ext.ux.desktop.Desktop', {
             { xtype: 'wallpaper', id: me.id+'_wallpaper' },
             me.createDataView()
         ];
-
-        me.callParent();
+        
         //DataView
         me.shortcutsView = me.items.getAt(1);
         me.shortcutsView.on('itemclick', me.onShortcutItemClick, me);
@@ -116,6 +115,7 @@ Ext.define('Ext.ux.desktop.Desktop', {
         if (wallpaper) {
             me.setWallpaper(wallpaper, me.wallpaperStretch);
         }
+        me.callParent();
     },
     /**
      * 组件渲染之后执行的函数
