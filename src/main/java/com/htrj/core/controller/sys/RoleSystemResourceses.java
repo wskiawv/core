@@ -1,42 +1,43 @@
-package com.htrj.core.controller;
+package com.htrj.core.controller.sys;
 
-import java.io.IOException;
+
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import com.htrj.core.model.Role;
+
+import com.htrj.core.model.sys.RoleSystemResources;
 import com.htrj.core.controller.base.BaseController;
 
 
 /**
- * 角色 控制器
+ * 角色与系统资源中间 控制器
  * 
  * @author he
  */
 @Controller
-@RequestMapping("/Roles")
-public class Roles extends BaseController {
+@RequestMapping("/RoleSystemResourceses")
+public class RoleSystemResourceses extends BaseController {
 	
 	
 	@RequestMapping(value="/save", method=RequestMethod.POST)
-	public void save(Role model) {
+	public void save(RoleSystemResources model) {
 		_Save(model);
 	}
 	@RequestMapping(value="/delete", method=RequestMethod.POST)
 	public void delete(String id) {
-		_Delete(Role.class,id);
+		_Delete(RoleSystemResources.class,id);
 	}
 	@RequestMapping(value="/update", method=RequestMethod.POST)
-	public void update(Role model) {
+	public void update(RoleSystemResources model) {
 		_Update(model);		
 	}
 	@RequestMapping(value="/search", method=RequestMethod.GET)
 	public void search() {
-		_Search(Role.class);
+		_Search(RoleSystemResources.class);
 	}
 	@RequestMapping(value="/show", method=RequestMethod.POST)
-	public Role show(Long id){
-		return (Role)_Show(Role.class, id);
+	public RoleSystemResources show(Long id){
+		return (RoleSystemResources)_Show(RoleSystemResources.class, id);
 	}
 	
 	
