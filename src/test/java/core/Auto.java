@@ -13,8 +13,8 @@ public class Auto  {
 	@Test
 	public void create() throws Exception{
 		Map<String, String> maps = new HashMap<String, String>();
-		maps.put("cls", "model.RoleSystemResources");
-		maps.put("desc", "角色与系统资源中间");
+		maps.put("cls", "model.sys.Admin");
+		maps.put("desc", "系统管理员");
 		maps.put("cextend", "BaseController");
 		maps.put("appPath", "E:/newworkspace/core/src/main/java/");
 		

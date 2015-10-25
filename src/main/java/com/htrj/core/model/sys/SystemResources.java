@@ -25,6 +25,8 @@ public class SystemResources extends Model{
 	private String controllerName;
 	//资源请求action名称
 	private String action;
+	//
+	private String method;
 	//资源状态
 	private String status;
 	//资源创建时间
