@@ -83,11 +83,16 @@ public class Auto {
 		String cls = (String) maps.get("cls");
 		String model = StringUtils.substringAfterLast(cls, ".");
 		String _package = StringUtils.substringBeforeLast(cls, ".");
+		
 		if (_package.indexOf(".") != -1)
 			_package = "." + StringUtils.substringAfter(_package, ".");
 		else {
 			_package = "";
 		}
+		String moduleName="";
+		if ((!StringUtils.isBlank(_package)) && (!".".equals(_package))) {
+			moduleName="/"+StringUtils.join(StringUtils.split(_package, "."), "/");
+		}		
 		//String table = SimpleStringUtils.plural(SimpleStringUtils.SEOName(model, "_"));
 		String table = model.toLowerCase();
 		String controller = SimpleStringUtils.plural(model);
@@ -109,6 +114,7 @@ public class Auto {
 		context.put("time", new Date(System.currentTimeMillis()));
 		context.put("model", model);
 		context.put("_package", _package);
+		context.put("moduleName", moduleName);
 		context.put("desc", desc);
 		context.put("table", table);
 		context.put("mextend", mextend);

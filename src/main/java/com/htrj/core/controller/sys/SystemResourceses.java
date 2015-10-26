@@ -15,7 +15,7 @@ import com.htrj.core.controller.base.BaseController;
  * @author he
  */
 @Controller
-@RequestMapping("/SystemResourceses")
+@RequestMapping("/sys/SystemResourceses")
 public class SystemResourceses extends BaseController {
 	
 	

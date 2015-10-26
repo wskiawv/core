@@ -17,7 +17,7 @@ import com.htrj.core.controller.base.${cextend};
  * @author he
  */
 @Controller
-@RequestMapping("/${controller}")
+@RequestMapping("${moduleName}/${controller}")
 public class ${controller} extends ${cextend} {
 	
 	

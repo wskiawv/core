@@ -16,7 +16,7 @@ import com.htrj.core.controller.base.BaseController;
  * @author he
  */
 @Controller
-@RequestMapping("/UserRoles")
+@RequestMapping("/sys/UserRoles")
 public class UserRoles extends BaseController {
 	
 	
