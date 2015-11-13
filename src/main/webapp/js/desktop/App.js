@@ -26,7 +26,7 @@ Ext.define('App', {
         'desktop.app.user.User',
 		'desktop.app.filesys.FileSys',
 		'DouBan',
-		'Eims'
+		'desktop.app.eims.Eims'
     ],
 
     init: function() {
@@ -53,7 +53,7 @@ Ext.define('App', {
             new BogusModule(),
             new desktop.app.user.User(),
             new desktop.app.filesys.FileSys(),
-            new Eims(),
+            new desktop.app.eims.Eims(),
             new DouBan()
             
         ];

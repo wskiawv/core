@@ -4,9 +4,45 @@
   <groupId>com.htrj</groupId>
   <artifactId>core</artifactId>
   <packaging>war</packaging>
-  <version>0.0.1-SNAPSHOT</version>
+  <version>1.0</version>
   <name>core Maven Webapp</name>
   <url>http://maven.apache.org</url>
+  <!-- 指定Maven仓库 -->
+	<repositories>
+		<!-- oschina的maven仓库 -->
+		<repository>
+			<id>oschinaRepository</id>
+			<name>local private nexus</name>
+			<url>http://maven.oschina.net/content/groups/public/</url>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+		</repository>
+
+		<!-- 官方maven仓库 -->
+		<!-- <repository> <id>maven</id> <name>Maven Repository Switchboard</name> 
+			<layout>default</layout> <url>http://repo1.maven.org/maven2</url> <snapshots> 
+			<enabled>true</enabled> </snapshots> </repository> -->
+	</repositories>
+
+	<!-- 指定maven plugin仓库 -->
+	<pluginRepositories>
+		<!-- oschina的maven plugin仓库 -->
+		<pluginRepository>
+			<id>oschinaPluginRepository</id>
+			<name>local private nexus</name>
+			<url>http://maven.oschina.net/content/groups/public/</url>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+		</pluginRepository>
+	</pluginRepositories>
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
@@ -28,7 +64,12 @@
 		<groupId>org.springframework</groupId>
 		<artifactId>spring-jdbc</artifactId>
 		<version>4.1.5.RELEASE</version>
-	</dependency>
+	</dependency>	
+    <dependency>
+        <groupId>org.springframework.security</groupId>
+        <artifactId>spring-security-web</artifactId>
+        <version>4.0.3.RELEASE</version>
+    </dependency>
 	<dependency>
 		<groupId>org.springframework</groupId>
 		<artifactId>spring-aspects</artifactId>
@@ -111,13 +152,13 @@
 		<artifactId>jstl</artifactId>
 		<version>1.2</version>
 	</dependency>
+	<!-- servlet -->
 	<dependency>
 		<groupId>javax.servlet.jsp</groupId>
 		<artifactId>jsp-api</artifactId>
 		<version>2.2.1-b03</version>
 		<scope>provided</scope>
-	</dependency>
-	<!-- servlet -->
+	</dependency>	
 	<dependency>
 		<groupId>javax.servlet</groupId>
 		<artifactId>servlet-api</artifactId>
@@ -134,7 +175,7 @@
 		<groupId>com.artofsolving</groupId>
 		<artifactId>jodconverter</artifactId>
 		<version>2.2.1</version>
-	</dependency>
+	</dependency>	
   </dependencies>
   <build>
     <finalName>core</finalName>

@@ -1,7 +1,7 @@
-Ext.define('app.student.Student',{
-	extend:'CRUDPanel',
+Ext.define('desktop.app.student.Student',{
+	extend:'desktop.app.comm.CRUDPanel',
 	ailias:['wegdit.Student'],
-	requires:['CRUDPanel'],
+	requires:['desktop.app.comm.CRUDPanel'],
 	
 	moduleName:"sutdent",//请求模块名称
     modelName:'student',
