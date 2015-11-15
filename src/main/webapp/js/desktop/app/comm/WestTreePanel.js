@@ -16,7 +16,7 @@ Ext.define('desktop.app.comm.WestTreePanel',{
 					},
 					proxy:{
 						type:'ajax',
-						url:'public/javascripts/desktop/app/eims/WestTree.json',
+						url:'js/desktop/app/eims/WestTree.json',
 						reader:{
 							type:'json'
 						}

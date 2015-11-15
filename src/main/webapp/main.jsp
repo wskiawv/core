@@ -36,7 +36,7 @@
     <script type="text/javascript" src="js/desktop/js/Video.js"></script>
     <script type="text/javascript" src="js/desktop/js/Audio.js"></script>
     <script type="text/javascript" src="js/desktop/js/Wallpaper.js"></script>   
-     
+    <script type="text/javascript" src="js/desktop/ux/TabCloseMenu.js"></script>
     <script type="text/javascript" src="js/desktop/AccordionWindow.js"></script>    
     <script type="text/javascript" src="js/desktop/GridWindow.js"></script>
     

@@ -25,12 +25,12 @@ Ext.define('desktop.app.eims.Eims',{
     	var tabpanel=Ext.getCmp('mainTab');
     	var westpanel=Ext.getCmp('westPanel');
     	if(!tabpanel){
-    		tabpanel=Ext.create('CenterTabPanel');
+    		tabpanel=Ext.create('desktop.app.comm.CenterTabPanel');
     		//return tabpanel;
     	}
     	if(!westpanel)
     	{
-    		westpanel=Ext.create('WestPanel');
+    		westpanel=Ext.create('desktop.app.comm.WestPanel');
        	}
         var win = desktop.getWindow(me.id);
         if(!win){

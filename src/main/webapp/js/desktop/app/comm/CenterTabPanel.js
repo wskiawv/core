@@ -1,7 +1,10 @@
 Ext.define('desktop.app.comm.CenterTabPanel',{
 	extend:'Ext.tab.Panel',
 	alias:['widget.CenterTabPanel'],
-	requires:['Ext.tab.Panel'],
+	requires:[
+	          'Ext.tab.Panel',
+	          'Ext.ux.TabCloseMenu'
+	],
 	
 	
 	id:'mainTab',
@@ -19,7 +22,43 @@ Ext.define('desktop.app.comm.CenterTabPanel',{
 			layout:'fit',
 			items:[{
 				title:'首页'
-			}]
+			}],
+			plugins: Ext.create('Ext.ux.TabCloseMenu', {
+	            extraItemsTail: [
+	                '-',
+	                {
+	                    text: 'Closable',
+	                    checked: true,
+	                    hideOnClick: true,
+	                    handler: function (item) {
+	                        currentItem.tab.setClosable(item.checked);
+	                    }
+	                },
+	                '-',
+	                {
+	                    text: 'Enabled',
+	                    checked: true,
+	                    hideOnClick: true,
+	                    handler: function(item) {
+	                        currentItem.tab.setDisabled(!item.checked);
+	                    }
+	                }
+	            ],
+	            listeners: {
+	                beforemenu: function (menu, item) {
+	                    var enabled = menu.child('[text="Enabled"]'); 
+	                    menu.child('[text="Closable"]').setChecked(item.closable);
+	                    if (item.tab.active) {
+	                        enabled.disable();
+	                    } else {
+	                        enabled.enable();
+	                        enabled.setChecked(!item.tab.isDisabled());
+	                    }
+
+	                    currentItem = item;
+	                }
+	            }
+	        })
 		});
 		this.callParent(arguments);
 	}

@@ -60,6 +60,10 @@ Ext.define('desktop.app.comm.WestPanel',{
                 	//selModel : this.getTreeSelectModel(),
         			store : Ext.create('Ext.data.TreeStore', {
         				autoLoad:true,
+	    				proxy: {
+	                        type: 'ajax',
+	                        url: 'js/desktop/app/eims/WestTree.json'
+	                    },
 						root: eimsMenuData[i].children
 					})
                 	//menuNodes : .children 
@@ -83,7 +87,7 @@ Ext.define('desktop.app.comm.WestPanel',{
 			autoLoad:true
 		});*/
 		Ext.Ajax.request({
-			url: 'public/javascripts/desktop/app/eims/WestTree.json',		   
+			url: 'js/desktop/app/eims/WestTree.json',		   
 		    success: function(response){
 		    	
 		        var text = response.responseText;	
