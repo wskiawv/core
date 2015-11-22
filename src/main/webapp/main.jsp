@@ -1,5 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=utf-8"
     pageEncoding="utf-8"%>
+<%
+	String path = request.getContextPath();
+%>
+<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html>
 
 <html>
@@ -15,7 +19,7 @@
 	 
 	<!-- <script type="text/javascript" src="js/ext/ext-all-dev.js"></script> -->
 	<script type="text/javascript" src="js/desktop/ext/ext-all.js"></script>
-	
+	<script src="<%=path%>/js/jquery-1.6.4.min.js"></script>
 	<!-- <script type="text/javascript" src="js/desktop/js/include-ext.js"></script> -->
     <!-- <script type="text/javascript" src="js/desktop/js/ext-theme-neptune.js"></script> -->
     <script type="text/javascript" src="js/desktop/ext/options-toolbar.js"></script>
@@ -93,12 +97,18 @@
         Ext.onReady(function () {
         	//Ext.ns('Ext.ux.desktop','app','app.comm','app.user','app.filesys','app.eims.Eims','app.student');
             app = new App();
+           var sysMenus = eval('${menus}');
+            alert(sysMenus);
         });
     </script>
     </head>
     <body>
     
        <a href="http://www.sencha.com" target="_blank" alt="Powered by Ext JS"
-       id="poweredby"><div></div></a>
+       id="poweredby"><div></div>
+     	</a>
+       
+       
+
     </body>
 </html>

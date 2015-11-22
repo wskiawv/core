@@ -23,15 +23,15 @@ Ext.define('desktop.app.eims.Eims',{
 	createWindow : function(){
     	var me=this,desktop = this.app.getDesktop();
     	var tabpanel=Ext.getCmp('mainTab');
-    	var westpanel=Ext.getCmp('westPanel');
+    	//var westpanel=Ext.getCmp('westPanel');
     	if(!tabpanel){
     		tabpanel=Ext.create('desktop.app.comm.CenterTabPanel');
     		//return tabpanel;
     	}
-    	if(!westpanel)
+    	/*if(!westpanel)
     	{
     		westpanel=Ext.create('desktop.app.comm.WestPanel');
-       	}
+       	}*/
         var win = desktop.getWindow(me.id);
         if(!win){
         	win = desktop.createWindow({
@@ -48,8 +48,8 @@ Ext.define('desktop.app.eims.Eims',{
               //  items:[{xtype:'CenterTabPanel'}]
         	});
         }
-       	win.add(westpanel,tabpanel);
-       	
+       //	win.add(westpanel,tabpanel);
+        win.add(tabpanel);
         return win;
     }
 });

@@ -31,9 +31,18 @@
   <mvc:resources location="/js/" mapping="/js/**"/>
   <bean id="viewResolver"
     class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+    <property name="viewClass" value="org.springframework.web.servlet.view.JstlView"/>
+     <property name="contentType" value="text/html"/>
     <property name="prefix" value="/"></property>
     <property name="suffix" value=".jsp"></property>
   </bean>
+  <!-- 默认的视图解析器 在上边的解析错误时使用 (默认使用html)- -->
+   <bean id="defaultViewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver" p:order="3">
+       <property name="viewClass" value="org.springframework.web.servlet.view.JstlView"/>
+       <property name="contentType" value="text/html"/>        
+       <property name="prefix" value="/"/>
+       <property name="suffix" value=".jsp"/>
+   </bean>
   <!-- <bean class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter">
         <property name="messageConverters">
             <list>
