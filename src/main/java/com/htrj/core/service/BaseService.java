@@ -149,13 +149,13 @@ public class BaseService implements BaseServiceI {
 	@Override
 	public int executeSql(String sql) {
 		// TODO Auto-generated method stub
-		return baseDao.executeHql(sql);
+		return baseDao.executeSql(sql);
 	}
 
 	@Override
 	public int executeSql(String sql, Map params) {
 		// TODO Auto-generated method stub
-		return baseDao.executeHql(sql, params);
+		return baseDao.executeSql(sql, params);
 	}
 
 	@Override
