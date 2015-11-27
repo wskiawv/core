@@ -180,63 +180,59 @@
   <build>
     <finalName>core</finalName>
     <plugins>
-            <plugin>
-            	 <!-- <groupId>org.eclipse.jetty</groupId>
-			        <artifactId>jetty-maven-plugin</artifactId>
-			        <version>9.1.5.v20140505</version>
-			        <configuration>
-			          http://www.eclipse.org/jetty/documentation/current/jetty-maven-plugin.html
-			          <scanIntervalSeconds>3</scanIntervalSeconds>
-			           By Default, jetty start on port 8080
-			          <httpConnector>
-			              <port>9090</port>
-			          </httpConnector>
-			         
-			          <httpConnector>
-			              <port>9090</port>
-			          </httpConnector>
-			        </configuration> -->
-                <groupId>org.mortbay.jetty</groupId>
-                <artifactId>maven-jetty-plugin</artifactId>
-                <version>6.1.10</version>
-                <configuration>
-                	<httpConnector>
-						<port>9900</port>
-					</httpConnector>
-                    <scanIntervalSeconds>5</scanIntervalSeconds>
-                    <stopKey>foo</stopKey>
-                    <stopPort>9999</stopPort>
-                    <webApp>
-						<!-- 指定项目路径(如果不写，则按照pom.xml里面的artifactId属性值配置)，访问路径为http://localhost:9999/oa
-						配置<contextPath>/Somnus</contextPath>，则访问路径为http://localhost:9999/oa
-						配置<contextPath>/</contextPath>，则访问路径为http://localhost:9999 -->
-						<contextPath>/core</contextPath>
-						<!-- 更改jetty默认webdefault.xml文件，主要修改了useFileMappedBuffer属性为false，使其不锁定静态文件
-						此文件在C盘\用户目录\.m2\repository\org\eclipse\jetty\jetty-webapp\9.1.0.RC1\找到jar包，打开jar包目录org\eclipse\jetty\webapp\目录中 -->
-						<defaultsDescriptor>webdefault.xml</defaultsDescriptor>
-					</webApp>
-                </configuration>
-                <executions>
-                    <execution>
-                        <id>start-jetty</id>
-                        <phase>pre-integration-test</phase>
-                        <goals>
-                            <goal>run</goal>
-                        </goals>
-                        <configuration>
-                            <scanIntervalSeconds>0</scanIntervalSeconds>
-                            <daemon>true</daemon>
-                        </configuration>
-                    </execution>
-                    <execution>
-                        <id>stop-jetty</id>
-                        <phase>post-integration-test</phase>
-                        <goals>
-                            <goal>stop</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
-        </plugins>
+          <plugin>
+              <groupId>org.apache.maven.plugins</groupId>
+              <artifactId>maven-compiler-plugin</artifactId>
+              <version>2.3.2</version>
+              <configuration>
+                  <encoding>${project.build.sourceEncoding}</encoding>
+              </configuration>
+          </plugin>
+          <plugin>
+              <groupId>org.apache.maven.plugins</groupId>
+              <artifactId>maven-resources-plugin</artifactId>
+              <version>2.4.3</version>
+              <configuration>
+                  <encoding>${project.build.sourceEncoding}</encoding>
+              </configuration>
+          </plugin>
+          <!-- 配置Maven插件(mvn jetty:run可以运行项目) -->
+		  <plugin>
+			  <groupId>org.mortbay.jetty</groupId>
+			  <artifactId>jetty-maven-plugin</artifactId>
+			  <version>8.1.9.v20130131</version>
+			  <configuration>
+				  <webAppConfig>
+					  <contextPath>/${project.build.finalName}</contextPath>
+				  </webAppConfig>
+				  <httpConnector>
+					  <port>8081</port>
+				  </httpConnector>
+				  <scanIntervalSeconds>2</scanIntervalSeconds>
+				 	  <stopKey>shutdown</stopKey>
+				  <stopPort>9966</stopPort>
+			  </configuration>
+		  </plugin>
+          <plugin>
+				<groupId>org.apache.tomcat.maven</groupId>
+				<artifactId>tomcat7-maven-plugin</artifactId>
+				<version>2.2</version>
+				<configuration>
+					<path>/${project.build.finalName}</path>
+					<port>8090</port>
+					<uriEncoding>UTF-8</uriEncoding>
+					<finalName>${project.build.finalName}</finalName>
+					<server>tomcat7</server>
+				</configuration>
+				<!-- <executions>
+					<execution>
+						<phase>package</phase>
+						<goals>
+							<goal>run</goal>
+						</goals>
+					</execution>
+				</executions> -->
+			</plugin>
+      </plugins>
   </build>
 </project>
