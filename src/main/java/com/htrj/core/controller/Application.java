@@ -8,13 +8,7 @@ import java.util.Set;
 
 import javax.servlet.http.HttpServletRequest;
 
-
-
-
-
-
-
-
+import net.sf.json.JSONArray;
 import net.sf.json.JSONObject;
 import net.sf.json.JSONSerializer;
 
@@ -53,47 +47,61 @@ public class Application extends BaseController {
 			System.out.println(params.get(name));
 		}		
 		ModelAndView modelAndView = new ModelAndView(); 
-		System.out.println("login success");		
-		List<Menu> menus=getBaseService().find("from Menu");
-		//Map<String,Object> treeMap=new HashMap();
-		//List<Menu> listTree=new ArrayList();
-		List<Map<String,Object>> treeJson=new ArrayList();
-		for(Menu m1:menus){
-			JSONObject js=new JSONObject();
-			js.put("id", m1.getId());
-			js.put("text", m1.getText());
-			js.put("qtip", m1.getQtip());
-			js.put("leaf", m1.getLeaf());			
-			if(m1.getLeaf()==false){
-				//js.put("children", value)
-				m1.setChildren(genTree(menus,m1));
-				List<JSONObject> children=new ArrayList();
-				for(Menu m2:menus){
-					JSONObject node=new JSONObject();
-					if(m1.getId()==m2.getPid().getId()){
-						
-					}
-				}
-			}else{
-				js.put("xtype", m1.getXtype());
-				js.put("pid", m1.getPid().getId());
+		System.out.println("login success");				
+		String sql="select * from t_menu";
+		List<Map<String,Object>> menuList=baseService.findBySql(sql);
+		List<JSONObject> list=new ArrayList();
+		for(Map<String,Object>  mL:menuList){			
+			if(mL.containsKey("pid")&&mL.get("pid")==null){
+				JSONObject js=new JSONObject();
+				js.put("id", mL.get("id"));
+				js.put("leaf", mL.get("leaf"));
+				js.put("xtype", mL.get("xtype"));
+				js.put("text", mL.get("text"));
+				js.put("qtip",mL.get("qtip"));
+				js.put("iconCls", mL.get("iconCls"));
+				JSONObject node=new JSONObject();
+				node=getNode(menuList,node,String.valueOf(mL.get("id")));
+				js.put("children", node);
+				list.add(js);				
 			}
+			
 		}
+		System.out.println(list.toString());
 		JSONSerializer JS=new JSONSerializer();
 //		JS.toJava(json, jsonConfig)
 //		System.out.println(JS.toJSON(menus));
-		modelAndView.addObject("menus",menus);
+		modelAndView.addObject("menus",list.toString());
 		modelAndView.setViewName("main");
 		return modelAndView;
 	}
-	public List<Menu> genTree(List<Menu> list,Menu menu){
-		List<Menu> menuList=new ArrayList();
+	/*public List<JSONObject> genTree(List<Menu> list,Menu menu){
+		List<JSONObject> menuList=new ArrayList();
 		for(Menu m:list){
-			if(m.getPid()!=null && m.getPid().getId()==menu.getId()){
-				menuList.add(m);
+			if(m.getPid().equals(menu)){
+				System.out.println("te------------");
 			}
 		}
 		return menuList;
+	}*/
+	public JSONObject getNode(List<Map<String,Object>> list,JSONObject json,String id){
+		for(Map<String,Object> mL:list){
+			if(mL.get("pid")!=null && id.equals(String.valueOf(mL.get("pid")))){
+				json.put("id", mL.get("id"));
+				json.put("leaf", mL.get("leaf"));
+				json.put("xtype", mL.get("xtype"));
+				json.put("text", mL.get("text"));
+				json.put("qtip",mL.get("qtip"));
+				json.put("iconCls", mL.get("iconCls"));
+				Boolean leaf=Boolean.parseBoolean(String.valueOf(mL.get("leaf")));
+				if(!leaf){
+					JSONObject js=new JSONObject();
+					js=getNode(list,js,String.valueOf(mL.get("id")));
+					json.put("children", js);
+				}
+			}
+		}
+		return json;
 	}
 
 }

@@ -17,7 +17,9 @@
 	 <link rel="stylesheet" type="text/css" href="js/desktop/css/main.css" />
 	<!-- %{out.print(com.he.utils.GenerationJSPath.ExportJsPath(com.he.utils.GenerationJSPath.DESKTOP_JS_PATH));}% -->
 	 
-	<!-- <script type="text/javascript" src="js/ext/ext-all-dev.js"></script> -->
+	<script type="text/javascript">	
+		var sysMenus = eval('${menus}');
+	</script>
 	<script type="text/javascript" src="js/desktop/ext/ext-all.js"></script>
 	<script src="<%=path%>/js/jquery-1.6.4.min.js"></script>
 	<!-- <script type="text/javascript" src="js/desktop/js/include-ext.js"></script> -->
@@ -97,8 +99,8 @@
         Ext.onReady(function () {
         	//Ext.ns('Ext.ux.desktop','app','app.comm','app.user','app.filesys','app.eims.Eims','app.student');
             app = new App();
-           var sysMenus = eval('${menus}');
-            alert(sysMenus);
+           //var sysMenus = eval('${menus}');
+            //alert(sysMenus);
         });
     </script>
     </head>

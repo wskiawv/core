@@ -42,8 +42,8 @@ Ext.define('desktop.app.eims.Eims',{
                 iconCls: 'icon-grid',
                 animCollapse:false,
                 constrainHeader:true,
-                layout:'border'
-               // items:[{xtype:'WestPanel'}]
+                layout:'border',
+                items:[{xtype:'WestPanel'}]
              	//items:[me.getWestPanel(),me.getTabPanel()]
               //  items:[{xtype:'CenterTabPanel'}]
         	});

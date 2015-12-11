@@ -12,9 +12,52 @@ Ext.define('desktop.app.comm.WestPanel',{
 		var me=this;
 			//me.getData();
 		//var menus=me.getMenus(eimsMenuData);
+		var menusItems = [];
+		if(sysMenus) {
+			for(var i = 0; i < sysMenus.length; i++) {
+				menusItems.push({
+					xtype : 'treepanel',
+					iconCls : 'x-tree-icon x-tree-icon-parent',
+					rootVisible : false,
+					title : sysMenus[i]["text"],
+					store : Ext.create('Ext.data.TreeStore', {
+						root: sysMenus[i]
+					}),
+					listeners:{
+						itemclick:function(treepanel, record, item, index, e, opts){
+							if(record.get('leaf')){
+								var viewType=record.raw['xtype'];
+								/**
+				            	 * 如果没有此视图, 创建视图.
+				            	 */
+				            	if (!tabpanel.down(viewType)) {
+				                    var panel = view.create({
+				                    	title: record.get('text'),
+				                    	iconCls: "icon-tab",
+				                    	closable : true,
+				                    	margin: 3
+				                    });
+				                    tabpanel.add(panel);
+				                    tabpanel.setActiveTab(panel);
+				                    panel.doLayout();
+				            	}
+				            	/**
+				            	 * 如果有此视图, 刷新视图.
+				            	 */
+				            	else {
+				            		var panel = tabpanel.down(viewType);
+				                    tabpanel.setActiveTab(panel);
+				                    panel.doLayout();
+				            	}
+							}
+						}
+					}
+				});
+			}
+		}
 		Ext.apply(this,{
 			region : 'west',
-			title : '功能模块',
+			title : '菜单',
 			id:me.id,
 			width:200,
 			collapsible : true,
@@ -27,15 +70,15 @@ Ext.define('desktop.app.comm.WestPanel',{
 			animCollapse : false,
 			margins : '0 0 0 5',*/
 			layout : 'accordion',
-			border : true
-			//items :menus
+			border : true,
+			items :menusItems
 		});
 		/**
 		 * 注册侦听事件
 		 */
 		me.on({			
-			//'beforerender':me.getData(),//组件渲染之前加载菜单数据
-			'add':me.getData()
+			//'beforerender':me.getMenus(),//组件渲染之前加载菜单数据
+			//'add':me.getData()
 			
 		});
 		me.callParent();
@@ -46,10 +89,26 @@ Ext.define('desktop.app.comm.WestPanel',{
 	 * 组装菜单
 	 */
 	getMenus : function(eimsMenuData){
-		var menu=[];
-		var eimsMenuData=eimsMenuData;
+		//var menu=[];
+		//var eimsMenuData=eimsMenuData;
 		//console.log("eimsMenuData:"+eimsMenuData[0].title);
-		if(Ext.isEmpty(eimsMenuData)){
+		var menusItems = [];
+		if(sysMenus) {
+			for(var i = 0; i < sysMenus.length; i++) {
+				menusItems.push({
+					xtype : 'treepanel',
+					iconCls : 'x-tree-icon x-tree-icon-parent',
+					rootVisible : false,
+					title : sysMenus[i]["text"],
+					store : Ext.create('Ext.data.TreeStore', {
+						fields:['id','text','leaf','qtip','xtype','children'],
+						root: sysMenus[i]
+					})
+				});
+			}
+		}
+		return menusItems;
+		/*if(Ext.isEmpty(eimsMenuData)){
 			
 			for(i=0,len=eimsMenuData.lenght;i<len;i++){
 				menu.push({
@@ -70,7 +129,7 @@ Ext.define('desktop.app.comm.WestPanel',{
 				})
 			}
 		}
-		return menu;
+		return menu;*/
 	},
 	getData:function(){
 		var me=this;
