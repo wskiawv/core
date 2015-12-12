@@ -66,9 +66,9 @@ public class Menus extends BaseController {
 
 			Element root = document.getRootElement();
 			isUpdateMenus = Boolean.parseBoolean(root.attribute("isUpdateMenus").getValue());
-			String hql="delete from Menu where 1=1";
+			String hql="delete from Menu";
 			if(isUpdateMenus){
-				super.getBaseService().executeHql(hql);
+				//super.getBaseService().executeHql(hql);
 				toSaveMenus(root,null);
 			}
 		}catch (DocumentException e) {

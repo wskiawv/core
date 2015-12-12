@@ -43,13 +43,13 @@ Ext.define('desktop.app.eims.Eims',{
                 animCollapse:false,
                 constrainHeader:true,
                 layout:'border',
-                items:[{xtype:'WestPanel'}]
+                items:[{xtype:'WestPanel'},tabpanel]
              	//items:[me.getWestPanel(),me.getTabPanel()]
               //  items:[{xtype:'CenterTabPanel'}]
         	});
         }
        //	win.add(westpanel,tabpanel);
-        win.add(tabpanel);
+        //win.add(tabpanel);
         return win;
     }
 });

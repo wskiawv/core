@@ -63,6 +63,7 @@
     <script type="text/javascript" src="js/desktop/app/eims/Eims.js"></script>
     <script type="text/javascript" src="js/desktop/app/user/User.js"></script>
     <script type="text/javascript" src="js/desktop/app/filesys/FileSys.js"></script>
+    <script type="text/javascript" src="js/desktop/app/sys/Role.js"></script>
     <script type="text/javascript" src="js/desktop/app/otherApp/DouBan.js"></script>
     <script type="text/javascript" src="js/desktop/Notepad.js"></script>
     <script type="text/javascript" src="js/desktop/SystemStatus.js"></script>

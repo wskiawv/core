@@ -27,11 +27,14 @@ Ext.define('desktop.app.comm.WestPanel',{
 						itemclick:function(treepanel, record, item, index, e, opts){
 							if(record.get('leaf')){
 								var viewType=record.raw['xtype'];
+								//var tabpanel=Ext.getCmp("mainTab");
+								var tabpanel=me.ownerCt.down("CenterTabPanel");
 								/**
 				            	 * 如果没有此视图, 创建视图.
 				            	 */
 				            	if (!tabpanel.down(viewType)) {
-				                    var panel = view.create({
+				                    var panel = Ext.create({
+				                    	xtype:viewType,
 				                    	title: record.get('text'),
 				                    	iconCls: "icon-tab",
 				                    	closable : true,

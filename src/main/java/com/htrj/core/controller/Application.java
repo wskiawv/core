@@ -60,9 +60,10 @@ public class Application extends BaseController {
 				js.put("text", mL.get("text"));
 				js.put("qtip",mL.get("qtip"));
 				js.put("iconCls", mL.get("iconCls"));
-				JSONObject node=new JSONObject();
+				//JSONObject node=new JSONObject();
+				List<JSONObject> node=new ArrayList();
 				node=getNode(menuList,node,String.valueOf(mL.get("id")));
-				js.put("children", node);
+				js.put("children",node);
 				list.add(js);				
 			}
 			
@@ -84,24 +85,31 @@ public class Application extends BaseController {
 		}
 		return menuList;
 	}*/
-	public JSONObject getNode(List<Map<String,Object>> list,JSONObject json,String id){
+	public List<JSONObject> getNode(List<Map<String,Object>> list,List<JSONObject>nodeList,String id){
+		//List<JSONObject> nodeList =new ArrayList();
 		for(Map<String,Object> mL:list){
+			JSONObject node=new JSONObject();
 			if(mL.get("pid")!=null && id.equals(String.valueOf(mL.get("pid")))){
-				json.put("id", mL.get("id"));
-				json.put("leaf", mL.get("leaf"));
-				json.put("xtype", mL.get("xtype"));
-				json.put("text", mL.get("text"));
-				json.put("qtip",mL.get("qtip"));
-				json.put("iconCls", mL.get("iconCls"));
+				node.put("id", mL.get("id"));
+				node.put("leaf", mL.get("leaf"));
+				node.put("xtype", mL.get("xtype"));
+				node.put("text", mL.get("text"));
+				node.put("qtip",mL.get("qtip"));
+				node.put("iconCls", mL.get("iconCls"));
 				Boolean leaf=Boolean.parseBoolean(String.valueOf(mL.get("leaf")));
 				if(!leaf){
+					List<JSONObject> cList=new ArrayList();
 					JSONObject js=new JSONObject();
-					js=getNode(list,js,String.valueOf(mL.get("id")));
-					json.put("children", js);
+					cList=getNode(list,cList,String.valueOf(mL.get("id")));
+					node.put("children", cList);
+					
+				}else{
+					
 				}
+				nodeList.add(node);
 			}
 		}
-		return json;
+		return nodeList;
 	}
 
 }

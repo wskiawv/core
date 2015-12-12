@@ -49,7 +49,7 @@ Ext.define('desktop.app.comm.CRUDPanel',{
 	searchPanelTitle:"搜索",
 	gridPanelTitle:"数据",
 	getUrl : function(){
-		return this.moduleName+this.controllersName;
+		return this.moduleName+"/"+this.controllersName;
 	},
 	/*constructor: function (config) {
         this.mixins.observable.constructor.call(this, config);
@@ -196,7 +196,7 @@ Ext.define('desktop.app.comm.CRUDPanel',{
     getSaveButton : function(config){
     	if(Ext.isEmpty(this.saveButton)){
 			this.saveButton = Ext.create('desktop.app.comm.SaveButton',{
-                url : this.getUrl()+"/create" || this.getUrl()+"/save",
+                url :  this.getUrl()+"/save",
                 scope : this,
                 handler: this.saveButtonClick
           	});
@@ -296,10 +296,10 @@ Ext.define('desktop.app.comm.CRUDPanel',{
 		for(var i=0,len=records.length; i<len; i++){
 			ids.push(records[i].get("id"));
 		}
-		AppAjax.request({
+		Ext.Ajax.request({
 			url : {
-				url : this.getDeleteAction(),
-				method : this.getDeleteMethod()
+				url : this.getUrl()+"/delete"
+				
 			},
 			params : {"id": ids},
 			success : function(){
