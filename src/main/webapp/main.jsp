@@ -46,7 +46,7 @@
     <script type="text/javascript" src="js/desktop/AccordionWindow.js"></script>    
     <script type="text/javascript" src="js/desktop/GridWindow.js"></script>
     
-    
+    <script type="text/javascript" src="js/desktop/app/comm/Paging.js"></script>
     <script type="text/javascript" src="js/desktop/app/comm/GridJsonStore.js"></script>
     <script type="text/javascript" src="js/desktop/app/comm/Msg.js"></script>
     <script type="text/javascript" src="js/desktop/app/comm/CommButton.js"></script>
