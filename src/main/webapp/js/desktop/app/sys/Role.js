@@ -21,8 +21,7 @@ Ext.define('desktop.app.sys.Role',{
 			text:'姓名',
 		    dataIndex:'name',
 		    width:150,
-			sortable:true
-			
+			sortable:true			
 		},{	   
 			text:'角色类型',
 		    dataIndex:'role_type',
