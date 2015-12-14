@@ -16,7 +16,7 @@ Ext.define('desktop.app.comm.CenterGrid',{
         	region:'center',
         	margins: "0 3 3 3",
         	loadMask: true,
-        	bbar:Ext.create('desktop.app.common.Paging',{
+        	bbar:Ext.create('desktop.app.comm.Paging',{
 	      		store: me.getStore(),
 	            displayInfo: true,
 	            displayMsg: '当前显示 {0} - {1} 共 {2}',

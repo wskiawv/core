@@ -274,7 +274,7 @@ Ext.define('desktop.app.user.User', {
 			         		},this);         		
 			         	}
 			         }],
-			         bbar: pagtbar=Ext.create('desktop.app.common.Paging',{
+			         bbar: pagtbar=Ext.create('desktop.app.comm.Paging',{
 			      		store: Ext.data.StoreManager.lookup('userstore'),
 			            displayInfo: true,
 			            displayMsg: '当前显示 {0} - {1} 共 {2}',

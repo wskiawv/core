@@ -2,7 +2,7 @@
  * @author he
  * @description 分页插件扩展，控制每页显示条数
  */
-Ext.define('desktop.app.common.Paging', {
+Ext.define('desktop.app.comm.Paging', {
     extend: 'Ext.toolbar.Paging',
     alias: 'widget.pagingtoolbar',
     requires: ['Ext.form.field.ComboBox'],
