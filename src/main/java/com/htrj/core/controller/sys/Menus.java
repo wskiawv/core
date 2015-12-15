@@ -68,7 +68,7 @@ public class Menus extends BaseController {
 			isUpdateMenus = Boolean.parseBoolean(root.attribute("isUpdateMenus").getValue());
 			String hql="delete from Menu";
 			if(isUpdateMenus){
-				//super.getBaseService().executeHql(hql);
+				super.getBaseService().deleteAll(hql);
 				toSaveMenus(root,null);
 			}
 		}catch (DocumentException e) {

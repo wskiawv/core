@@ -26,6 +26,8 @@ public interface BaseServiceI<T> {
 	 *            对象
 	 */
 	public void delete(Object o);
+	
+	public int deleteAll(String hql);
 
 	/**
 	 * 更新一个对象

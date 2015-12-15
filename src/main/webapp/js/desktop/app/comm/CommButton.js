@@ -9,7 +9,7 @@ Ext.define('desktop.app.comm.commButton',{
 		if(!Ext.isEmpty(url)){
 		 	hide = true;
 		}*/
-		config=Ext.apply({
+		config=Ext.applyIf({
 			hideMode: 'visibility'
 			//hidden : hide 
 		},config);
@@ -69,7 +69,8 @@ Ext.define('desktop.app.comm.DeleteButton',{
 	],
 	
 	initComponent : function(config){
-		config = Ext.apply({
+		Ext.applyIf(this,config);
+		config = Ext.applyIf({
 			text : '删除', 
 			iconCls: 'delete',
 			disabled:true

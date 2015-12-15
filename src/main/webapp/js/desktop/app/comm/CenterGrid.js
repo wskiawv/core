@@ -3,36 +3,33 @@ Ext.define('desktop.app.comm.CenterGrid',{
 	alias:['widget.CenterGrid'],
 	requires:[
 		'Ext.grid.plugin.*',
-		'Ext.grid.*'
+		'Ext.grid.*',
+		'desktop.app.comm.Paging'
 	],
 	
 	
 	
 	initComponent : function(config){
 		var me=this;
-		config=Ext.apply(config,{
-			stripeRows: true,
-        	border: true,
-        	region:'center',
-        	margins: "0 3 3 3",
-        	loadMask: true,
-        	bbar:Ext.create('desktop.app.comm.Paging',{
-	      		store: me.getStore(),
-	            displayInfo: true,
-	            displayMsg: '当前显示 {0} - {1} 共 {2}',
-	            emptyMsg: "没有记录",
-	            refreshText:'刷新',
-	            prevText:'上一页',
-	            nextText:'下一页',
-	            firstText:'第一页',
-	            afterPageText:'最后页',
-	            beforePageText:'上一页',
-	            lastText:'最后页'
-	         })
-			
+		me.bbar=Ext.create('desktop.app.comm.Paging', {
+		        store: me.store,  
+		        dock : 'bottom',
+		        displayInfo : true,
+		        displayMsg: '当前显示 {0} - {1} 共 {2}',
+		        emptyMsg: "没有记录",
+		        refreshText:'刷新',
+		        prevText:'上一页',
+		        nextText:'下一页',
+		        firstText:'第一页',
+		        afterPageText:'页',
+		        beforePageText:'第',
+		        lastText:'最后页'          
 		});
-		Ext.apply(this,config);
-		this.callParent();
+		 /*me.on('afterrender',function(grid){
+	            grid.getStore().load();
+	            //grid.doLayout();
+	     });*/
+		me.callParent([me]);
 	},
 	getStore:function(){
 		

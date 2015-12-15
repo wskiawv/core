@@ -33,16 +33,16 @@ Ext.define('desktop.app.comm.WestPanel',{
 				            	 * 如果没有此视图, 创建视图.
 				            	 */
 				            	if (!tabpanel.down(viewType)) {
-				                    var panel = Ext.create({
+				                    var panel = ({
 				                    	xtype:viewType,
 				                    	title: record.get('text'),
-				                    	iconCls: "icon-tab",
-				                    	closable : true,
+				                    	iconCls: "icon-tab",				                    	
+				                    	closable : true,				                    	
 				                    	margin: 3
 				                    });
 				                    tabpanel.add(panel);
 				                    tabpanel.setActiveTab(panel);
-				                    panel.doLayout();
+				                    //panel.doLayout();
 				            	}
 				            	/**
 				            	 * 如果有此视图, 刷新视图.

@@ -278,4 +278,11 @@ public class BaseDao implements BaseDaoI {
 		return page;
 	}
 
+	@Override
+	public int deleteAll(String hql) {
+		// TODO Auto-generated method stub
+		Query q = getSession().createQuery(hql);
+		return q.executeUpdate();
+	}
+
 }

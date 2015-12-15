@@ -175,6 +175,12 @@ public class BaseService implements BaseServiceI {
 		// TODO Auto-generated method stub
 		return baseDao.findJqGridPage(clazz, params);
 	}
+
+	@Override
+	public int deleteAll(String hql) {
+		// TODO Auto-generated method stub
+		return baseDao.deleteAll(hql);		
+	}
 	
 	
 

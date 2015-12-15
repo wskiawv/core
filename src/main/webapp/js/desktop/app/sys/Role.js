@@ -1,7 +1,7 @@
 
 Ext.define('desktop.app.sys.Role',{
 	extend:'desktop.app.comm.CRUDPanel',
-	alias:['widget.Role'],
+	alias:'widget.Role',
 	moduleName:"sys",//请求模块名称
 	controllersName:"Roles",//请求控制器名称
 	
@@ -18,7 +18,7 @@ Ext.define('desktop.app.sys.Role',{
 	},
 	getGridColumns:function(){
 		var columns = [Ext.create('Ext.grid.RowNumberer'),{
-			text:'姓名',
+			text:'角色名',
 		    dataIndex:'name',
 		    width:150,
 			sortable:true			
@@ -52,7 +52,8 @@ Ext.define('desktop.app.sys.Role',{
 			text:'备注',
 		    dataIndex:'remark',
 		    width:150,
-		    sortable:true		   
+		    sortable:false,
+		    flex     : 1,
 		}];
 		return columns;
 	}

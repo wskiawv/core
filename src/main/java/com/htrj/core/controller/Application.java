@@ -6,27 +6,36 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
+import javax.servlet.ServletContext;
 import javax.servlet.http.HttpServletRequest;
 
-import net.sf.json.JSONArray;
-import net.sf.json.JSONObject;
-import net.sf.json.JSONSerializer;
-
+import org.springframework.beans.factory.BeanFactoryUtils;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-
-
+import org.springframework.web.context.WebApplicationContext;
+import org.springframework.web.context.support.WebApplicationContextUtils;
+import org.springframework.web.method.HandlerMethod;
+import org.springframework.web.servlet.HandlerMapping;
 import org.springframework.web.servlet.ModelAndView;
+import org.springframework.web.servlet.mvc.condition.PatternsRequestCondition;
+import org.springframework.web.servlet.mvc.condition.RequestMethodsRequestCondition;
+import org.springframework.web.servlet.mvc.method.RequestMappingInfo;
+import org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping;
 
 import com.htrj.core.controller.base.BaseController;
 import com.htrj.core.model.User;
-import com.htrj.core.model.sys.Menu;
+import com.htrj.core.model.sys.SystemResources;
+
+import net.sf.json.JSONObject;
+import net.sf.json.JSONSerializer;
 @Controller
 public class Application extends BaseController {
 	
 	@RequestMapping(value="/login", method=RequestMethod.POST)
 	public ModelAndView login(User user,HttpServletRequest request){
+		
+		getSysAllUrl(request);
 		//HttpServletRequest request=((ServletRequestAttributes)RequestContextHolder.getRequestAttributes()).getRequest();
 		Map map=request.getParameterMap();
 		//String[] username=(String[])map.get("username");
@@ -110,6 +119,47 @@ public class Application extends BaseController {
 			}
 		}
 		return nodeList;
+	}
+	public void getSysAllUrl(HttpServletRequest request){
+		ServletContext servletContext = request.getSession().getServletContext();
+		if(servletContext == null){
+//			return;
+		}
+		WebApplicationContext appContext = WebApplicationContextUtils.getWebApplicationContext(servletContext);
+		List<SystemResources> list=new ArrayList<SystemResources>();
+		Map<String, HandlerMapping> allRequestMappings = BeanFactoryUtils.beansOfTypeIncludingAncestors(appContext,HandlerMapping.class, true, false);
+		for(HandlerMapping handlerMapping:allRequestMappings.values()){
+			if(handlerMapping instanceof RequestMappingHandlerMapping){
+				RequestMappingHandlerMapping requestMappingHandlerMapping = (RequestMappingHandlerMapping) handlerMapping;
+                Map<RequestMappingInfo, HandlerMethod> handlerMethods = requestMappingHandlerMapping.getHandlerMethods();
+                for (Map.Entry<RequestMappingInfo, HandlerMethod> requestMappingInfoHandlerMethodEntry : handlerMethods.entrySet())
+                {
+                    RequestMappingInfo requestMappingInfo = requestMappingInfoHandlerMethodEntry.getKey();
+                    HandlerMethod mappingInfoValue = requestMappingInfoHandlerMethodEntry.getValue();
+
+                    RequestMethodsRequestCondition methodCondition = requestMappingInfo.getMethodsCondition();
+                    String requestType = methodCondition.getMethods().toString();
+
+                    PatternsRequestCondition patternsCondition = requestMappingInfo.getPatternsCondition();
+                    String requestUrl = patternsCondition.getPatterns().toString();
+
+                    String controllerName = mappingInfoValue.getBeanType().toString();
+                    String requestMethodName = mappingInfoValue.getMethod().getName();
+                    Class<?>[] methodParamTypes = mappingInfoValue.getMethod().getParameterTypes();
+                    SystemResources item = new SystemResources();
+                    item.setControllerName(controllerName);
+                    System.out.println(controllerName);
+                    item.setMethod(requestMethodName);
+                    System.out.println(requestMethodName);
+                    item.setAction(requestType);
+                    System.out.println(requestType);
+                    item.setUrl(requestUrl);
+                    System.out.println(requestUrl);
+                    list.add(item);
+                }
+
+			}
+		}	
 	}
 
 }

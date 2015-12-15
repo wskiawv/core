@@ -26,6 +26,12 @@ public interface BaseDaoI {
 	 *            对象
 	 */
 	public void delete(Object o);
+	
+	/**
+	 * 删除所有数据
+	 * @param hql
+	 */
+	public int deleteAll(String hql);
 
 	/**
 	 * 更新一个对象

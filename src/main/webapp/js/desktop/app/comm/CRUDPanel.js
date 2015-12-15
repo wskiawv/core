@@ -9,8 +9,7 @@ Ext.define('desktop.app.comm.CRUDPanel',{
 	requires: [    	
     	'Ext.data.Model',        
         'Ext.util.Format', 
-        'Ext.selection.CheckboxModel',       
-        'Ext.data.JsonStore',
+        'Ext.selection.CheckboxModel',          
         'Ext.data.Store',
         'Ext.data.*',    
         'desktop.app.comm.AddButton',
@@ -60,9 +59,13 @@ Ext.define('desktop.app.comm.CRUDPanel',{
     },*/
     
 	initComponent : function(config){
+        var me=this;
+       /* Ext.apply(me,{
+        	layout:'border'
+        });*/
+        me.items =  me.getItems();
         
-        
-        this.addEvents(
+        me.addEvents(
             /**
              * fire before gird record is deleted,
              * if return false,will not delete the record
@@ -89,9 +92,11 @@ Ext.define('desktop.app.comm.CRUDPanel',{
              * @param record
              */
             'addPhotoHead'
+            
          )     
          
-         this.on({
+         me.on({
+        	 
          	deleteRecord : this.deleteRecord,          
          	beforedestroy : function(comp){
          		//A.log("CommonOutUpdateGrid beforedestroy!");
@@ -106,12 +111,15 @@ Ext.define('desktop.app.comm.CRUDPanel',{
          		}
          		
          	},
-         	
-         	scope : this
+         	afterrender:function(panel){
+         		//panel.down("CenterGrid").getStore().load();
+         		//me.getGrid().getStore().load();
+         	},
+         	scope : me
          })
          
-         this.getCancelButton().setHandler(this.cancelButtonClick, this);
-         this.callParent();
+         me.getCancelButton().setHandler(me.cancelButtonClick, me);
+        me.callParent();
 	},
 	
 	//搜索Panel相关函数
@@ -366,11 +374,20 @@ Ext.define('desktop.app.comm.CRUDPanel',{
 				collapsible : this.getSearchCollapsible(),
 				items:me.getSearchFields()
 			},{
-				xtype:'CenterGrid',
+				xtype:'CenterGrid',				
 				tbar : me.getToolbar(),
 				store : me.getGridStore(),
 				columns : me.getGridColumns(),
-				sm : me.getGridSm()
+				selModel : me.getGridSm(),
+				flex:1,					
+				listeners:{					
+					/*afterrender:function(grid){
+						me.getGridStore().load();
+					},
+*/					show:function(grid){
+						grid.getStore().load();
+					}
+				}
 			}				
 		];
 			
@@ -389,7 +406,7 @@ Ext.define('desktop.app.comm.CRUDPanel',{
 		return (!Ext.isEmpty(p) && p.getXType() === 'SearchPanel') ? p : null;
 	},
 	getGrid : function(){		
-		var p = this.ownerCt.get(0).get(1);
+		var p = this.ownerCt.down("CenterGrid");
 		return (!Ext.isEmpty(p)) ? p : null;
 	},
 	
@@ -442,7 +459,7 @@ Ext.define('desktop.app.comm.CRUDPanel',{
 				pageSize:me.pagesize,
 			//	model : me.getStoreModel(),	
 				fields:me.getFields(),
-				//autoLoad:true,
+				autoLoad:true,
 				remoteSort: true,
 				proxy : {
 				type : 'ajax',
