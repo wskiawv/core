@@ -2,9 +2,9 @@
  * 增删改查组件
  */
 
-Ext.define('desktop.app.comm.CRUDPanel',{
+Ext.define('desktop.app.comm.CRUDRowEditPanel',{
 	extend:'Ext.panel.Panel',
-	alias:['widget.CRUDPanel'],
+	alias:['widget.CRUDRowEditPanel'],
 	
 	requires: [    	
     	'Ext.data.Model',        
@@ -172,8 +172,7 @@ Ext.define('desktop.app.comm.CRUDPanel',{
     },
     getEditButton : function(config){
     	if(Ext.isEmpty(this.editButton)){
-			this.editButton = Ext.create('desktop.app.comm.EditButton',{
-                url : this.getUrl()+"/save", 
+			this.editButton = Ext.create('desktop.app.comm.EditButton',{              
                 scope: this,
                 handler: this.editButtonClick
             });
@@ -182,8 +181,7 @@ Ext.define('desktop.app.comm.CRUDPanel',{
     },
     getDeleteButton : function(config){
     	if(Ext.isEmpty(this.deleteButton)){
-			this.deleteButton = Ext.create('desktop.app.comm.DeleteButton',{
-                url : this.getUrl()+"/delete", 
+			this.deleteButton = Ext.create('desktop.app.comm.DeleteButton',{                
                 scope: this,
                 handler: this.deleteButtonClick
             });
@@ -385,6 +383,10 @@ Ext.define('desktop.app.comm.CRUDPanel',{
 				plugins: [{
 			            ptype: 'rowexpander',
 			            rowBodyTpl : me.getRowBodyTpl()		            
+			    },{
+			    	ptype:'rowediting',
+			    	clicksToMoveEditor: 1,
+			        autoCancel: false
 			    }],
 				flex:1
 			}				

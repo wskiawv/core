@@ -1,3 +1,10 @@
+/*Ext.define('desktop.app.comm.Msg',{
+	 mixins: {
+	        observable: 'Ext.util.Observable'
+	 },
+});*/
+
+
 Msg=function(){
 
 	return {
@@ -23,15 +30,15 @@ Msg=function(){
 		operateSuccess : "操作成功!",
 		
 		confirm : function(msg, callback, scope){
-			Ext.MessageBox.confirm('温馨提醒', msg ,  callback, scope);
+			Ext.window.MessageBox.confirm('温馨提醒', msg ,  callback, scope);
 		},
 		
 		alert : function(msg, callback, scope){
-			Ext.MessageBox.alert('温馨提醒', msg, callback, scope);
+			Ext.window.MessageBox.alert('温馨提醒', msg, callback, scope);
 		},
 		
 		prompt : function(msg, callback, scope){
-			Ext.MessageBox.prompt('温馨提醒', msg, callback, scope);
+			Ext.window.MessageBox.prompt('温馨提醒', msg, callback, scope);
 		}
 	}
 }

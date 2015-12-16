@@ -3,6 +3,7 @@ Ext.define('desktop.app.comm.commButton',{
 	requires:[
 		'Ext.button.Button'		
 	],
+	hideMode: 'visibility',
 	initComponent: function(config){
 		
 		/*var url = config.url, hide = false;
@@ -14,6 +15,12 @@ Ext.define('desktop.app.comm.commButton',{
 			//hidden : hide 
 		},config);
 		this.callParent(config);
+		/*var me=this;
+		//me=Ext.apply([],config);
+		me = Ext.apply([],{
+			hideMode: 'visibility'
+		});
+		me.callParent();*/
 		
 	}
 });
@@ -28,12 +35,24 @@ Ext.define('desktop.app.comm.AddButton',{
 	requires:[
 		'desktop.app.comm.commButton'		
 	],
+	
 	initComponent : function(config){
-		config = Ext.apply({
+		var me=this;
+		Ext.apply(me,{
+			text:'新增',
+			iconCls: 'add'
+        });
+		config=Ext.applyIf({
+			
+		},config);
+		this.callParent(config);
+		/*var me=this;
+		//me=Ext.apply([],config);
+		me = Ext.apply([],{
 			text : '新增', 
 			iconCls: 'add'
-		}, config);
-		this.callParent(config);
+		});
+		me.callParent();*/
 		
 	}		
 });
@@ -47,14 +66,24 @@ Ext.define('desktop.app.comm.EditButton',{
 	requires:[
 		'desktop.app.comm.commButton'		
 	],
+	
 	initComponent : function(config){
-		config = Ext.apply({
+		var me=this;
+		Ext.apply(me,{
+			text : '编辑', 
+			iconCls: 'edit'
+        });
+		config=Ext.applyIf({			
+		},config);
+		this.callParent(config);
+	/*	var me=this;
+		//me=Ext.apply([],config);
+		me = Ext.apply([],{
 			text : '编辑', 
 			iconCls: 'edit',
 			disabled:true
-		}, config);
-		this.callParent(config);
-	
+		});
+		me.callParent();*/
 	}		
 });
 
@@ -69,13 +98,22 @@ Ext.define('desktop.app.comm.DeleteButton',{
 	],
 	
 	initComponent : function(config){
-		Ext.applyIf(this,config);
+		var me=this;
+		Ext.apply(me,{
+			text : '删除', 
+			iconCls: 'delete'
+        });
+		config=Ext.applyIf({
+			
+		},config);
+		this.callParent(config);
+	/*	Ext.applyIf(this,config);
 		config = Ext.applyIf({
 			text : '删除', 
 			iconCls: 'delete',
 			disabled:true
 		}, config);
-		this.callParent(config);
+		this.callParent(config);*/
 		
 	}		
 });
@@ -91,11 +129,20 @@ Ext.define('desktop.app.comm.SaveButton',{
 	],
 	
 	initComponent : function(config){
-		config = Ext.apply({
+		var me=this;
+		Ext.apply(me,{
+			text : '保存', 
+			iconCls: 'save'
+        });
+		config=Ext.applyIf({
+		
+		},config);
+		this.callParent(config);
+	/*	config = Ext.apply({
 			text : '保存', 
 			iconCls: 'save'
 		}, config);
-		this.callParent(config);
+		this.callParent(config);*/
 		
 	}		
 });
@@ -111,9 +158,13 @@ Ext.define('desktop.app.comm.CancelButton',{
 	],
 	
 	initComponent : function(config){
-		config = Ext.apply({
+		var me=this;
+		Ext.apply(me,{
 			text : '取消', 
 			iconCls: 'cancel'
+        });
+		config = Ext.apply({
+			
 		}, config);
 		this.callParent(config);
 		
@@ -131,9 +182,13 @@ Ext.define('desktop.app.comm.SearchButton',{
 	],
 	
 	initComponent : function(config){
-		config = Ext.apply({
+		var me=this;
+		Ext.apply(me,{
 			text : '搜索', 
 			iconCls: 'search'
+        });
+		config = Ext.apply({
+			
 		}, config);
 		this.callParent(config);
 		
@@ -152,9 +207,13 @@ Ext.define('desktop.app.comm.ExportButton',{
 	],
 	
 	initComponent : function(config){
-		config = Ext.apply({
+		var me=this;
+		Ext.apply(me,{
 			text : '导出', 
 			iconCls: 'export'
+        });
+		config = Ext.apply({
+			
 		}, config);
 		this.callParent(config);
 		
@@ -172,9 +231,13 @@ Ext.define('desktop.app.comm.ImportButton',{
 	],
 	
 	initComponent : function(config){
-		config = Ext.apply({
+		var me=this;
+		Ext.apply(me,{
 			text : '导入', 
 			iconCls: 'import'
+        });
+		config = Ext.apply({
+			
 		}, config);
 		this.callParent(config);
 		
@@ -192,9 +255,13 @@ Ext.define('desktop.app.comm.PrintButton',{
 	],
 	
 	initComponent : function(config){
-		config = Ext.apply({
+		var me=this;
+		Ext.apply(me,{
 			text : '打印', 
 			iconCls: 'print'
+        });
+		config = Ext.apply({
+			
 		}, config);
 		this.callParent(config);
 		
@@ -207,9 +274,13 @@ Ext.define('desktop.app.comm.DownloadButton',{
 	requires:['desktop.app.comm.commButton'],
 	
 	initComponent:function(config){
-		config=Ext.apply({
+		var me=this;
+		Ext.apply(me,{
 			text:'下载',
-			iconCls:'download'			
+			iconCls:'download'	
+        });
+		config=Ext.apply({
+					
 		},config);
 		this.callParent(config);
 	}
@@ -221,9 +292,13 @@ Ext.define('desktop.app.comm.UploadButton',{
 	requires:['desktop.app.comm.commButton'],
 	
 	initComponent:function(config){
-		config=Ext.apply({
+		var me=this;
+		Ext.apply(me,{
 			text:'上传',
-			iconCls:'upload'	
+			iconCls:'upload'
+        });
+		config=Ext.apply({
+				
 		},config);
 		this.callParent(config);
 	}
@@ -237,9 +312,13 @@ Ext.define('desktop.app.comm.CutButton',{
 	
 	
 	initComponent:function(config){
-		config=Ext.apply({
+		var me=this;
+		Ext.apply(me,{
 			text:'剪切',
-			iconCls:'cut'	
+			iconCls:'cut'
+        });
+		config=Ext.apply({
+			
 		},config);
 		this.callParent(config);
 	}
@@ -251,9 +330,13 @@ Ext.define('desktop.app.comm.CopyButton',{
 	
 	
 	initComponent:function(config){
-		config=Ext.apply({
+		var me=this;
+		Ext.apply(me,{
 			text:'复制',
-			iconCls:'copy'	
+			iconCls:'copy'
+        });
+		config=Ext.apply({
+				
 		},config);
 		this.callParent(config);
 	}
@@ -265,9 +348,13 @@ Ext.define('desktop.app.comm.PasteButton',{
 	
 	
 	initComponent:function(config){
-		config=Ext.apply({
+		var me=this;
+		Ext.apply(me,{
 			text:'粘贴',
-			iconCls:'paste'	
+			iconCls:'paste'
+        });
+		config=Ext.apply({
+				
 		},config);
 		this.callParent(config);
 	}

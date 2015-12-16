@@ -58,7 +58,8 @@
     <script type="text/javascript" src="js/desktop/app/comm/WestPanel.js"></script>
     
     <script type="text/javascript" src="js/desktop/app/comm/CRUDPanel.js"></script>
-    
+    <script type="text/javascript" src="js/desktop/app/comm/CRUDRowEditPanel.js"></script>
+     
     <script type="text/javascript" src="js/desktop/app/student/Student.js"></script>
     <script type="text/javascript" src="js/desktop/app/eims/Eims.js"></script>
     <script type="text/javascript" src="js/desktop/app/user/User.js"></script>

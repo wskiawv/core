@@ -6,11 +6,15 @@ Ext.define('desktop.app.comm.CenterGrid',{
 		'Ext.grid.*',
 		'desktop.app.comm.Paging'
 	],
-	
-	
-	
+	viewConfig: {
+        stripeRows: true,
+        enableTextSelection: true
+    },	
 	initComponent : function(config){
 		var me=this;
+		Ext.apply(me,{
+        	autoScroll:true
+        });
 		me.bbar=Ext.create('desktop.app.comm.Paging', {
 		        store: me.store,  
 		        dock : 'bottom',
@@ -24,16 +28,12 @@ Ext.define('desktop.app.comm.CenterGrid',{
 		        afterPageText:'页',
 		        beforePageText:'第',
 		        lastText:'最后页'          
-		});
-		 /*me.on('afterrender',function(grid){
+		});		
+		me.on('afterrender',function(grid){
 	            grid.getStore().load();
-	            //grid.doLayout();
-	     });*/
+	            
+	    });
 		me.callParent([me]);
-	},
-	getStore:function(){
-		
 	}
-
 	
 });
