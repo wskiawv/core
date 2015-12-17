@@ -254,7 +254,8 @@ Ext.define('desktop.app.comm.CRUDRowEditPanel',{
 		var select = grid.getSelectionModel();
 		var records = select.getSelection();
 		if(Ext.isEmpty(records) || records.length>1){
-			Msg.alert("编辑时只能选择一条记录!");
+			Ext.example.msg('温馨提醒', "编辑时只能选择一条记录!");
+			//Msg.alert("编辑时只能选择一条记录!");
 			return;
 		}  
 	 
@@ -365,14 +366,22 @@ Ext.define('desktop.app.comm.CRUDRowEditPanel',{
 		me.callParent([config]);
 		//CRUDPanel.superclass.constructor.call(this,config);
 	},*/
-	getRowBodyTpl:Ext.emptyFn,
+	getRowBodyTpl:function(){
+		var me=this;
+		//var t=me.getTpl();
+		var tpl=new Ext.XTemplate();
+		
+		return tpl;
+		
+	},
+	getTpl:Ext.emptyFn,
 	getItems:function(config){
 		var me=this;
 		var items=[{
 				title:me.getSearchTitle(),
 				xtype:'SearchPanel',				
 				height : me.getSearchFieldHeight(),
-				collapsible : this.getSearchCollapsible(),
+				collapsible : me.getSearchCollapsible(),
 				items:me.getSearchFields()
 			},{
 				xtype:'CenterGrid',				
@@ -395,7 +404,49 @@ Ext.define('desktop.app.comm.CRUDRowEditPanel',{
 		return items;
 	},
 	
-	
+	/**
+	 * 添加插件
+	 */
+	getPlugin:function(){
+		var me=this;
+		var items=[me.getPluginRowEditing()];
+		var plugin="[";
+		if(!Ext.isEmpty(me.getPluginRowExpander())){
+			//plugin.push(me.getPluginRowExpander());
+			plugin+=me.getPluginRowExpander();
+		}
+		if(!Ext.isEmpty(me.getPluginRowEditing())){
+			//plugin.push(me.getPluginRowEditing());
+			plugin+=me.getPluginRowEditing();
+		}
+		plugin+="]"
+		return items;
+	},
+	/**
+	 * Grid行编辑插件
+	 */
+	getPluginRowEditing:function(){
+		var rowediting=Ext.create('Ext.grid.plugin.RowEditing',{
+			clicksToMoveEditor: 1,
+	        autoCancel: false
+		});
+		return rowediting;
+	},
+	/**
+	 * Grid行内容扩展显示插件
+	 */
+	getPluginRowExpander:function(){
+		var me=this;
+		var rowexpander=Ext.create('Ext.grid.plugin.RowExpander',{
+			rowBodyTpl:me.getRowBodyTpl()
+		});		
+		if(!Ext.isEmpty(me.getRowBodyTpl())){
+			return rowexpander;
+		}else{
+			return null;
+		}
+		
+	},
 	/**
 	 * 返回搜索Panel
 	 * @return {}
@@ -403,7 +454,7 @@ Ext.define('desktop.app.comm.CRUDRowEditPanel',{
 	getSearchPanel : function(){
 		var me=this;
 		
-		var p = this.get(0);
+		var p = this.ownerCt.down("SearchPanel");
 		return (!Ext.isEmpty(p) && p.getXType() === 'SearchPanel') ? p : null;
 	},
 	getGrid : function(){		

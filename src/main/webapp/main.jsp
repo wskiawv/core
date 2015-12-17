@@ -12,7 +12,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">       
  	 <!-- <script type="text/javascript">%{out.print(com.he.utils.PageUtils.PrintInfo());}%</script> -->
      <!-- <link rel="stylesheet" type="text/css" href="js/desktop/resources/ext-theme-classic/ext-theme-classic-all.css" /> -->
-    <link rel="stylesheet" type="text/css" href="js/desktop/resources/css/ext-all.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="js/desktop/resources/css/ext-all.css" /> -->
      <link rel="stylesheet" type="text/css" href="js/desktop/css/desktop.css" />
 	 <link rel="stylesheet" type="text/css" href="js/desktop/css/main.css" />
 	<!-- %{out.print(com.he.utils.GenerationJSPath.ExportJsPath(com.he.utils.GenerationJSPath.DESKTOP_JS_PATH));}% -->
@@ -20,9 +20,9 @@
 	<script type="text/javascript">	
 		var sysMenus = eval('${menus}');
 	</script>
-	<script type="text/javascript" src="js/desktop/ext/ext-all.js"></script>
+	<!-- <script type="text/javascript" src="js/desktop/ext/ext-all.js"></script> -->
 	<script src="<%=path%>/js/jquery-1.6.4.min.js"></script>
-	<!-- <script type="text/javascript" src="js/desktop/js/include-ext.js"></script> -->
+	<script type="text/javascript" src="js/desktop/ext/include-ext.js"></script>
     <!-- <script type="text/javascript" src="js/desktop/js/ext-theme-neptune.js"></script> -->
     <script type="text/javascript" src="js/desktop/ext/options-toolbar.js"></script>
     <script type="text/javascript" src="js/desktop/ext/ext-lang-zh_CN.js"></script>
@@ -95,6 +95,7 @@
         Ext.require('app.filesys.FileSys'); 
         Ext.require('app.eims.Eims');
         Ext.require('app.student.Student');*/
+        var appPath='<%=path%>';
         var app;
         //var eimsMenuData;
         //var swfurl="js/desktop/video/99.swf";

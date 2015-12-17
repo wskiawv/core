@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<modules>
+	<module text="教育信息管理系统" name="eims" menu="menu.xml"/>
+	<module text="考试管理信息系统" name="examination" menu=""/>
+	<module text="资源库" name="" />
+	<module text="OA办公系统" name="" />
+	<module text="网盘" name="" />
+	<module text="资源库" name="" />
+</modules>

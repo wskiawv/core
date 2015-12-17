@@ -159,7 +159,11 @@ Ext.define('App', {
 	 * 退出系统
 	 */
     onLogout: function () {
-        Ext.Msg.confirm('温馨提示', '你确定退出系统?');
+        Ext.Msg.confirm('温馨提示', '你确定退出系统?',function(btn){
+        	if(btn=="yes"){
+        		window.location.href=appPath;
+        	}
+        });
     },
     /**
      * 系统设置

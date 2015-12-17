@@ -64,9 +64,9 @@
     suffix = (suffix.length) ? ('-' + suffix.join('-')) : '';
 
     if (includeCSS) {
-        document.write('<link rel="stylesheet" type="text/css" href="' + path + '/resources/css/ext-all' + suffix + '-debug.css"/>');
+        document.write('<link rel="stylesheet" type="text/css" href="' + path + '/desktop/resources/css/ext-all' + suffix + '-debug.css"/>');
     }
-    document.write('<script type="text/javascript" src="' + path + '/ext-all' + (rtl ? '-rtl' : '') + '.js"></script>');
+    document.write('<script type="text/javascript" src="' + path + '/desktop/ext/ext-all' + (rtl ? '-rtl' : '') + '.js"></script>');
 
     if (neptune) {
         // since document.write('<script>') does not block execution in IE, we need to 
@@ -78,7 +78,7 @@
         // To work around this we use the _beforereadyhandler hook to load the neptune
         // overrides dynamically after Ext has been defined.
         neptunePath = (repoDevMode ? path + '/..' : path) +
-            '/packages/ext-theme-neptune/build/ext-theme-neptune' +
+            '/desktop/ext/ext-theme-neptune' +
             (repoDevMode ? '-dev' : '') + '.js';
 
         if (repoDevMode &&  window.ActiveXObject) {

@@ -13,9 +13,9 @@ Ext.define('desktop.app.comm.CommWindow',{
 	cancelButton:null,//取消按钮
 	
     initComponent : function(){
-    	Ext.apply(this,{
-    		xtype:'SearchPanel',
-    		items:[{xtype:'text'}],
+    	var me=this;
+    	Ext.apply(me,{
+    		xtype:'SearchPanel',    		
     		closable : true,
 			modal : true,		
 			closeAction : 'hide',
@@ -29,10 +29,11 @@ Ext.define('desktop.app.comm.CommWindow',{
 			plain : true,
 			buttonAlign : 'center',
 			layout : 'border',
+			items:me.getItems(),
 			buttons : [this.getSaveButton(),
 					   this.getCancelButton()]
     	});
-    	this.callParent(arguments);
+    	me.callParent();
     },
     getSaveButton : function(){
     	if(Ext.isEmpty(this.saveButton)){
@@ -48,7 +49,7 @@ Ext.define('desktop.app.comm.CommWindow',{
     saveButtonClick : function(){
     	
     },
-    
+    getItems:Ext.emptyFn,
     getCancelButton : function(){
     	if(Ext.isEmpty(this.cancelButton)){
             this.cancelButton = Ext.create('CancelButton',{

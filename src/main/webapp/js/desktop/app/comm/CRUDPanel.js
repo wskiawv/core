@@ -172,8 +172,7 @@ Ext.define('desktop.app.comm.CRUDPanel',{
     },
     getEditButton : function(config){
     	if(Ext.isEmpty(this.editButton)){
-			this.editButton = Ext.create('desktop.app.comm.EditButton',{
-                url : this.getUrl()+"/save", 
+			this.editButton = Ext.create('desktop.app.comm.EditButton',{               
                 scope: this,
                 handler: this.editButtonClick
             });
@@ -256,7 +255,8 @@ Ext.define('desktop.app.comm.CRUDPanel',{
 		var select = grid.getSelectionModel();
 		var records = select.getSelection();
 		if(Ext.isEmpty(records) || records.length>1){
-			Msg.alert("编辑时只能选择一条记录!");
+			Ext.example.msg('温馨提醒', "编辑时只能选择一条记录!");
+			//Msg.alert("编辑时只能选择一条记录!");
 			return;
 		}  
 	 
@@ -399,9 +399,8 @@ Ext.define('desktop.app.comm.CRUDPanel',{
 	 * @return {}
 	 */
 	getSearchPanel : function(){
-		var me=this;
-		
-		var p = this.get(0);
+		var me=this;		
+		var p = me.ownerCt.down("SearchPanel");
 		return (!Ext.isEmpty(p) && p.getXType() === 'SearchPanel') ? p : null;
 	},
 	getGrid : function(){		

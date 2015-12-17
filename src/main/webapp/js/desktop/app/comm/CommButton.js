@@ -1,9 +1,9 @@
-Ext.define('desktop.app.comm.commButton',{
+Ext.define('desktop.app.comm.CommButton',{
 	extend:'Ext.button.Button',
 	requires:[
 		'Ext.button.Button'		
 	],
-	hideMode: 'visibility',
+	alias:['widget.CommButton'],
 	initComponent: function(config){
 		
 		/*var url = config.url, hide = false;
@@ -30,10 +30,10 @@ Ext.define('desktop.app.comm.commButton',{
  * 新增
  */
 Ext.define('desktop.app.comm.AddButton',{
-	extend:'desktop.app.comm.commButton',
-	
+	extend:'desktop.app.comm.CommButton',
+	alias:['widget.AddButton'],
 	requires:[
-		'desktop.app.comm.commButton'		
+		'desktop.app.comm.CommButton'		
 	],
 	
 	initComponent : function(config){
@@ -61,10 +61,10 @@ Ext.define('desktop.app.comm.AddButton',{
  * 编辑
  */
 Ext.define('desktop.app.comm.EditButton',{
-	extend:'desktop.app.comm.commButton',
-	
+	extend:'desktop.app.comm.CommButton',
+	alias:['widget.EditButton'],
 	requires:[
-		'desktop.app.comm.commButton'		
+		'desktop.app.comm.CommButton'		
 	],
 	
 	initComponent : function(config){
@@ -91,10 +91,10 @@ Ext.define('desktop.app.comm.EditButton',{
  * 删除
  */
 Ext.define('desktop.app.comm.DeleteButton',{
-	extend:'desktop.app.comm.commButton',
-	
+	extend:'desktop.app.comm.CommButton',
+	alias:['widget.DeleteButton'],
 	requires:[
-		'desktop.app.comm.commButton'		
+		'desktop.app.comm.CommButton'		
 	],
 	
 	initComponent : function(config){
@@ -122,10 +122,10 @@ Ext.define('desktop.app.comm.DeleteButton',{
  * 保存
  */
 Ext.define('desktop.app.comm.SaveButton',{
-	extend:'desktop.app.comm.commButton',
-	
+	extend:'desktop.app.comm.CommButton',
+	alias:['widget.SaveButton'],
 	requires:[
-		'desktop.app.comm.commButton'		
+		'desktop.app.comm.CommButton'		
 	],
 	
 	initComponent : function(config){
@@ -151,10 +151,10 @@ Ext.define('desktop.app.comm.SaveButton',{
  * 取消
  */
 Ext.define('desktop.app.comm.CancelButton',{
-	extend:'desktop.app.comm.commButton',
-	
+	extend:'desktop.app.comm.CommButton',
+	alias:['widget.CancelButton'],
 	requires:[
-		'desktop.app.comm.commButton'		
+		'desktop.app.comm.CommButton'		
 	],
 	
 	initComponent : function(config){
@@ -175,10 +175,10 @@ Ext.define('desktop.app.comm.CancelButton',{
  * 搜索
  */
 Ext.define('desktop.app.comm.SearchButton',{
-	extend:'desktop.app.comm.commButton',
-	
+	extend:'desktop.app.comm.CommButton',
+	alias:['widget.SearchButton'],
 	requires:[
-		'desktop.app.comm.commButton'		
+		'desktop.app.comm.CommButton'		
 	],
 	
 	initComponent : function(config){
@@ -200,10 +200,10 @@ Ext.define('desktop.app.comm.SearchButton',{
  * 导出
  */
 Ext.define('desktop.app.comm.ExportButton',{
-	extend:'desktop.app.comm.commButton',
-	
+	extend:'desktop.app.comm.CommButton',
+	alias:['widget.ExportButton'],
 	requires:[
-		'desktop.app.comm.commButton'		
+		'desktop.app.comm.CommButton'		
 	],
 	
 	initComponent : function(config){
@@ -224,10 +224,10 @@ Ext.define('desktop.app.comm.ExportButton',{
  * 导入
  */
 Ext.define('desktop.app.comm.ImportButton',{
-	extend:'desktop.app.comm.commButton',
-	
+	extend:'desktop.app.comm.CommButton',
+	alias:['widget.ImportButton'],
 	requires:[
-		'desktop.app.comm.commButton'		
+		'desktop.app.comm.CommButton'		
 	],
 	
 	initComponent : function(config){
@@ -248,10 +248,10 @@ Ext.define('desktop.app.comm.ImportButton',{
  * 打印
  */
 Ext.define('desktop.app.comm.PrintButton',{
-	extend:'desktop.app.comm.commButton',
-	
+	extend:'desktop.app.comm.CommButton',
+	alias:['widget.PrintButton'],
 	requires:[
-		'desktop.app.comm.commButton'		
+		'desktop.app.comm.CommButton'		
 	],
 	
 	initComponent : function(config){
@@ -269,9 +269,9 @@ Ext.define('desktop.app.comm.PrintButton',{
 });
 
 Ext.define('desktop.app.comm.DownloadButton',{
-	extend:'desktop.app.comm.commButton',
-	
-	requires:['desktop.app.comm.commButton'],
+	extend:'desktop.app.comm.CommButton',
+	alias:['widget.DownloadButton'],
+	requires:['desktop.app.comm.CommButton'],
 	
 	initComponent:function(config){
 		var me=this;
@@ -285,11 +285,13 @@ Ext.define('desktop.app.comm.DownloadButton',{
 		this.callParent(config);
 	}
 });
-
+/**
+ * 上传按钮
+ */
 Ext.define('desktop.app.comm.UploadButton',{
-	extend:'desktop.app.comm.commButton',
-	
-	requires:['desktop.app.comm.commButton'],
+	extend:'desktop.app.comm.CommButton',
+	alias:['widget.UploadButton'],
+	requires:['desktop.app.comm.CommButton'],
 	
 	initComponent:function(config){
 		var me=this;
@@ -305,10 +307,13 @@ Ext.define('desktop.app.comm.UploadButton',{
 	
 	
 });
-
+/**
+ * 剪切按钮
+ */
 Ext.define('desktop.app.comm.CutButton',{
-	extend:'desktop.app.comm.commButton',
-	requires:['desktop.app.comm.commButton'],
+	extend:'desktop.app.comm.CommButton',
+	alias:['widget.CutButton'],
+	requires:['desktop.app.comm.CommButton'],
 	
 	
 	initComponent:function(config){
@@ -323,10 +328,13 @@ Ext.define('desktop.app.comm.CutButton',{
 		this.callParent(config);
 	}
 });
-
+/**
+ * 复制按钮
+ */
 Ext.define('desktop.app.comm.CopyButton',{
-	extend:'desktop.app.comm.commButton',
-	requires:['desktop.app.comm.commButton'],
+	extend:'desktop.app.comm.CommButton',
+	alias:['widget.CopyButton'],
+	requires:['desktop.app.comm.CommButton'],
 	
 	
 	initComponent:function(config){
@@ -342,9 +350,13 @@ Ext.define('desktop.app.comm.CopyButton',{
 	}
 });
 
+/**
+ * 粘贴按钮
+ */
 Ext.define('desktop.app.comm.PasteButton',{
-	extend:'desktop.app.comm.commButton',
-	requires:['desktop.app.comm.commButton'],
+	extend:'desktop.app.comm.CommButton',
+	alias:['widget.PasteButton'],
+	requires:['desktop.app.comm.CommButton'],
 	
 	
 	initComponent:function(config){

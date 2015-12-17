@@ -302,7 +302,7 @@ Ext.define('desktop.app.user.User', {
     },
     getGrid : function(){
     	// Ext.example.msg('温馨提醒',this.ownerCt);
-    	return Ext.getCmp('gridpanel');;
+    	return Ext.getCmp('gridpanel');
     },
     refreshGrid : function(){
 		var pbar = pagtbar;

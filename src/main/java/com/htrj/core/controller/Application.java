@@ -32,7 +32,7 @@ import net.sf.json.JSONSerializer;
 @Controller
 public class Application extends BaseController {
 	
-	@RequestMapping(value="/login", method=RequestMethod.POST)
+	@RequestMapping(value="/login", method={RequestMethod.GET,RequestMethod.POST})
 	public ModelAndView login(User user,HttpServletRequest request){
 		
 		getSysAllUrl(request);

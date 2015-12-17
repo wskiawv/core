@@ -48,6 +48,7 @@ Ext.define('desktop.app.eims.Eims',{
               //  items:[{xtype:'CenterTabPanel'}]
         	});
         }
+        win.show();
        //	win.add(westpanel,tabpanel);
         //win.add(tabpanel);
         return win;
