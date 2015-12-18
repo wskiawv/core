@@ -327,12 +327,13 @@ Ext.define('desktop.app.comm.CRUDRowEditPanel',{
 	 * 搜索按钮单击事件处理函数
 	 */
 	searchButtonClick : function(){
+		var me=this;
 		var formPanel = this.getSearchFormPanel(),
-			params = formPanel.getForm().getValues() || {},
-			bsParams = {start: 0, limit: ACom.PAGE_SIZE},
-			_params = {},
 			grid = this.getGrid(),
-			store = grid.getStore();
+			store = grid.getStore(),
+			params = formPanel.getForm().getValues() || {},
+			bsParams = {start: 0, limit:store.pageSize },
+			_params = {};
 		for(var p in params){
 			if(!Ext.isEmpty(params[p])){//将没有值的属性排除
 				_params[p] = params[p];
@@ -340,10 +341,16 @@ Ext.define('desktop.app.comm.CRUDRowEditPanel',{
 			}			
 		}
 		store.removeAll();
-		store.baseParams = Ext.apply(_params, bsParams);
-		store.load();
+		store.load({params:Ext.apply(_params, bsParams)});	
+		
 	},
-	
+	/**
+	 * 获取搜索form表单
+	 */
+	getSearchFormPanel:function(){
+		var me=this;
+		return me.down("SearchPanel");
+	},
 	/**
 	 * 取消或重置按钮单击事件处理函数
 	 */

@@ -38,7 +38,7 @@ Ext.define('desktop.app.comm.WestPanel',{
 				                    	title: record.get('text'),
 				                    	iconCls: "icon-tab",				                    	
 				                    	closable : true,
-				                    	frame:true				      
+				                    	frame:false,				      
 				                    });
 				                    tabpanel.add(panel);
 				                    tabpanel.setActiveTab(panel);

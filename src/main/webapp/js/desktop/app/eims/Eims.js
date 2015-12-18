@@ -37,8 +37,8 @@ Ext.define('desktop.app.eims.Eims',{
         	win = desktop.createWindow({
         		id:me.id,
         		title:'教育信息管理系统',
-                width:740,
-                height:480,
+                width:800,
+                height:500,
                 iconCls: 'icon-grid',
                 animCollapse:false,
                 constrainHeader:true,

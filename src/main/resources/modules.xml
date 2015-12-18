@@ -6,4 +6,5 @@
 	<module text="OA办公系统" name="" />
 	<module text="网盘" name="" />
 	<module text="资源库" name="" />
+	<module text="邮件收发" name="" />
 </modules>

@@ -36,7 +36,7 @@ Ext.define('Settings', {
         me.preview = Ext.create('widget.wallpaper');
         me.preview.setWallpaper(me.selected);
         me.tree = me.createTree();
-
+        me.theme = me.createTheme();
         me.buttons = [
             { text: '确定', handler: me.onOK, scope: me },
             { text: '取消', handler: me.close, scope: me }
@@ -48,7 +48,7 @@ Ext.define('Settings', {
                 anchor: '0 -30',
                 border: false,
                 layout: 'border',
-                items: [
+                items: [me.theme,
                     me.tree,
                     {
                         xtype: 'panel',
@@ -58,8 +58,8 @@ Ext.define('Settings', {
                         items: [ me.preview ]
                     }
                 ]
-            },
-            {
+            }
+          /*  {
                 xtype: 'checkbox',
                 boxLabel: 'Stretch to fit',
                 checked: me.stretch,
@@ -68,34 +68,43 @@ Ext.define('Settings', {
                         me.stretch = comp.checked;
                     }
                 }
-            }/*,{
+            },{
                     xtype: 'combo',
                     rtl: false,
                     width: 170,
                     labelWidth: 45,
-                    fieldLabel: 'Theme',
+                    fieldLabel: '主题',
                     displayField: 'name',
                     valueField: 'value',
                     labelStyle: 'cursor:move;',
-                    margin: '0 5 0 0',
+                   // margin: '0 5 0 0',
                     store: Ext.create('Ext.data.Store', {
                         fields: ['value', 'name'],
                         data : [
-                            { value: 'access', name: 'Accessibility' },
-                            { value: 'classic', name: 'Classic' },
-                            { value: 'gray', name: 'Gray' },
-                            { value: 'neptune', name: 'Neptune' }
+                            { value: 'access', name: '黑色' },
+                            { value: 'classic', name: '淡蓝色' },
+                            { value: 'gray', name: '灰色' },
+                            { value: 'neptune', name: '深蓝色' }
                         ]
                     }),
-                    value: theme,
+                    value: 'neptune',
                     listeners: {
                         select: function(combo) {
-                            var theme = combo.getValue();
-                            if (theme !== defaultTheme) {
-                                setParam({ theme: theme });
-                            } else {
-                                removeParam('theme');
-                            }
+                        	var link = Ext.getDom('theme');
+							var href = link.getAttribute('href');
+							var lastg = href.lastIndexOf('/')+1;
+							var oldcss = href.substring(lastg);
+							var newcss = combo.getValue();
+							if(oldcss.indexOf(newcss)==-1){
+								if(newcss=='classic'){
+									href = href.substring(0,lastg)+"ext-all.css";
+									link.setAttribute('href',href);
+								}else{
+									href = href.substring(0,lastg)+"ext-all-"+newcss+"-debug.css";
+									link.setAttribute('href',href);
+								}							
+							}
+                          
                         }
                     }
                 }*/
@@ -150,7 +159,54 @@ Ext.define('Settings', {
 
         return tree;
     },
-
+    createTheme : function(){
+    	var theme=new Ext.panel.Panel({
+    		title:'主题设置',
+    		height:60,
+    		region: 'north',
+    		items:[{
+                    xtype: 'combo',
+                    rtl: false,
+                    width: 170,
+                    labelWidth: 45,
+                    fieldLabel: '主题',
+                    displayField: 'name',
+                    valueField: 'value',
+                    labelStyle: 'cursor:move;',
+                    margin: '0 5 0 0',
+                    store: Ext.create('Ext.data.Store', {
+                        fields: ['value', 'name'],
+                        data : [
+                            { value: 'access', name: '黑色' },
+                            { value: 'classic', name: '经典' },
+                            { value: 'gray', name: '灰色' },
+                            { value: 'neptune', name: '自然' }
+                        ]
+                    }),
+                    value: 'neptune',
+                    listeners: {
+                        select: function(combo) {
+                        	var link = Ext.getDom('theme');
+							var href = link.getAttribute('href');
+							var lastg = href.lastIndexOf('/')+1;
+							var oldcss = href.substring(lastg);
+							var newcss = combo.getValue();
+							if(oldcss.indexOf(newcss)==-1){
+								if(newcss=='classic'){									
+									href = href.substring(0,lastg)+"ext-all.css";
+									link.setAttribute('href',href);
+								}else{									
+									href = href.substring(0,lastg)+"ext-all-"+newcss+"-debug.css";
+									link.setAttribute('href',href);
+								}							
+							}
+                          
+                        }
+                    }
+                }]
+    	});
+    	return theme;
+    },
     getTextOfWallpaper: function (path) {
         var text = path, slash = path.lastIndexOf('/');
         if (slash >= 0) {

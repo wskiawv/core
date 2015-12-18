@@ -10,7 +10,7 @@ Ext.define('desktop.app.comm.SearchPanel',{
     initComponent:function(config){
 		config=Ext.apply({
 			region: 'north', 
-			height: 75,
+			height: 100,
 			border: false,
 			minSize: 40,
 			split:true,
@@ -18,7 +18,7 @@ Ext.define('desktop.app.comm.SearchPanel',{
 			labelAlign: 'right',
 			margins:'3 3 0 3',
             cmargins:'3 3 0 3',
-			frame: true,
+			frame: false,
 			autoScroll : true
 		},config);
 		Ext.apply(this,config);
@@ -30,7 +30,7 @@ Ext.define('desktop.app.comm.SearchPanel',{
 	 * @param {} data
 	 * @param {} clsName
 	 */
-	loadSpecialRecord : function(data, clsName){
+	/*loadSpecialRecord : function(data, clsName){
 		if(data){
 			var assetsCard = data;
 			var form = this.getForm().getForm().reset();
@@ -55,7 +55,7 @@ Ext.define('desktop.app.comm.SearchPanel',{
                 }
             }
 		}
-	}
+	}*/
 	/**
 	 * 利用data中的值对form中fiel进行更新
 	 * @param {} data record of data

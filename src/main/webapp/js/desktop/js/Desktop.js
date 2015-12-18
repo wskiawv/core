@@ -371,7 +371,6 @@ Ext.define('Ext.ux.desktop.Desktop', {
 
     onWindowMenuClose: function () {
         var me = this, win = me.windowMenu.theWin;
-
         win.close();
     },
 

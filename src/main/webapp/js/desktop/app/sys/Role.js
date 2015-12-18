@@ -4,8 +4,25 @@ Ext.define('desktop.app.sys.Role',{
 	alias:'widget.Role',
 	moduleName:"sys",//请求模块名称
 	controllersName:"Roles",//请求控制器名称
+	editWindowId:'eimsRoleEdit',
 	
-	
+	getStoreModel : function(){
+		return 'desktop.app.sys.RoleModel';
+	},
+	getSearchFieldHeight : function(){
+		return 120;
+	},
+	getSearchFields : function(){
+		return[{
+	        fieldLabel: '角色名称',
+	        name: 'filter_LIKE_name',	       
+	        anchor:'100%'  
+	    },{
+	        fieldLabel: '角色类型',	       
+	        name: 'filter_LIKE_role_type',
+	        anchor: '100%'  
+	    }]
+	},
 	getFields:function(){
 		return [
 	        {name:'id'},
@@ -63,6 +80,35 @@ Ext.define('desktop.app.sys.Role',{
 		}];
 		return columns;
 	},
+	getWindowFormItems:function(){
+		return[{
+		    	xtype:'hidden',
+		    	name:'id'
+		    },{
+		        fieldLabel: '角色名称',
+		        name: 'name',
+		        allowBlank:false,
+		        emptyText:'角色名称不能为空！',
+		        msgTarget:'角色名称不能为空！',
+		        anchor:'100%'  
+		    },{
+		        fieldLabel: '角色类型',
+		        allowBlank:false,
+		        emptyText:'角色类型不能空！',
+		        name: 'role_type',
+		        anchor: '100%'  
+		    },{
+		        fieldLabel: '状态',
+		        allowBlank:false,
+		        emptyText:'状态不能空！',
+		        name: 'status',
+		        anchor: '100%'  
+		    },{
+		        fieldLabel: '备注',	        
+		        name: 'remark',
+		        anchor: '100%'  
+		    }]
+	},	
 	getRowBodyTpl:function(){
 		var tpl=new Ext.XTemplate(
                 '<p><b>角色名:</b> {name}</p>',
@@ -71,6 +117,18 @@ Ext.define('desktop.app.sys.Role',{
            );
 		return tpl;
 	}
+});
+Ext.define('desktop.app.sys.RoleModel',{
+	extend: 'Ext.data.Model',
+	fields:[
+	        {name:'id',type: 'string'},
+	        {name:'name',type: 'string'},
+	        {name:'role_type',type: 'string'},
+	        {name:'create_datetime',type: 'string',dateFormat:'Y-m-d H:i:s'},
+	        {name:'update_datetime',type: 'string',dateFormat:'Y-m-d H:i:s'},
+	        {name:'status',type: 'string'},
+	        {name:'remark',type: 'string'}
+	       ]
 });
 /*Ext.define('desktop.app.comm.RoleEditWindow',{
 	extend:'desktop.app.comm.CommWindow',

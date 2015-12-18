@@ -64,7 +64,7 @@
     suffix = (suffix.length) ? ('-' + suffix.join('-')) : '';
 
     if (includeCSS) {
-        document.write('<link rel="stylesheet" type="text/css" href="' + path + '/desktop/resources/css/ext-all' + suffix + '-debug.css"/>');
+        document.write('<link rel="stylesheet" type="text/css" id="theme" href="' + path + '/desktop/resources/css/ext-all' + suffix + '-debug.css"/>');
     }
     document.write('<script type="text/javascript" src="' + path + '/desktop/ext/ext-all' + (rtl ? '-rtl' : '') + '.js"></script>');
 
