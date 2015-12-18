@@ -24,7 +24,7 @@
 	<script src="<%=path%>/js/jquery-1.6.4.min.js"></script>
 	<script type="text/javascript" src="js/desktop/ext/include-ext.js"></script>
     <!-- <script type="text/javascript" src="js/desktop/js/ext-theme-neptune.js"></script> -->
-    <!-- <script type="text/javascript" src="js/desktop/ext/options-toolbar.js"></script> -->
+    <script type="text/javascript" src="js/desktop/ext/options-toolbar.js"></script>
     <script type="text/javascript" src="js/desktop/ext/ext-lang-zh_CN.js"></script>
 	<script type="text/javascript" src="js/desktop/ext/examples.js"></script>
 	<script type="text/javascript" src="js/desktop/ux/IFrame.js"></script>
