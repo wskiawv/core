@@ -36,7 +36,8 @@ Ext.define('desktop.app.comm.WestPanel',{
 				                    var panel = ({
 				                    	xtype:viewType,
 				                    	title: record.get('text'),
-				                    	iconCls: "icon-tab",				                    	
+				                    	iconCls: "icon-tab",
+				                    	layout:'border',
 				                    	closable : true,
 				                    	frame:false,				      
 				                    });

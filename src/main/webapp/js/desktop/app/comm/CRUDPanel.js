@@ -94,6 +94,7 @@ Ext.define('desktop.app.comm.CRUDPanel',{
 				height : me.getSearchFieldHeight(),
 				collapsible : me.getSearchCollapsible(),
 				items:me.getSearchFields(),
+				buttonAlign:'center',
 				buttons:[me.getSearchButton(),me.getSearchResetButton()],
 				fieldDefaults: {
 			        labelWidth: 70,
@@ -103,6 +104,7 @@ Ext.define('desktop.app.comm.CRUDPanel',{
 			},{
 				xtype:'CenterGrid',				
 				tbar : me.getToolbar(),
+				//region:'center',
 				store : me.getGridStore(),
 				columns : me.getGridColumns(),
 				selModel : me.getGridSm(),				
@@ -119,7 +121,7 @@ Ext.define('desktop.app.comm.CRUDPanel',{
 	initComponent : function(config){
         var me=this;
         Ext.apply(me,{
-        	autoScroll:true
+        	
         });        
         me.items =  me.getItems();
         

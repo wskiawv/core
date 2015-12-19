@@ -217,7 +217,16 @@ public class BaseDao implements BaseDaoI {
 		page.setTotalCount(totalCount);
 		c.setFirstResult(page.getStart());
 		c.setMaxResults(page.getLimit());
-		c.addOrder(Order.desc("id"));
+		if(params.containsKey("sort")){
+			if(params.get("dir").toString().equalsIgnoreCase("ASC")){
+				c.addOrder(Order.asc(params.get("sort").toString()));
+			}else{
+				c.addOrder(Order.desc(params.get("sort").toString()));
+			}
+			
+		}else{
+			c.addOrder(Order.desc("id"));
+		}		
 		page.setResult(c.list());	
 		return page;
 	}

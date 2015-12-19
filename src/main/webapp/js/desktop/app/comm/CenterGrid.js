@@ -13,6 +13,7 @@ Ext.define('desktop.app.comm.CenterGrid',{
 	initComponent : function(config){
 		var me=this;
 		Ext.apply(me,{
+			region:'center',
         	autoScroll:true
         });
 		me.bbar=Ext.create('desktop.app.comm.Paging', {
