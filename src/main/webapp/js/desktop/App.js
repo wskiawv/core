@@ -78,7 +78,7 @@ Ext.define('App', {
                 data: this.getDesktopIocn()
             }),
 
-            wallpaper: 'js/desktop/wallpapers/Blue-Sencha.jpg',
+            wallpaper: 'js/desktop/wallpapers/Dark-Sencha.jpg',
             wallpaperStretch: false
         });
     },    

@@ -22,6 +22,7 @@ Ext.define('desktop.app.comm.CRUDRowEditPanel',{
 		'desktop.app.comm.SearchPanel',
 		'desktop.app.comm.CommWindow',   
 		'desktop.app.comm.CenterGrid', 
+		'desktop.app.comm.RowExpanders',
 		'Ext.grid.plugin.*',
 		'Ext.grid.*',
 		'Ext.panel.Panel',
@@ -108,10 +109,7 @@ Ext.define('desktop.app.comm.CRUDRowEditPanel',{
    				store : me.getGridStore(),
    				columns : me.getGridColumns(),
    				selModel : me.getGridSm(),				
-   				plugins: [{
-   			            ptype: 'rowexpander',
-   			            rowBodyTpl : me.getRowBodyTpl()		            
-   			    }],
+   				plugins: [me.getRowExpander(),me.getRowEditPlugin()],
    				flex:1
    			}				
    		];
@@ -194,6 +192,20 @@ Ext.define('desktop.app.comm.CRUDRowEditPanel',{
    	getMainWindow:function(){
    		var win=this.ownerCt.ownerCt;
    		return win;
+   	},
+   	getRowExpander:function(){
+   		var me=this;
+   		var rowexpander=Ext.create('Ext.grid.plugin.RowExpander',{   			   
+		    rowBodyTpl : me.getRowBodyTpl()			    
+   		});
+   		return rowexpander;
+   	},
+   	getRowEditPlugin:function(){
+   		var rowEditPlugin=Ext.create('Ext.grid.plugin.RowEditing',{
+   			clicksToMoveEditor: 1,
+	        autoCancel: false
+   		});
+   		return rowEditPlugin;
    	},
    	/**
    	 * 获取tabPanel
@@ -399,7 +411,7 @@ Ext.define('desktop.app.comm.CRUDRowEditPanel',{
    			    scope:me,
    				success:function(form,action){
    					var grid=me.getGrid(),store =grid.getStore();
-   						grid.getSelectionModel().deselectAll();	
+   						//grid.getSelectionModel().deselectAll();	
    						store.load();
    					me.createWindow().close();
    					//this.getStore().load();
@@ -480,7 +492,7 @@ Ext.define('desktop.app.comm.CRUDRowEditPanel',{
    				/*for(var i=0,len=records.length; i<len; i++){
    					store.remove(records[i]);
    				}*/
-   				grid.getSelectionModel().deselectAll();
+   				//grid.getSelectionModel().deselectAll();
    				store.load();
    				//grid.getSelectionModel().clearSelections();
    			}
@@ -607,19 +619,31 @@ Ext.define('desktop.app.comm.CRUDRowEditPanel',{
    				//autoLoad:true,
    				remoteSort: true,
    				proxy : {
-   				type : 'ajax',
-   				url : me.getUrl()+"/search",
-   				reader : {
-   					type : 'json',
-   					totalProperty : 'totalCount',
-   					root : 'result'
+	   				type : 'ajax',
+	   				url : me.getUrl()+"/search",
+	   				reader : {
+	   					type : 'json',
+	   					totalProperty : 'totalCount',
+	   					root : 'result'
+	   				},
+	   				simpleSortMode : true
    				},
-   				simpleSortMode : true
-   			},
-   			sorters : [{
-   						property : 'id',
-   						direction : 'ASC'
-   					}]
+	   			sorters : [{
+					property : 'id',
+					direction : 'DESC'
+	   			}]
+   		});
+   		GridStore.on({
+   			load:function(store,records,successful,eOpts){
+   				var grid=me.getGrid();
+   				/*var rowExpander=me.getRowExpander();
+   				//var rowEditing=grid.getPlugin("rowexpander");
+   				rowExpander.rowCollapsedCls="x-grid-row-collapsed"
+   				//rowEditing.disable();
+   				
+*/   			grid.getSelectionModel().deselectAll();
+				//grid.collapse();
+   			}
    		});
    		return GridStore;
    	},

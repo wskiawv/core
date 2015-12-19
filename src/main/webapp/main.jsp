@@ -56,6 +56,7 @@
     <script type="text/javascript" src="js/desktop/app/comm/CenterTabPanel.js"></script>
     <script type="text/javascript" src="js/desktop/app/comm/WestTreePanel.js"></script>
     <script type="text/javascript" src="js/desktop/app/comm/WestPanel.js"></script>
+    <script type="text/javascript" src="js/desktop/app/comm/RowExpanders.js"></script>
     
     <script type="text/javascript" src="js/desktop/app/comm/CRUDPanel.js"></script>
     <script type="text/javascript" src="js/desktop/app/comm/CRUDRowEditPanel.js"></script>

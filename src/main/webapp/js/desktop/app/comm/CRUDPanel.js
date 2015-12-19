@@ -608,20 +608,26 @@ Ext.define('desktop.app.comm.CRUDPanel',{
 				//autoLoad:true,
 				remoteSort: true,
 				proxy : {
-				type : 'ajax',
-				url : me.getUrl()+"/search",
-				reader : {
-					type : 'json',
-					totalProperty : 'totalCount',
-					root : 'result'
+					type : 'ajax',
+					url : me.getUrl()+"/search",
+					reader : {
+						type : 'json',
+						totalProperty : 'totalCount',
+						root : 'result'
+					},
+					simpleSortMode : true
 				},
-				simpleSortMode : true
-			},
-			sorters : [{
-						property : 'id',
-						direction : 'ASC'
-					}]
+				sorters : [{
+					property : 'id',
+					direction : 'DESC'
+				}]
 		});
+		GridStore.on({
+   			load:function(store,records,successful,eOpts){
+   				var grid=me.getGrid();
+   				grid.getSelectionModel().deselectAll();
+   			}
+   		});
 		return GridStore;
 	},
 	

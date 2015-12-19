@@ -1,6 +1,6 @@
 
 Ext.define('desktop.app.sys.Role',{
-	extend:'desktop.app.comm.CRUDPanel',
+	extend:'desktop.app.comm.CRUDRowEditPanel',
 	alias:'widget.Role',
 	moduleName:"sys",//请求模块名称
 	controllersName:"Roles",//请求控制器名称
@@ -130,11 +130,3 @@ Ext.define('desktop.app.sys.RoleModel',{
 	        {name:'remark',type: 'string'}
 	       ]
 });
-/*Ext.define('desktop.app.comm.RoleEditWindow',{
-	extend:'desktop.app.comm.CommWindow',
-	getItems:function(){
-		return [{
-			
-		}];
-	}
-});*/
