@@ -231,6 +231,7 @@ Ext.define('desktop.app.comm.CRUDRowEditPanel',{
    				minimizable:true,				 
    				width : 740,
    				height : 480,
+   				closeAction:'hide',
    				iconCls : 'video',
    				animCollapse : false,
    				constrainHeader : true,
@@ -245,26 +246,27 @@ Ext.define('desktop.app.comm.CRUDRowEditPanel',{
    			me.tip.setTarget(win.taskButton.el);
    		}
    		win.show();
+   		win.doLayout();
    		return win;
    	},
    	/**
    	 * 新增、编辑窗口form表单对象
    	 */
    	getWindowItems:function(){		
-   		var form=Ext.getCmp(this.editWindowId+'form');
-       	if(!form)
-       	{
-       	    form=Ext.create('Ext.form.Panel',{
+   		//var form=Ext.getCmp(this.editWindowId+'form');
+//       	if(!form)
+//       	{
+   	    var form=Ext.create('Ext.form.Panel',{
    			border: false,			
-   			id:this.editWindowId+'form',
+   			//id:this.editWindowId+'form',
    		    fieldDefaults: {
    		        labelWidth: 70,
    		        labelAlign:'right'
    		    },		    
    		    defaultType: 'textfield',		   
    		    items: this.getWindowFormItems()
-   			});
-       	}
+		});
+       	//}
        	return form;		
    	},
    	//搜索Panel相关函数		
@@ -364,9 +366,10 @@ Ext.define('desktop.app.comm.CRUDRowEditPanel',{
    	w.taskButton.setText(me.getPanelTitle()+"新增");
    	w.setTitle(me.getPanelTitle()+"新增");
 	w.down("form").getForm().reset();	
-	me.newOrEdit=true;			
-	var record = Ext.data.Record.create(this.getFields());
-	this.setCURecord(new record());
+	me.newOrEdit=true;		
+	me.formWindow=w;
+	/*var record = Ext.data.Record.create(this.getFields());
+	this.setCURecord(new record());*/
    },
    
    /**
@@ -385,9 +388,10 @@ Ext.define('desktop.app.comm.CRUDRowEditPanel',{
 		w.taskButton.setText(me.getPanelTitle()+"编辑");
 		w.setTitle(me.getPanelTitle()+"编辑");
 		me.newOrEdit=false;
+		me.formWindow=w;
 		var formPanel = w.down("form");		 
 		this.setCURecord(records[0]);		
-		formPanel.loadRecord(records[0]);	
+		formPanel.loadRecord(records[0]);
    	},
    	/**
    	 * 保存按钮单击事件
@@ -400,7 +404,7 @@ Ext.define('desktop.app.comm.CRUDRowEditPanel',{
    		}else{
    			url+="/update";
    		}
-   		var form=me.getWindowItems();
+   		var form=me.formWindow.down("form");
    		if(form.getForm().isValid()){
    			form.submit({
    				clientValidation:true,
