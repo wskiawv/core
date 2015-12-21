@@ -476,14 +476,20 @@ Ext.define('desktop.app.comm.CRUDPanel',{
 		Ext.Ajax.request({
 			url : me.getUrl()+"/delete",
 			params : {"id": ids},
-			success : function(){
-				Ext.example.msg('温馨提醒', "数据删除成功!");		
+			success : function(response){
+				 var text = response.responseText;
+				  var result=Ext.decode(text);
+				  Ext.example.msg('温馨提醒',result.msg);	
 				/*for(var i=0,len=records.length; i<len; i++){
 					store.remove(records[i]);
 				}*/
 				grid.getSelectionModel().deselectAll();
 				store.load();
 				//grid.getSelectionModel().clearSelections();
+			},
+			failure:function(response){
+				
+				  Ext.example.msg('温馨提醒',"请求失败！");
 			}
 		})
 	},

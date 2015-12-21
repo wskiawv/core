@@ -193,6 +193,9 @@ Ext.define('desktop.app.comm.CRUDRowEditPanel',{
    		var win=this.ownerCt.ownerCt;
    		return win;
    	},
+   	/**
+   	 * 扩展显示插件
+   	 */
    	getRowExpander:function(){
    		var me=this;
    		var rowexpander=Ext.create('Ext.grid.plugin.RowExpander',{   			   
@@ -200,10 +203,62 @@ Ext.define('desktop.app.comm.CRUDRowEditPanel',{
    		});
    		return rowexpander;
    	},
+   	/**
+   	 * 行编辑组件
+   	 */
    	getRowEditPlugin:function(){
+   		var me=this;
    		var rowEditPlugin=Ext.create('Ext.grid.plugin.RowEditing',{
    			clicksToMoveEditor: 1,
 	        autoCancel: false
+   		});
+   		//注册事件
+   		rowEditPlugin.addEvents(
+   			'addRecord'
+   		);
+   		//监听事件
+   		rowEditPlugin.on({
+   			beforeedit:function(editor,context,e){
+   				var edit=editor;   				
+   				var record=context.record;
+   				
+   			},
+   			edit:function(editor,context){
+   				var edit=editor;   				
+   				var record=context.record;
+   				var action="/save";
+   				if(record.data["id"]==""||record.data["id"]==null){
+   					action="/save";
+   				}else{
+   					action="/update";
+   				}
+   				var data=record.data;
+   				var store=context.store;  
+   				var grid =context.grid;
+   				Ext.Ajax.request({
+   					url : me.getUrl()+action,
+   					params : data,
+   					success : function(response){
+   						var text = response.responseText;
+     					var result=Ext.decode(text);
+     					Ext.example.msg('温馨提醒',result.msg);	   						
+   						grid.getSelectionModel().deselectAll();
+   						store.load();   						
+   					},
+   					failure:function(response){   					 
+   					  Ext.example.msg('温馨提醒',"请求失败");
+   					}
+   				});
+   			},
+   			canceledit:function(editor,context,e){
+   				var edit=editor;   				
+   				var record=context.record;
+   				var store=context.store;
+   				
+   			},
+   			addRecord:function(editor,store){
+   				
+   			}
    		});
    		return rowEditPlugin;
    	},
@@ -362,12 +417,19 @@ Ext.define('desktop.app.comm.CRUDRowEditPanel',{
     */
    addButtonClick : function(btn){
    	var me=this;    	
-   	var w=me.createWindow();  
+   	var record=Ext.create(me.getStoreModel());
+   	var grid=me.getGrid();
+   	var store=grid.getStore();
+   	var rowediting=me.getRowEditPlugin();
+   	store.insert(0,record);
+   	//rowediting.fireEvent("beforeedit");
+   	rowediting.startEdit(0,0);
+   /*	var w=me.createWindow();  
    	w.taskButton.setText(me.getPanelTitle()+"新增");
    	w.setTitle(me.getPanelTitle()+"新增");
 	w.down("form").getForm().reset();	
 	me.newOrEdit=true;		
-	me.formWindow=w;
+	me.formWindow=w;*/
 	/*var record = Ext.data.Record.create(this.getFields());
 	this.setCURecord(new record());*/
    },

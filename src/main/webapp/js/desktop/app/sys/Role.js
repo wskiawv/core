@@ -74,7 +74,7 @@ Ext.define('desktop.app.sys.Role',{
 			text:'备注',
 		    dataIndex:'remark',
 		    width:150,
-		    sortable:false,
+		    sortable:true,
 		    flex     : 1,
 		    editor:{xtype:'textfield'}
 		}];

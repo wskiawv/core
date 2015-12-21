@@ -16,5 +16,6 @@
 	<menu text="系统管理">		
 		<menu text="资源管理" xtype="SystemResources"/>
 		<menu text="角色管理" xtype="Role"/>
+		<menu text="系统菜单维护" xtype="Menu"/>
 	</menu>
 </menus>

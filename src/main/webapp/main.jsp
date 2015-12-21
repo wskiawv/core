@@ -63,6 +63,7 @@
      
     <script type="text/javascript" src="js/desktop/app/student/Student.js"></script>
     <script type="text/javascript" src="js/desktop/app/eims/Eims.js"></script>
+    <script type="text/javascript" src="js/desktop/app/eims/sys/Menu.js"></script>
     <script type="text/javascript" src="js/desktop/app/user/User.js"></script>
     <script type="text/javascript" src="js/desktop/app/filesys/FileSys.js"></script>
     <script type="text/javascript" src="js/desktop/app/sys/Role.js"></script>

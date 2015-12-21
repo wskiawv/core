@@ -95,7 +95,7 @@ public class BaseController{
 	public void _Save(Object o){
 		
 		baseService.save(o);
-		Msg msg=new Msg("success",true);
+		Msg msg=new Msg("新增成功！",true);
 		renderJson(msg);
 	}
 	/**
@@ -111,7 +111,7 @@ public class BaseController{
 	@ResponseBody 
 	public void _Update(Object o){
 		baseService.update(o);
-		Msg msg=new Msg("success",true);
+		Msg msg=new Msg("更新成功！",true);
 		renderJson(msg);
 	}
 	
@@ -151,7 +151,7 @@ public class BaseController{
 				_Delete(t);
 			}	
 		}
-		Msg msg=new Msg("success",true);
+		Msg msg=new Msg("删除成功！",true);
 		renderJson(msg);
 		
 	}
