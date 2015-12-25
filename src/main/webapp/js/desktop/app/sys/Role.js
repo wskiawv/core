@@ -1,6 +1,6 @@
 
 Ext.define('desktop.app.sys.Role',{
-	extend:'desktop.app.comm.CRUDRowEditPanel',
+	extend:'desktop.app.comm.CRUDPanel',
 	alias:'widget.Role',
 	moduleName:"sys",//请求模块名称
 	controllersName:"Roles",//请求控制器名称
@@ -50,7 +50,7 @@ Ext.define('desktop.app.sys.Role',{
 		},{	     
 			text:'创建日期',
 		    dataIndex:'create_datetime',
-		    format : 'Y-m-d',
+		    renderer: Ext.util.Format.dateRenderer('Y-m-d'),		   
 		    align: "center",
 		    width:120,
 		    sortable:true,
@@ -58,7 +58,7 @@ Ext.define('desktop.app.sys.Role',{
 		},{	     
 			text:'更新日期',
 		    dataIndex:'update_datetime',
-		    format : 'Y-m-d',
+		    renderer: Ext.util.Format.dateRenderer('Y-m-d'),	
 		    align: "center",
 		    width:120,
 		    sortable:true,

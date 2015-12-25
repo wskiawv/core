@@ -229,9 +229,9 @@ Ext.define('desktop.app.comm.CRUDPanel',{
 				buttons:[me.getSaveButton(),me.getResetButton(),me.getCancelButton()]
 			})
 		}
-		if (me.tip) {
+		/*if (me.tip) {
 			me.tip.setTarget(win.taskButton.el);
-		}
+		}*/
 		win.show();
 		return win;
 	},
@@ -354,8 +354,8 @@ Ext.define('desktop.app.comm.CRUDPanel',{
     	w.setTitle(me.getPanelTitle()+"新增");
 		w.down("form").getForm().reset();	
 		me.newOrEdit=true;			
-		var record = Ext.data.Record.create(this.getFields());
-		this.setCURecord(new record());
+		var record=Ext.create(me.getStoreModel());
+		this.setCURecord(record);
     },
     
     /**

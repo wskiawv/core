@@ -63,7 +63,7 @@ Ext.define('desktop.app.comm.CRUDRowEditPanel',{
    	getStoreModel : Ext.emptyFn,//需要子类覆盖此方法返回Store模型model
    	
    	getWindowFormItems:Ext.emptyFn,
-       getFields:Ext.emptyFn,//此方法用于返回model中的filds配置字段
+    getFields:Ext.emptyFn,//此方法用于返回model中的filds配置字段
        /**
    	 * grid列模型子类需要覆盖此方法
    	 */
@@ -210,7 +210,8 @@ Ext.define('desktop.app.comm.CRUDRowEditPanel',{
    		var me=this;
    		var rowEditPlugin=Ext.create('Ext.grid.plugin.RowEditing',{
    			clicksToMoveEditor: 1,
-	        autoCancel: false
+   			clicksToEdit:1,
+	        autoCancel: true
    		});
    		//注册事件
    		rowEditPlugin.addEvents(
@@ -225,7 +226,7 @@ Ext.define('desktop.app.comm.CRUDRowEditPanel',{
    			},
    			edit:function(editor,context){
    				var edit=editor;   				
-   				var record=context.record;
+   				var record=context.record;   				 
    				var action="/save";
    				if(record.data["id"]==""||record.data["id"]==null){
    					action="/save";
@@ -240,7 +241,7 @@ Ext.define('desktop.app.comm.CRUDRowEditPanel',{
    					params : data,
    					success : function(response){
    						var text = response.responseText;
-     					var result=Ext.decode(text);
+     					var result=Ext.decode(text);     				
      					Ext.example.msg('温馨提醒',result.msg);	   						
    						grid.getSelectionModel().deselectAll();
    						store.load();   						
@@ -422,8 +423,8 @@ Ext.define('desktop.app.comm.CRUDRowEditPanel',{
    	var store=grid.getStore();
    	var rowediting=me.getRowEditPlugin();
    	store.insert(0,record);
-   	//rowediting.fireEvent("beforeedit");
-   	rowediting.startEdit(0,0);
+   	//rowediting.fireEvent("canceledit",rowediting,rowediting.context);
+   	rowediting.startEdit(record,0);
    /*	var w=me.createWindow();  
    	w.taskButton.setText(me.getPanelTitle()+"新增");
    	w.setTitle(me.getPanelTitle()+"新增");

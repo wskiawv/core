@@ -71,7 +71,7 @@ public class Menus extends BaseController {
 				super.getBaseService().executeSql(sql);
 				toSaveMenus(root,null);
 			}
-		}catch (DocumentException e) {
+		} catch (DocumentException e) {
 			e.printStackTrace();
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
