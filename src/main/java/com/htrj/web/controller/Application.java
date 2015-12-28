@@ -1,4 +1,4 @@
-package com.htrj.core.controller;
+package com.htrj.web.controller;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -23,9 +23,9 @@ import org.springframework.web.servlet.mvc.condition.RequestMethodsRequestCondit
 import org.springframework.web.servlet.mvc.method.RequestMappingInfo;
 import org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping;
 
-import com.htrj.core.controller.base.BaseController;
-import com.htrj.core.model.User;
-import com.htrj.core.model.sys.SystemResources;
+import com.htrj.core.controller.BaseController;
+import com.htrj.web.model.sys.User;
+import com.htrj.web.model.sys.SystemResources;
 
 import net.sf.json.JSONObject;
 import net.sf.json.JSONSerializer;

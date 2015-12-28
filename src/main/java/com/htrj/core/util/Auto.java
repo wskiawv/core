@@ -107,8 +107,13 @@ public class Auto {
 		if ((!StringUtils.isBlank(_package)) && (!".".equals(_package))) {
 			ppath = StringUtils.join(StringUtils.split(_package, "."), "/") + "/";
 		}
-		String cPath = maps.get("appPath") + "/com/htrj/core/controller/" + ppath + controller + ".java";
-		String mPath = maps.get("appPath") + "/com/htrj/core/model/" + ppath + model + ".java";
+		String genPackage="";
+		if ((!StringUtils.isBlank(maps.get("package").toString())) && (!".".equals(maps.get("package").toString()))) {
+			genPackage = StringUtils.join(StringUtils.split(maps.get("package").toString(), "."), "/") + "/";
+		}
+		
+		String cPath = maps.get("appPath").toString() + "/" + genPackage+"/controller/" + ppath + controller + ".java";
+		String mPath = maps.get("appPath").toString() + "/" + genPackage+"/model/" + ppath + model + ".java";
 
 		Map context = new HashMap();
 		context.put("time", new Date(System.currentTimeMillis()));

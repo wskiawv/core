@@ -1,4 +1,4 @@
-package com.htrj.core.controller.base;
+package com.htrj.core.controller;
 
 import java.io.IOException;
 import java.util.HashMap;

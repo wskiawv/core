@@ -73,7 +73,7 @@ Ext.define('desktop.app.user.User', {
 	            // load using script tags for cross domain, if the data in on the same domain as
 	            // this page, an HttpProxy would be better
 	            type: 'ajax',
-	            url: 'user/search',
+	            url: 'sys/Users/search',
 	            reader: {
 	            	type : 'json',
 	                root: 'result',
@@ -190,7 +190,7 @@ Ext.define('desktop.app.user.User', {
 			         	iconCls: 'add',
 			         	scope:this,
 			         	handler:function(){
-			         		this.Method='user/save';
+			         		this.Method='sys/Users/save';
 			         		this.getFormWindow().setTitle("新增");
 			         		this.getFormWindow().show();			         		
 			         		this.getForm().getForm().reset();			         		
@@ -202,7 +202,7 @@ Ext.define('desktop.app.user.User', {
 			         	handler:function(){			         			
 			         		var records=this.getGrid().getSelectionModel().getSelection();
 			         		var i=records.length;
-			         		this.Method='user/update';
+			         		this.Method='sys/Users/update';
 			         		if(i==1)
 			         		{
 			         			this.getFormWindow().setTitle("编辑");
@@ -228,7 +228,7 @@ Ext.define('desktop.app.user.User', {
 			         		var i=records.length;			         	
 			         		var record=records[0];
 			         		var ids=[];
-			         		this.Method='user/delete';
+			         		this.Method='sys/Users/delete';
 			         		if(i==0)
 			         		{
 			         			Ext.Msg.alert('温馨提醒','你没有选择记录！');

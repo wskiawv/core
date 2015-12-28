@@ -1,47 +1,44 @@
-package com.htrj.web.controller${_package};
+package com.htrj.web.controller.sys;
 
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import com.htrj.web.model${_package}.${model};
-import com.htrj.core.controller.${cextend};
+import com.htrj.web.model.sys.RoleSystemResources;
+import com.htrj.core.controller.BaseController;
 
-<#if (controllerImports?has_content)>
-	${controllerImports}
-</#if>
 
 /**
- * ${desc} 控制器
+ * 角色与资源 控制器
  * 
  * @author he
  */
 @Controller
-@RequestMapping("${moduleName}/${controller}")
-public class ${controller} extends ${cextend} {
+@RequestMapping("/sys/RoleSystemResourceses")
+public class RoleSystemResourceses extends BaseController {
 	
 	
 	@RequestMapping(value="/save", method=RequestMethod.POST)
-	public void save(${model} model) {
+	public void save(RoleSystemResources model) {
 		_Save(model);
 	}
 	@RequestMapping(value="/delete", method=RequestMethod.POST)
 	public void delete(String id) {
-		_Delete(${model}.class,id);
+		_Delete(RoleSystemResources.class,id);
 	}
 	@RequestMapping(value="/update", method=RequestMethod.POST)
-	public void update(${model} model) {
+	public void update(RoleSystemResources model) {
 		_Update(model);		
 	}
 	@RequestMapping(value="/search", method=RequestMethod.GET)
 	public void search() {
-		_Search(${model}.class);
+		_Search(RoleSystemResources.class);
 	}
 	@RequestMapping(value="/show", method=RequestMethod.POST)
-	public ${model} show(Long id){
-		return (${model})_Show(${model}.class, id);
+	public RoleSystemResources show(Long id){
+		return (RoleSystemResources)_Show(RoleSystemResources.class, id);
 	}
 	
 	
-	${controllerBusCode}
+	
 }

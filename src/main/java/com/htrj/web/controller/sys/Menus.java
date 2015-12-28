@@ -1,4 +1,4 @@
-package com.htrj.core.controller.sys;
+package com.htrj.web.controller.sys;
 
 
 import java.io.FileInputStream;
@@ -17,10 +17,8 @@ import org.dom4j.io.SAXReader;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-
-
-import com.htrj.core.model.sys.Menu;
-import com.htrj.core.controller.base.BaseController;
+import com.htrj.web.model.sys.Menu;
+import com.htrj.core.controller.BaseController;
 
 
 /**
@@ -30,9 +28,9 @@ import com.htrj.core.controller.base.BaseController;
  */
 @Controller
 @RequestMapping("/sys/Menus")
-public class Menus extends BaseController {
+public class Menus extends BaseController {	
 	
-	
+
 	@RequestMapping(value="/save", method=RequestMethod.POST)
 	public void save(Menu model) {
 		_Save(model);

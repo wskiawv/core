@@ -1,15 +1,15 @@
-package com.htrj.core.controller.sys;
+package com.htrj.web.controller.sys;
 
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import com.htrj.core.model.sys.Admin;
-import com.htrj.core.controller.base.BaseController;
+import com.htrj.web.model.sys.Admin;
+import com.htrj.core.controller.BaseController;
 
 
 /**
- * 系统管理员 控制器
+ * 管理员 控制器
  * 
  * @author he
  */

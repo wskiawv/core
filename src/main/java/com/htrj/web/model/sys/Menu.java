@@ -1,5 +1,4 @@
-package com.htrj.core.model.sys;
-
+package com.htrj.web.model.sys;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -15,7 +14,8 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
-import javax.persistence.Transient;
+import com.htrj.core.model.Model;
+
 /**
  * 系统菜单 模型
  * 
@@ -23,10 +23,11 @@ import javax.persistence.Transient;
  */
 @Entity
 @Table(name = "t_menu")
-public class Menu {
+public class Menu{
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
-	@Column(name = "id",  nullable = false, length = 36)
+	@Column(name = "id", nullable = false, length = 36)
 	private Long id;
 	@Column(name = "text")
 	private String text;
@@ -41,80 +42,95 @@ public class Menu {
 	@Column(name = "modules")
 	private String modules;
 	@ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
-	@JoinColumn(name="pid")	
+	@JoinColumn(name = "pid")
 	private Menu pid;
-	@OneToMany(cascade = CascadeType.ALL, mappedBy = "pid", fetch = FetchType.EAGER)	
+	@OneToMany(cascade = CascadeType.ALL, mappedBy = "pid", fetch = FetchType.EAGER)
 	private List<Menu> children = new ArrayList<Menu>();
 	@Column(name = "orderNum")
 	private Integer orderNum;
+
 	public Long getId() {
 		return id;
 	}
+
 	public void setId(Long id) {
 		this.id = id;
 	}
+
 	public String getText() {
 		return text;
 	}
+
 	public void setText(String text) {
 		this.text = text;
 	}
+
 	public String getQtip() {
 		return qtip;
 	}
+
 	public void setQtip(String qtip) {
 		this.qtip = qtip;
 	}
+
 	public String getXtype() {
 		return xtype;
 	}
+
 	public void setXtype(String xtype) {
 		this.xtype = xtype;
 	}
+
 	public Boolean getLeaf() {
 		return leaf;
 	}
+
 	public void setLeaf(Boolean leaf) {
 		this.leaf = leaf;
 	}
-	
+
 	public String getIconCls() {
 		return iconCls;
 	}
+
 	public void setIconCls(String iconCls) {
 		this.iconCls = iconCls;
 	}
+
 	public String getModules() {
 		return modules;
 	}
+
 	public void setModules(String modules) {
 		this.modules = modules;
 	}
+
 	public Menu getPid() {
 		return pid;
 	}
+
 	public void setPid(Menu pid) {
 		this.pid = pid;
 	}
+
 	public List<Menu> getChildren() {
 		return children;
 	}
+
 	public void setChildren(List<Menu> children) {
 		this.children = children;
-	}	
+	}
+
 	public Integer getOrderNum() {
 		return orderNum;
 	}
+
 	public void setOrderNum(Integer orderNum) {
-		if(orderNum == null) {
+		if (orderNum == null) {
 			this.orderNum = 0;
 		} else {
 			this.orderNum = orderNum;
 		}
 	}
 
-	
-	
-	
-	
 }

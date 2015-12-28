@@ -1,43 +1,42 @@
-package com.htrj.core.controller.sys;
+package com.htrj.web.controller.base;
 
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-
-import com.htrj.core.model.sys.RoleSystemResources;
-import com.htrj.core.controller.base.BaseController;
+import com.htrj.web.model.base.School;
+import com.htrj.core.controller.BaseController;
 
 
 /**
- * 角色与系统资源中间 控制器
+ * 学校基本信息 控制器
  * 
  * @author he
  */
 @Controller
-@RequestMapping("/sys/RoleSystemResourceses")
-public class RoleSystemResourceses extends BaseController {
+@RequestMapping("/base/Schools")
+public class Schools extends BaseController {
 	
 	
 	@RequestMapping(value="/save", method=RequestMethod.POST)
-	public void save(RoleSystemResources model) {
+	public void save(School model) {
 		_Save(model);
 	}
 	@RequestMapping(value="/delete", method=RequestMethod.POST)
 	public void delete(String id) {
-		_Delete(RoleSystemResources.class,id);
+		_Delete(School.class,id);
 	}
 	@RequestMapping(value="/update", method=RequestMethod.POST)
-	public void update(RoleSystemResources model) {
+	public void update(School model) {
 		_Update(model);		
 	}
 	@RequestMapping(value="/search", method=RequestMethod.GET)
 	public void search() {
-		_Search(RoleSystemResources.class);
+		_Search(School.class);
 	}
 	@RequestMapping(value="/show", method=RequestMethod.POST)
-	public RoleSystemResources show(Long id){
-		return (RoleSystemResources)_Show(RoleSystemResources.class, id);
+	public School show(Long id){
+		return (School)_Show(School.class, id);
 	}
 	
 	

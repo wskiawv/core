@@ -1,44 +1,42 @@
-package com.htrj.core.controller.sys;
+package com.htrj.web.controller.sys;
 
-import java.io.IOException;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-
-import com.htrj.core.model.sys.Role;
-import com.htrj.core.controller.base.BaseController;
+import com.htrj.web.model.sys.UserRole;
+import com.htrj.core.controller.BaseController;
 
 
 /**
- * 角色 控制器
+ * 用户与角色 控制器
  * 
  * @author he
  */
 @Controller
-@RequestMapping("/sys/Roles")
-public class Roles extends BaseController {
+@RequestMapping("/sys/UserRoles")
+public class UserRoles extends BaseController {
 	
 	
 	@RequestMapping(value="/save", method=RequestMethod.POST)
-	public void save(Role model) {
+	public void save(UserRole model) {
 		_Save(model);
 	}
 	@RequestMapping(value="/delete", method=RequestMethod.POST)
 	public void delete(String id) {
-		_Delete(Role.class,id);
+		_Delete(UserRole.class,id);
 	}
 	@RequestMapping(value="/update", method=RequestMethod.POST)
-	public void update(Role model) {
+	public void update(UserRole model) {
 		_Update(model);		
 	}
 	@RequestMapping(value="/search", method=RequestMethod.GET)
 	public void search() {
-		_Search(Role.class);
+		_Search(UserRole.class);
 	}
 	@RequestMapping(value="/show", method=RequestMethod.POST)
-	public Role show(Long id){
-		return (Role)_Show(Role.class, id);
+	public UserRole show(Long id){
+		return (UserRole)_Show(UserRole.class, id);
 	}
 	
 	

@@ -21,7 +21,7 @@
 	</bean> 	
 
 	<!-- 配置hibernate session工厂 -->
-	<bean id="sessionFactory" class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
+	<bean id="sessionFactory" name="sessionFactory" class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
 		<property name="dataSource" ref="dataSource" />
 		<property name="hibernateProperties">
 			<props>
@@ -36,7 +36,7 @@
 		<!-- 自动扫描注解方式配置的hibernate类文件 -->
 		<property name="packagesToScan">
 			<list>
-				<value>com.htrj.core.model</value>
+				<value>com.htrj.web.model</value>				
 			</list>
 		</property>
 

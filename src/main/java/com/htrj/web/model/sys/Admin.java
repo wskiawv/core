@@ -1,22 +1,17 @@
-package com.htrj.core.model.sys;
-
+package com.htrj.web.model.sys;
 
 import javax.persistence.Entity;
 import javax.persistence.Table;
 import com.htrj.core.model.Model;
 
-
-
-
-
 /**
- * 系统管理员 模型
+ * 管理员 模型
  * 
  * @author he
  */
 @Entity
 @Table(name = "t_admin")
-public class Admin extends Model{
+public class Admin extends Model {
 
 	private String name;
 	private String password;
@@ -24,10 +19,5 @@ public class Admin extends Model{
 	private String email;
 	private String phone;
 	private String qq;
-	
 
-	
-	
-	
-	
 }

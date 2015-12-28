@@ -1,4 +1,4 @@
-package com.htrj.core.model${_package};
+package com.htrj.web.model${_package};
 
 
 import javax.persistence.Entity;
