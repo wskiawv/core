@@ -23,12 +23,9 @@ import com.htrj.core.model.Model;
  */
 @Entity
 @Table(name = "t_menu")
-public class Menu{
+public class Menu extends Model{
 
-	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
-	@Column(name = "id", nullable = false, length = 36)
-	private Long id;
+	
 	@Column(name = "text")
 	private String text;
 	@Column(name = "qtip")
@@ -48,14 +45,7 @@ public class Menu{
 	private List<Menu> children = new ArrayList<Menu>();
 	@Column(name = "orderNum")
 	private Integer orderNum;
-
-	public Long getId() {
-		return id;
-	}
-
-	public void setId(Long id) {
-		this.id = id;
-	}
+	
 
 	public String getText() {
 		return text;
